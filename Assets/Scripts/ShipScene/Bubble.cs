@@ -9,6 +9,7 @@ namespace ShipScene
         [SerializeField] private float minScale, maxScale;
         [SerializeField] private float expansionSpeed;
 
+        private BubblePool bubblePool;
         private GameObject tip;
         private InputAction interactAction;
         private bool shipHere = false;
@@ -31,15 +32,16 @@ namespace ShipScene
 
         private void OnDisable()
         {
-            if(shipHere)
+            if (shipHere)
                 tip.SetActive(false);
+            bubblePool.Instance.Release(gameObject);
         }
 
         private void OnTriggerStay2D(Collider2D other)
         {
             if (!other.CompareTag("Ship"))
                 return;
-            if(tip.activeSelf)
+            if (tip.activeSelf)
                 return;
             shipHere = true;
             tip.transform.position = transform.position;
@@ -54,13 +56,17 @@ namespace ShipScene
             tip.SetActive(false);
         }
 
-        public void Init(float minScale, float maxScale, float expansionSpeed,GameObject tip)
+        public void Init(GameObject tip, BubblePool bubblePool, Vector2 position, float minScale, float maxScale,
+            float expansionSpeed)
         {
+            this.tip = tip;
+            this.bubblePool = bubblePool;
+            transform.position = position;
             this.minScale = minScale;
             this.maxScale = maxScale;
             this.expansionSpeed = expansionSpeed;
-            this.tip = tip;
             transform.localScale = new Vector3(minScale, minScale, minScale);
+            gameObject.SetActive(true);
         }
     }
 }

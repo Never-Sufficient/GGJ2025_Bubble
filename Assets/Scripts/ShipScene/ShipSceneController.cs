@@ -7,7 +7,7 @@ namespace ShipScene
     public class ShipSceneController : MonoBehaviour
     {
         [SerializeField] private GameObject playableArea;
-        [SerializeField] private GameObject bubblePrefab;
+        [SerializeField] private BubblePool bubblePool;
         [SerializeField] private GameObject tip;
         [SerializeField] private float bubbleSpawnDelay;
 
@@ -19,7 +19,7 @@ namespace ShipScene
             spawnMaxX = playableArea.transform.TransformPoint(playableArea.GetComponent<EdgeCollider2D>().points[0]).x;
             spawnMaxY = playableArea.transform.TransformPoint(playableArea.GetComponent<EdgeCollider2D>().points[0]).y;
             spawnMinX = playableArea.transform.TransformPoint(playableArea.GetComponent<EdgeCollider2D>().points[2]).x;
-            spawnMinY = playableArea.transform.TransformPoint(playableArea.GetComponent<EdgeCollider2D>().points[2]).x;
+            spawnMinY = playableArea.transform.TransformPoint(playableArea.GetComponent<EdgeCollider2D>().points[2]).y;
         }
 
         private void Update()
@@ -34,8 +34,8 @@ namespace ShipScene
             {
                 spawnTimer -= bubbleSpawnDelay;
                 var spawnPosition = new Vector2(Random.Range(spawnMinX, spawnMaxX), Random.Range(spawnMinY, spawnMaxY));
-                var bubble = Instantiate(bubblePrefab, spawnPosition, Quaternion.identity);
-                bubble.GetComponent<Bubble>().Init(1, 2, 0.3f, tip);
+                var bubble = bubblePool.Instance.Get();
+                bubble.GetComponent<Bubble>().Init(tip, bubblePool, spawnPosition, 1, 2, 0.3f);
             }
         }
     }
