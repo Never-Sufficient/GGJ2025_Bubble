@@ -10,7 +10,7 @@ namespace EventCenter
         /// </summary>
         /// <param name="sender">触发源</param>
         /// <param name="eventName">事件名</param>
-        public static void TriggerEvent(this object sender, string eventName)
+        public static void TriggerEvent(this object sender, EventName eventName)
         {
             EventManager.Instance.TriggerEvent(eventName);
         }
@@ -20,7 +20,7 @@ namespace EventCenter
         /// <param name="sender">触发源</param>
         /// <param name="eventName">事件名</param>
         /// <param name="info">参数</param>
-        public static void TriggerEvent<T>(this object sender, string eventName, T info)
+        public static void TriggerEvent<T>(this object sender, EventName eventName, T info)
         {
             EventManager.Instance.TriggerEvent(eventName, info);
         }
@@ -31,7 +31,7 @@ namespace EventCenter
         /// <param name="eventName">事件名</param>
         /// <param name="info1">参数1</param>
         /// <param name="info2">参数2</param>
-        public static void TriggerEvent<T1, T2>(this object sender, string eventName, T1 info1, T2 info2)
+        public static void TriggerEvent<T1, T2>(this object sender, EventName eventName, T1 info1, T2 info2)
         {
             EventManager.Instance.TriggerEvent(eventName, info1, info2);
         }
@@ -43,7 +43,7 @@ namespace EventCenter
         /// <param name="info1">参数1</param>
         /// <param name="info2">参数2</param>
         /// <param name="info3">参数3</param>
-        public static void TriggerEvent<T1, T2, T3>(this object sender, string eventName, T1 info1, T2 info2, T3 info3)
+        public static void TriggerEvent<T1, T2, T3>(this object sender, EventName eventName, T1 info1, T2 info2, T3 info3)
         {
             EventManager.Instance.TriggerEvent(eventName, info1, info2, info3);
         }
@@ -56,7 +56,7 @@ namespace EventCenter
         /// <param name="info2">参数2</param>
         /// <param name="info3">参数3</param>
         /// <param name="info4">参数4</param>
-        public static void TriggerEvent<T1, T2, T3, T4>(this object sender, string eventName, T1 info1, T2 info2, T3 info3, T4 info4)
+        public static void TriggerEvent<T1, T2, T3, T4>(this object sender, EventName eventName, T1 info1, T2 info2, T3 info3, T4 info4)
         {
             EventManager.Instance.TriggerEvent(eventName, info1, info2, info3, info4);
         }

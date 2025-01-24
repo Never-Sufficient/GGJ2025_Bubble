@@ -1,7 +1,9 @@
+using System;
+using Cysharp.Threading.Tasks;
+using DG.Tweening;
+using EventCenter;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEngine.Rendering;
-using UnityEngine.Serialization;
 
 namespace ShipScene
 {
@@ -12,9 +14,24 @@ namespace ShipScene
         [SerializeField] [Tooltip("摩擦阻力")] private float friction;
         [SerializeField] [Tooltip("旋转力大小")] private float rotateForce;
         [SerializeField] [Tooltip("旋转阻力大小")] private float rotateFriction;
+        [SerializeField] private Transform exitPosition, enterPosition;
 
         private InputAction moveAction;
         private Rigidbody2D rb2d;
+        private bool paused = false;
+        private int animationMoving = 0; // 0：未移动 1：移动到开始 2：移动到结束
+
+        private void Awake()
+        {
+            EventManager.Instance.AddListener(EventName.GameStart, OnGameStart);
+            EventManager.Instance.AddListener(EventName.TimerExpire, OnTimeExpire);
+        }
+
+        private void OnDestroy()
+        {
+            EventManager.Instance.RemoveListener(EventName.GameStart, OnGameStart);
+            EventManager.Instance.RemoveListener(EventName.TimerExpire, OnTimeExpire);
+        }
 
         private void Start()
         {
@@ -24,9 +41,12 @@ namespace ShipScene
 
         private void FixedUpdate()
         {
-            var moveDir = moveAction.ReadValue<Vector2>();
-            // RotateToDir(moveDir);
-            Move(moveDir);
+            if (!paused && animationMoving == 0)
+            {
+                var moveDir = moveAction.ReadValue<Vector2>();
+                // RotateToDir(moveDir);
+                Move(moveDir);
+            }
         }
 
         private void Move(Vector2 moveDir)
@@ -36,6 +56,37 @@ namespace ShipScene
             //平移阻力
             rb2d.drag = drag;
             rb2d.AddForce(-rb2d.velocity.normalized * friction);
+        }
+
+        private async UniTaskVoid MoveToPosition(Vector2 position)
+        {
+            // rb2d.velocity = Vector2.zero;
+            await StopMoving();
+            rb2d.DOMove(position, 7f).SetEase(Ease.InOutCubic).onComplete = () =>
+            {
+                if (animationMoving == 1)
+                    animationMoving = 0;
+                GetComponent<Collider2D>().enabled = true;
+            };
+        }
+
+        private async UniTask StopMoving()
+        {
+            Vector2 lastVelocity = rb2d.velocity;
+            while (rb2d.velocity.magnitude > 0.05f)
+            {
+                if(Vector2.Angle(lastVelocity, rb2d.velocity) > 90)
+                    break;
+                lastVelocity = rb2d.velocity;
+                
+                //平移力
+                rb2d.AddForce(-rb2d.velocity.normalized * moveForce);
+                //平移阻力
+                rb2d.drag = drag;
+                rb2d.AddForce(-rb2d.velocity.normalized * friction);
+                await UniTask.WaitForFixedUpdate();
+            }
+            rb2d.velocity = Vector2.zero;
         }
 
         private void RotateToDir(Vector2 moveDir)
@@ -54,6 +105,20 @@ namespace ShipScene
             }
             else
                 rb2d.AddTorque(-rb2d.angularVelocity * rotateFriction);
+        }
+
+        private void OnGameStart()
+        {
+            animationMoving = 1;
+            GetComponent<Collider2D>().enabled = false;
+            MoveToPosition(enterPosition.position).Forget();
+        }
+
+        private void OnTimeExpire()
+        {
+            animationMoving = 2;
+            GetComponent<Collider2D>().enabled = false;
+            MoveToPosition(exitPosition.position).Forget();
         }
     }
 }

@@ -24,14 +24,15 @@ namespace ShipScene
             transform.localScale = Vector3.Lerp(transform.localScale, new Vector3(maxScale, maxScale, maxScale),
                 expansionSpeed * Time.deltaTime);
             if (transform.localScale.x / maxScale >= 0.95)
-                gameObject.SetActive(false);
+                BubbleBreak();
 
             if (interactAction.WasPressedThisFrame() && shipHere)
                 Debug.Log("交互！！");
         }
 
-        private void OnDisable()
+        private void BubbleBreak()
         {
+            gameObject.SetActive(false);
             if (shipHere)
                 tip.SetActive(false);
             bubblePool.Instance.Release(gameObject);
