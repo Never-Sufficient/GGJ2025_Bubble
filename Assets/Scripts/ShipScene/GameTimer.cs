@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using EventCenter;
 using UnityEngine;
 
@@ -36,7 +36,7 @@ namespace ShipScene
                 this.TriggerEvent(EventName.TimerExpire);
                 expired = true;
             }
-            Debug.Log(timer);
+            //Debug.Log(timer);
         }
     }
 }
