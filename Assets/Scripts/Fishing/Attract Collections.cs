@@ -30,6 +30,7 @@ public class AttractCollections : MonoBehaviour
             if (Vector2.Distance(collision.gameObject.transform.position, transform.position) < 0.1f)
             {
                 hook = collision.gameObject;
+                hook.GetComponent<FishingRodInputHandle>().setGotCollection();
                 isCatched = true;
             }
             else
