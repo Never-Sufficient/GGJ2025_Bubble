@@ -87,10 +87,19 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "MouseOperation",
+                    "name": "HookScroll",
                     "type": "Value",
-                    "id": "0ddf98a5-4e95-4368-acd1-c5d0f0a63d8a",
-                    "expectedControlType": "Vector2",
+                    "id": "090f8c38-ea6a-45de-8769-fe9c0a20e31b",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "HookHorizontalMove",
+                    "type": "Value",
+                    "id": "b4e98f6b-28bc-456b-a791-596f7472a17e",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
@@ -483,59 +492,26 @@
                     "isPartOfComposite": false
                 },
                 {
-                    "name": "Scroll",
-                    "id": "dfd4a07f-484f-4996-9e00-070ad03734da",
-                    "path": "2DVector",
+                    "name": "",
+                    "id": "40025ceb-e4f8-40c0-ade7-1ac48b056862",
+                    "path": "<Mouse>/scroll/y",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
-                    "action": "MouseOperation",
-                    "isComposite": true,
+                    "groups": ";Keyboard&Mouse",
+                    "action": "HookScroll",
+                    "isComposite": false,
                     "isPartOfComposite": false
                 },
                 {
-                    "name": "up",
-                    "id": "5723e3f2-98cd-4322-aef6-442e0c4cbfcf",
-                    "path": "<Mouse>/scroll/up",
+                    "name": "",
+                    "id": "7ab7590a-ba03-4e9d-805d-dcfb117bba9a",
+                    "path": "<Mouse>/delta/x",
                     "interactions": "",
                     "processors": "",
                     "groups": ";Keyboard&Mouse",
-                    "action": "MouseOperation",
+                    "action": "HookHorizontalMove",
                     "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "down",
-                    "id": "42ec17a4-43ad-41f7-afd5-2b1c7d6b7ed8",
-                    "path": "<Mouse>/scroll/down",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": ";Keyboard&Mouse",
-                    "action": "MouseOperation",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "left",
-                    "id": "7c1c9e23-41d2-49ed-ae48-ad2b2eb1fe30",
-                    "path": "<Mouse>/delta/left",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": ";Keyboard&Mouse",
-                    "action": "MouseOperation",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "right",
-                    "id": "931efb70-2394-4371-af73-85348e0e0f3b",
-                    "path": "<Mouse>/delta/right",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": ";Keyboard&Mouse",
-                    "action": "MouseOperation",
-                    "isComposite": false,
-                    "isPartOfComposite": true
+                    "isPartOfComposite": false
                 }
             ]
         },
