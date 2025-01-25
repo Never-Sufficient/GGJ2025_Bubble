@@ -51,9 +51,9 @@ public class FishingRodInputHandle : MonoBehaviour
 
     private void FixedUpdate()
     {
-        Debug.Log("getCollection" + getCollection);
-        Debug.Log("hookExitWater" + hookExitWater);
-        Debug.Log(backGround.transform.position.y > topPoint.transform.position.y);
+        // Debug.Log("getCollection" + getCollection);
+        // Debug.Log("hookExitWater" + hookExitWater);
+        // Debug.Log(backGround.transform.position.y > topPoint.transform.position.y);
 
         if (hookEnterWater)
         {
@@ -240,7 +240,6 @@ public class FishingRodInputHandle : MonoBehaviour
     {
         Transform transform = hook.transform;
         //transform.position = new Vector3(transform.position.x + MouseOperationDir.x * horizontalMoveIntensity, transform.position.y, transform.position.z);
-        Debug.Log(hookHorizontalMove);
         transform.Translate(hookHorizontalMove * horizontalMoveIntensity, 0.0f, 0.0f);
     }
 

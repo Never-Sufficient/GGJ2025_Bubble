@@ -6,5 +6,8 @@ namespace EventCenter
         GamePause,
         GameResume,
         TimerExpire,
+        
+        StartFishing,
+        ShipLevelChanged,
     }
 }

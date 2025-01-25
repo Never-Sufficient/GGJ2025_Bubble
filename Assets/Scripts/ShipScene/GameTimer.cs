@@ -1,4 +1,5 @@
 ﻿using System;
+using Cysharp.Threading.Tasks;
 using EventCenter;
 using UnityEngine;
 
@@ -6,14 +7,16 @@ namespace ShipScene
 {
     public class GameTimer : MonoBehaviour
     {
-        [SerializeField] private float duration;
+        private float duration;
 
         private float timer;
         private bool expired = true;
 
+        public float PercentOfGame => 1 - timer / (duration == 0 ? 1 : duration);
+
         private void Start()
         {
-            InitTimer(duration);
+            ShowTimer().Forget();
         }
 
         private void Update()
@@ -21,8 +24,9 @@ namespace ShipScene
             UpdateTimer();
         }
 
-        private void InitTimer(float duration)
+        public void InitTimer(float duration)
         {
+            this.duration = duration;
             timer = duration;
             expired = false;
         }
@@ -36,7 +40,16 @@ namespace ShipScene
                 this.TriggerEvent(EventName.TimerExpire);
                 expired = true;
             }
-            //Debug.Log(timer);
+        }
+
+        private async UniTask ShowTimer()
+        {
+            while (true)
+            {
+                Debug.Log(timer);
+                await UniTask.WaitForSeconds(0.5f);
+            }
+            // ReSharper disable once FunctionNeverReturns
         }
     }
 }

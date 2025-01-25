@@ -1,4 +1,6 @@
 using System;
+using Data;
+using EventCenter;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -13,6 +15,7 @@ namespace ShipScene
         private GameObject tip;
         private InputAction interactAction;
         private bool shipHere = false;
+        private FishingDataSo.BubbleAndFishData data;
 
         private void Start()
         {
@@ -21,16 +24,20 @@ namespace ShipScene
 
         private void Update()
         {
-            transform.localScale = Vector3.Lerp(transform.localScale, new Vector3(maxScale, maxScale, maxScale),
-                expansionSpeed * Time.deltaTime);
-            if (transform.localScale.x / maxScale >= 0.95)
-                BubbleBreak();
+            // transform.localScale = Vector3.Lerp(transform.localScale, new Vector3(maxScale, maxScale, maxScale),
+            //     expansionSpeed * Time.deltaTime);
+            // if (transform.localScale.x / maxScale >= 0.95)
+            //     BubbleExplode();
 
             if (interactAction.WasPressedThisFrame() && shipHere)
+            {
                 Debug.Log("交互！！");
+                Debug.Log(data);
+                this.TriggerEvent(EventName.StartFishing, data);
+            }
         }
 
-        private void BubbleBreak()
+        public void BubbleExplode()
         {
             gameObject.SetActive(false);
             if (shipHere)
@@ -54,11 +61,11 @@ namespace ShipScene
             if (!other.CompareTag("Ship"))
                 return;
             shipHere = false;
-            tip.SetActive(false);
+            tip?.SetActive(false);
         }
 
         public void Init(GameObject tip, BubblePool bubblePool, Vector2 position, float minScale, float maxScale,
-            float expansionSpeed)
+            float expansionSpeed, FishingDataSo.BubbleAndFishData bubbleAndFishData)
         {
             this.tip = tip;
             this.bubblePool = bubblePool;
@@ -66,8 +73,11 @@ namespace ShipScene
             this.minScale = minScale;
             this.maxScale = maxScale;
             this.expansionSpeed = expansionSpeed;
+            this.data = bubbleAndFishData;
             transform.localScale = new Vector3(minScale, minScale, minScale);
+
             gameObject.SetActive(true);
+            GetComponent<Animator>().Play(data.bubbleAnimationName);
         }
     }
 }
