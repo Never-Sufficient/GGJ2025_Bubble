@@ -11,5 +11,7 @@ namespace EventCenter
         StartFishing,
         CaughtFish,
         ShipLevelChanged,
+        FishingAbilityLevelChanged,
+        MaxDepthLeveChanged
     }
 }

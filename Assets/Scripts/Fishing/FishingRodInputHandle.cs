@@ -7,9 +7,9 @@ using UnityEngine.InputSystem;
 
 public class FishingRodInputHandle : MonoBehaviour
 {
+    [SerializeField] private GameObject collectionPrefab;
     [SerializeField] private GameObject hook; //底部鱼钩
     [SerializeField] private GameObject backGround; //可移动背景
-    [SerializeField] private float defaultScrollForce; //力的初始值
     [SerializeField] private float variableScrollForce; //可变化力
     [SerializeField] private float maxScrollForce; //力的最大值
     [SerializeField] private float scrollForceGrowingSpeedIntensity; //力的变化速率
@@ -18,6 +18,10 @@ public class FishingRodInputHandle : MonoBehaviour
     [SerializeField] private Transform exitWaterPosition; //上升到水面的指定位置
     [SerializeField] private float drag;
     [SerializeField] private float friction;
+    [SerializeField] private Transform[] collectionGenerateMinDepthArray;
+    [SerializeField] private Transform[] topPointArray;
+    [SerializeField] private Transform[] bottomPointArray;
+    [SerializeField] private float[] maxDepthArray;
     private InputAction hookScrollAction, hookHorizontalMoveAction;
     private float lastVelocity = 0;
     private bool hookAtTop = false; //鱼钩顶部区域检测
@@ -34,6 +38,7 @@ public class FishingRodInputHandle : MonoBehaviour
 
     private float accumulatedScroll; //当前帧累计滚动距离
     private float accumulatedMove; //当前帧累计水平移动距离
+    private FishingAbilityData fishingAbilityData;
 
     private void Awake()
     {
@@ -47,9 +52,10 @@ public class FishingRodInputHandle : MonoBehaviour
     }
     private void Start()
     {
+        fishingAbilityData = GetComponent<FishingAbilityData>();
         hookScrollAction = InputSystem.actions.FindAction("HookScroll");
         hookHorizontalMoveAction = InputSystem.actions.FindAction("HookHorizontalMove");
-        variableScrollForce = defaultScrollForce;
+        variableScrollForce = fishingAbilityData.defaultScrollForce;
     }
 
     private void Update()
@@ -135,6 +141,7 @@ public class FishingRodInputHandle : MonoBehaviour
     private void HookExitWater()
     {
         isFishing = false;
+        gameObject.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
         transform.position = Vector2.MoveTowards(transform.position, exitWaterPosition.position, Time.deltaTime * 2.0f);
         if (Vector2.Distance(exitWaterPosition.position, transform.position) < 0.01f)
         {
@@ -206,7 +213,7 @@ public class FishingRodInputHandle : MonoBehaviour
         float currentVelocity = rb2d.velocity.normalized.y;
         if (currentVelocity != lastVelocity)
         {
-            variableScrollForce = defaultScrollForce;
+            variableScrollForce = fishingAbilityData.defaultScrollForce;
         }
 
         if (rb2d.velocity.normalized.y != 0)
@@ -229,7 +236,7 @@ public class FishingRodInputHandle : MonoBehaviour
         float currentVelocity = rb2d.velocity.normalized.y;
         if (currentVelocity != lastVelocity)
         {
-            variableScrollForce = defaultScrollForce;
+            variableScrollForce = fishingAbilityData.defaultScrollForce;
         }
 
         if (rb2d.velocity.normalized.y != 0)
@@ -276,6 +283,33 @@ public class FishingRodInputHandle : MonoBehaviour
 
     public void setHookEnterWater(FishingDataSo.BubbleAndFishData data)
     {
+        Transform localCGMD = null;
+        switch (data.minDepth)
+        {
+            case 1:
+                localCGMD = collectionGenerateMinDepthArray[0];
+                topPoint.position = topPointArray[0].position;
+                bottomPoint.position= bottomPointArray[0].position;
+                maxDepth = maxDepthArray[0];
+                break;
+            case 2:
+                localCGMD = collectionGenerateMinDepthArray[1];
+                topPoint.position = topPointArray[1].position;
+                bottomPoint.position = bottomPointArray[1].position;
+                maxDepth = maxDepthArray[1];
+                break;
+            case 3:
+                localCGMD = collectionGenerateMinDepthArray[2];
+                topPoint.position = topPointArray[2].position;
+                bottomPoint.position = bottomPointArray[2].position;
+                maxDepth = maxDepthArray[2];
+                break;
+            default:
+                break;
+        }
+        GameObject collection = Instantiate(collectionPrefab, new Vector3(backGround.transform.position.x, localCGMD.position.y, backGround.transform.position.z), Quaternion.identity, backGround.transform);
+        collection.GetComponent<SpriteRenderer>().sprite = data.fishSprite;
+        collection.GetComponent<SpriteRenderer>().color = Color.black;
         hookEnterWater = true;
     }
 }

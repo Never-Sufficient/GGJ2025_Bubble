@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Burst.Intrinsics;
 using UnityEngine;
 /// <summary>
 /// 声音管理类
@@ -18,6 +19,7 @@ public class SoundManager : MonoBehaviour
     }
     [Tooltip("可以使用字符串绑定相应的音乐资源，方便统一调用和录入")]
     public List<PrefabData> _soundClipList = new List<PrefabData>();
+    public GameObject _soundPrefab;
 
     public Dictionary<string, AudioClip> soundClip = new Dictionary<string, AudioClip>();
     private Dictionary<AudioClip, float> soundTime = new Dictionary<AudioClip, float>();
@@ -35,7 +37,7 @@ public class SoundManager : MonoBehaviour
     }
 
 
-    [SerializeField] private AudioSource _musicSource, _effectsSource, _environment;
+    [SerializeField] private AudioSource _musicSource, _effectsSource, _environment, leaves, wind, bird;
 
     private void Awake()
     {
@@ -53,17 +55,41 @@ public class SoundManager : MonoBehaviour
 
     public void MusicPlayClip(AudioClip clip)
     {
-        if (_musicSource.clip != null) soundTime[_musicSource.clip] = _musicSource.time;
+        //if (_musicSource.clip != null) soundTime[_musicSource.clip] = _musicSource.time;
         _musicSource.Stop();
         _musicSource.clip = clip;
         _musicSource.Play();
-        _musicSource.time = soundTime[clip];
+        //_musicSource.time = soundTime[clip];
+    }
+    public void PlaySound()
+    {
+        leaves.volume = _musicSource.volume;
+        wind.volume = _musicSource.volume;
+        leaves.Play();
+        wind.Play();
+    }
+    public void StopSound()
+    {
+        leaves.Stop();
+        wind.Stop();
     }
 
+    public void PlayBoirSound()
+    {
+        bird.volume = _musicSource.volume;
+        bird.Play();
+    }
+    public void StopBirdSound()
+    {
+        bird.Stop();
+    }
     public void EffectPlayClip(AudioClip clip)
     {
-        _effectsSource.Stop();
-        _effectsSource.PlayOneShot(clip);
+        GameObject audioSource = Instantiate(_soundPrefab);
+        audioSource.GetComponent<AudioSource>().volume = _effectsSource.volume;
+        audioSource.GetComponent<AudioSource>().mute = _effectsSource.mute;
+        audioSource.GetComponent<AudioSource>().PlayOneShot(clip);
+        Destroy(audioSource, 5.0f);
     }
 
     public void ChangeVolumeMusic(float value)
@@ -83,10 +109,10 @@ public class SoundManager : MonoBehaviour
         _effectsSource.mute = !_effectsSource.mute;
         _environment.mute = !_effectsSource.mute;
     }
-    public void ToggleMusic()
+    public void StopMusic()
     {
 
-        _musicSource.mute = !_musicSource.mute;
+        _musicSource.Stop();
     }
 
     public void MusicPlayStr(string str)
