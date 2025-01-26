@@ -35,6 +35,7 @@ namespace ShipScene
 
         public async UniTask ShowFish(Sprite fishNameSprite, Sprite fishSprite, Sprite fishCostSprite)
         {
+            SoundManager.Instance.EffectPlayStr("14");
             fishName.sprite = fishNameSprite;
             fish.sprite = fishSprite;
             fishCost.sprite = fishCostSprite;

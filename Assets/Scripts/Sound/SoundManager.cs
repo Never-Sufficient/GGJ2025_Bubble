@@ -85,7 +85,7 @@ public class SoundManager : MonoBehaviour
     }
     public void PlayEngine()
     {
-        engine.volume = 0.5f;
+        engine.volume = 0.3f;
         engine.Play();
     }
     public void StopEngine()
@@ -100,6 +100,10 @@ public class SoundManager : MonoBehaviour
     public void StopHookSound()
     {
         hook.Stop();
+    }
+    public bool getHookState()
+    {
+        return hook.isPlaying;
     }
     public void EffectPlayClip(AudioClip clip)
     {

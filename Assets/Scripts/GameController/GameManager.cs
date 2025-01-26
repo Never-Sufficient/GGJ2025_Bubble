@@ -39,7 +39,6 @@ namespace GameController
         private void GameStart()
         {
             SoundManager.Instance.PlayBirdSound();
-            Invoke("delayMusic1", 6.0f);
             var color = globalDark.color;
             color.a = 1;
             globalDark.color = color;
@@ -58,6 +57,7 @@ namespace GameController
 
         private async UniTask StartOneDay()
         {
+            SoundManager.Instance.PlayEngine();
             SoundManager.Instance.EffectPlayStr("19");
             if (dayCount == 1)
             {
@@ -68,6 +68,7 @@ namespace GameController
                 var colorN1 = globalNumber.color;
                 colorN1.a = 1;
                 globalNumber.DOColor(colorN1, 2f).SetEase(Ease.OutSine);
+                UniTask.WaitForSeconds(4);
 
             }
             gameTimer.InitTimer(oneDayDuration);
@@ -112,10 +113,6 @@ namespace GameController
             globalNumber.DOColor(colorN, 5f).SetEase(Ease.OutSine);
             await UniTask.WaitForSeconds(10);
             StartOneDay().Forget();
-        }
-        public void delayMusic1()
-        {
-            SoundManager.Instance.PlayEngine();
         }
         private void changeDayNumber(int dayCount)
         {

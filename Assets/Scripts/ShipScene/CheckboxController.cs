@@ -10,16 +10,19 @@ namespace ShipScene
 
         public void TryUpgradeShip()
         {
+            SoundManager.Instance.EffectPlayStr("2");
             shopController.TryUpgradeShip(gameObject, level);
         }
 
         public void TryUpgradeRod()
         {
+            SoundManager.Instance.EffectPlayStr("2");
             shopController.TryUpgradeRod(gameObject, level);
         }
 
         public void TryUpgradeFishingLine()
         {
+            SoundManager.Instance.EffectPlayStr("2");
             shopController.TryUpgradeFishingLine(gameObject, level);
         }
     }

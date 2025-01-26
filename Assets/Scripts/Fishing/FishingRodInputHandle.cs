@@ -22,6 +22,7 @@ public class FishingRodInputHandle : MonoBehaviour
     [SerializeField] private Transform[] topPointArray;
     [SerializeField] private Transform[] bottomPointArray;
     [SerializeField] private float[] maxDepthArray;
+    [SerializeField] private GameObject[] rocks;
     private InputAction hookScrollAction, hookHorizontalMoveAction;
     private float lastVelocity = 0;
     private bool hookAtTop = false; //鱼钩顶部区域检测
@@ -87,6 +88,7 @@ public class FishingRodInputHandle : MonoBehaviour
         if (hookExitWater && getCollection)
         {
             HookExitWater();
+            Invoke("delayMusic2",0.5f);
         }
 
         if (isFishing)
@@ -231,6 +233,15 @@ public class FishingRodInputHandle : MonoBehaviour
             {
                 variableScrollForce += scrollForceGrowingSpeedIntensity;
             }
+            if (!SoundManager.Instance.getHookState() && Mathf.Abs( rb2d.velocity.normalized.y) >= 0.2f)
+            {
+                SoundManager.Instance.PlayHookSound();
+            }
+
+        }
+        else
+        {
+            SoundManager.Instance.StopHookSound();
         }
 
         rb2d.AddForce(new Vector2(0.0f, hookScroll) * variableScrollForce, ForceMode2D.Impulse);
@@ -254,6 +265,14 @@ public class FishingRodInputHandle : MonoBehaviour
             {
                 variableScrollForce += scrollForceGrowingSpeedIntensity;
             }
+            if (!SoundManager.Instance.getHookState())
+            {
+                SoundManager.Instance.PlayHookSound();
+            }
+        }
+        else
+        {
+            SoundManager.Instance.StopHookSound();
         }
 
         rb2d.AddForce(-new Vector2(0.0f, hookScroll) * variableScrollForce, ForceMode2D.Impulse);
@@ -311,5 +330,10 @@ public class FishingRodInputHandle : MonoBehaviour
     public void delayMusic1()
     {
         SoundManager.Instance.MusicPlayStr("11");
+    }
+    public void delayMusic2()
+    {
+        SoundManager.Instance.StopMusic();
+        SoundManager.Instance.StopHookSound();
     }
 }

@@ -29,6 +29,7 @@ namespace ShipScene
 
         public void DropDownClicked()
         {
+            SoundManager.Instance.EffectPlayStr("21");
             if (dropdownOpen)
                 transform.DOLocalMove(new Vector3(-498, 701, 0), 0.5f).SetEase(Ease.InOutSine);
             else

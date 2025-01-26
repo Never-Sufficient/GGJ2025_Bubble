@@ -70,7 +70,7 @@ namespace ShipScene
 
         private void Move(Vector2 moveDir)
         {
-            if (SoundManager.Instance.getEngineVolume() < 1f)
+            if (SoundManager.Instance.getEngineVolume() < 0.5f)
             {
                 SoundManager.Instance.enLargeEngineVoulume();
             }
