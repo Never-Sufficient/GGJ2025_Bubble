@@ -31,8 +31,8 @@ public class FishingRodInputHandle : MonoBehaviour
     private bool hookEnterWater = false; //鱼钩正在入水状态检测，须外部初始化
     private bool hookExitWater = false; //鱼钩正在出水状态检测
     private bool isFishing = false;
-    [SerializeField] private Transform topPoint; //地图的可移动的顶部最大值，须外部初始化
-    [SerializeField] private Transform bottomPoint; //地图的可移动的低部最大值，须外部初始化
+    private Vector2 topPoint; //地图的可移动的顶部最大值，须外部初始化
+    private Vector2 bottomPoint; //地图的可移动的低部最大值，须外部初始化
     public float currentDepth { get; private set; } //当前最大深度
     public float maxDepth { get; private set; } //UI最大深度，须外部初始化
 
@@ -52,6 +52,8 @@ public class FishingRodInputHandle : MonoBehaviour
     }
     private void Start()
     {
+        topPoint = Vector2.zero;
+        bottomPoint = Vector2.zero;
         fishingAbilityData = GetComponent<FishingAbilityData>();
         hookScrollAction = InputSystem.actions.FindAction("HookScroll");
         hookHorizontalMoveAction = InputSystem.actions.FindAction("HookHorizontalMove");
@@ -107,8 +109,8 @@ public class FishingRodInputHandle : MonoBehaviour
 
             if ((hookAtTop && hookScroll > 0) || (hookAtBottom && hookScroll < 0))
             {
-                if (backGround.transform.position.y <= topPoint.position.y &&
-                    backGround.transform.position.y >= bottomPoint.position.y)
+                if (backGround.transform.position.y <= topPoint.y &&
+                    backGround.transform.position.y >= bottomPoint.y)
                 {
                     BackGroundScroll(hookScroll);
                     //currentDepth = Mathf.Abs(bottomPoint.position.y - hook.transform.position.y) / Mathf.Abs(topPoint.position.y - bottomPoint.transform.position.y) * maxDepth;
@@ -188,7 +190,7 @@ public class FishingRodInputHandle : MonoBehaviour
 
     private void BackgroundEdgeRegress() //背景位置回归
     {
-        if (backGround.transform.position.y < bottomPoint.transform.position.y)
+        if (backGround.transform.position.y < bottomPoint.y)
         {
             if (getCollection)
             {
@@ -197,13 +199,13 @@ public class FishingRodInputHandle : MonoBehaviour
 
             backGround.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
             backGround.transform.position = new Vector3(backGround.transform.position.x,
-                bottomPoint.transform.position.y, backGround.transform.position.z);
+                bottomPoint.y, backGround.transform.position.z);
         }
 
-        if (backGround.transform.position.y > topPoint.transform.position.y)
+        if (backGround.transform.position.y > topPoint.y)
         {
             backGround.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
-            backGround.transform.position = new Vector3(backGround.transform.position.x, topPoint.transform.position.y,
+            backGround.transform.position = new Vector3(backGround.transform.position.x, topPoint.y,
                 backGround.transform.position.z);
         }
     }
@@ -261,22 +263,6 @@ public class FishingRodInputHandle : MonoBehaviour
         transform.Translate(hookHorizontalMove * horizontalMoveIntensity, 0.0f, 0.0f);
     }
 
-
-    public void setTopPoint(Vector2 Point)
-    {
-        topPoint.position = Point;
-    }
-
-    public void setBottomPoint(Vector2 Point)
-    {
-        bottomPoint.position = Point;
-    }
-
-    public void setMaxDepth(float depth)
-    {
-        maxDepth = depth;
-    }
-
     public void setGotCollection()
     {
         getCollection = true;
@@ -289,20 +275,20 @@ public class FishingRodInputHandle : MonoBehaviour
         {
             case 1:
                 localCGMD = collectionGenerateMinDepthArray[0];
-                topPoint.position = topPointArray[0].position;
-                bottomPoint.position= bottomPointArray[0].position;
+                topPoint = topPointArray[0].position;
+                bottomPoint= bottomPointArray[0].position;
                 maxDepth = maxDepthArray[0];
                 break;
             case 2:
                 localCGMD = collectionGenerateMinDepthArray[1];
-                topPoint.position = topPointArray[1].position;
-                bottomPoint.position = bottomPointArray[1].position;
+                topPoint = topPointArray[1].position;
+                bottomPoint = bottomPointArray[1].position;
                 maxDepth = maxDepthArray[1];
                 break;
             case 3:
                 localCGMD = collectionGenerateMinDepthArray[2];
-                topPoint.position = topPointArray[2].position;
-                bottomPoint.position = bottomPointArray[2].position;
+                topPoint = topPointArray[2].position;
+                bottomPoint = bottomPointArray[2].position;
                 maxDepth = maxDepthArray[2];
                 break;
             default:

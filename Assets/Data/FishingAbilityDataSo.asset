@@ -9,13 +9,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9ba3c81cac538fd438da4504742ec6b0, type: 3}
+  m_Script: {fileID: 0}
   m_Name: FishingAbilityDataSo
-  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: Assembly-CSharp::FishingAbilityDataSo
   fishingAbilityLevelDataList:
   - level: 1
-    defaultScrollForce: 1
+    defaultScrollForce: 0.005
   - level: 2
-    defaultScrollForce: 2
+    defaultScrollForce: 0.01
   - level: 3
-    defaultScrollForce: 3
+    defaultScrollForce: 0.015
