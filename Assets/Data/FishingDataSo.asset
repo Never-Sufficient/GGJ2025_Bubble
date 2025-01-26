@@ -12,16 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cdb6c96fe50411eafc89dfb93bc27bf, type: 3}
   m_Name: FishingDataSo
   m_EditorClassIdentifier: 
-  bubbleDataList:
-  - chance: 0.25
-    bubbleAnimationName: BubbleSmallAnim
-    fishDataList: []
-  - chance: 0.25
-    bubbleAnimationName: BubbleMidAnim
-    fishDataList: []
-  - chance: 0.25
-    bubbleAnimationName: BubbleBigAnim
-    fishDataList: []
-  - chance: 0.25
-    bubbleAnimationName: BubbleHugeAnim
-    fishDataList: []
+  bubbleDataList: []

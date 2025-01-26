@@ -11,7 +11,9 @@ namespace Data
         [Serializable]
         public class FishData
         {
-            public string fishAnimationName;
+            public int minDepth;
+            public Sprite fishSprite;
+            public Sprite fishNameSprite;
             public int fishCost;
         }
 
@@ -27,7 +29,9 @@ namespace Data
         public class BubbleAndFishData
         {
             public string bubbleAnimationName;
-            public string fishAnimationName;
+            public int minDepth;
+            public Sprite fishSprite;
+            public Sprite fishNameSprite;
             public int fishCost;
         }
 

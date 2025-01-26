@@ -63,7 +63,8 @@ namespace ShipScene
                     {
                         var randomValue2 = Random.Range(0, bubbleData.fishDataList.Count - 1);
                         var fishData = bubbleData.fishDataList[randomValue2];
-                        bubbleAndFishData.fishAnimationName = fishData.fishAnimationName;
+                        bubbleAndFishData.minDepth = fishData.minDepth;
+                        bubbleAndFishData.fishSprite = fishData.fishSprite;
                         bubbleAndFishData.fishCost = fishData.fishCost;
                     }
 
