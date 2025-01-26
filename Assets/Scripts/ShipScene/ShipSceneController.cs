@@ -1,5 +1,6 @@
 using System;
 using Data;
+using GameController;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -61,10 +62,16 @@ namespace ShipScene
                     bubbleAndFishData.bubbleAnimationName = bubbleData.bubbleAnimationName;
                     if (bubbleData.fishDataList.Count > 0)
                     {
-                        var randomValue2 = Random.Range(0, bubbleData.fishDataList.Count - 1);
-                        var fishData = bubbleData.fishDataList[randomValue2];
+                        FishingDataSo.FishData fishData;
+                        do
+                        {
+                            var randomValue2 = Random.Range(0, bubbleData.fishDataList.Count - 1);
+                            fishData = bubbleData.fishDataList[randomValue2];
+                        } while (GameData.Instance.DepthCanReach < fishData.minDepth);
+
                         bubbleAndFishData.minDepth = fishData.minDepth;
                         bubbleAndFishData.fishSprite = fishData.fishSprite;
+                        bubbleAndFishData.fishNameSprite = fishData.fishNameSprite;
                         bubbleAndFishData.fishCost = fishData.fishCost;
                     }
 
