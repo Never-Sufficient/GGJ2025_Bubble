@@ -13,6 +13,7 @@ namespace ShipScene
         [SerializeField] private GameObject opening;
         [SerializeField] private GameObject ending;
         [SerializeField] private GameObject endingEnd;
+        [SerializeField] private GameObject title;
         private void Start()
         {
             SoundManager.Instance.PlaySound();
@@ -36,6 +37,7 @@ namespace ShipScene
 
         public void OnOpeningEnd()
         {
+            title.SetActive(false);
             opening.SetActive(false);
             this.TriggerEvent(EventName.GameStart);
         }

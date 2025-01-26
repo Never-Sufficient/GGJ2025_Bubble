@@ -37,6 +37,7 @@ public class AttractCollections : MonoBehaviour
 
             if (Vector2.Distance(collision.gameObject.transform.position, transform.position) < 0.1f)
             {
+                SoundManager.Instance.EffectPlayStr("17");
                 hook = collision.gameObject;
                 hook.GetComponent<FishingRodInputHandle>().setGotCollection();
                 isCatched = true;
