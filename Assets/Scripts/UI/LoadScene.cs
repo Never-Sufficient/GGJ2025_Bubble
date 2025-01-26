@@ -13,6 +13,6 @@ public class LoadScene : MonoBehaviour
     }
     public void loadScene()
     {
-        SceneManager.LoadScene("Main Scene 2");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }

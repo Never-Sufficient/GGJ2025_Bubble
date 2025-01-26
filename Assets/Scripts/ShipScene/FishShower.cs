@@ -55,6 +55,7 @@ namespace ShipScene
                 return;
             ShowFish(fishData.fishNameSprite, fishData.fishSprite, fishData.fishCostSprite).Forget();
             GameData.Instance.Money += fishData.fishCost;
+            fishData = null;
         }
     }
 }

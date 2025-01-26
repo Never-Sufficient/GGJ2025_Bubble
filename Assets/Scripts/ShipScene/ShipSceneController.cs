@@ -22,13 +22,13 @@ namespace ShipScene
 
         private void Awake()
         {
-            EventManager.Instance.AddListener(EventName.GameStart, OnGameStart);
+            EventManager.Instance.AddListener(EventName.StartOneDay, OnOneDayStart);
             EventManager.Instance.AddListener(EventName.TimerExpire, OnTimerExpire);
         }
 
         private void OnDestroy()
         {
-            EventManager.Instance.RemoveListener(EventName.GameStart, OnGameStart);
+            EventManager.Instance.RemoveListener(EventName.StartOneDay, OnOneDayStart);
             EventManager.Instance.RemoveListener(EventName.TimerExpire, OnTimerExpire);
         }
 
@@ -98,7 +98,7 @@ namespace ShipScene
             return bubbleAndFishData;
         }
 
-        private void OnGameStart()
+        private void OnOneDayStart()
         {
             activing = true;
         }
