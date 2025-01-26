@@ -34,7 +34,9 @@ namespace GameController
 
         private void GameStart()
         {
-            
+            SoundManager.Instance.PlayBirdSound();
+            SoundManager.Instance.EffectPlayStr("19");
+            Invoke("delayMusic1", 6.0f);
             var color = globalDark.color;
             color.a = 1;
             globalDark.color = color;
@@ -75,6 +77,10 @@ namespace GameController
             globalDark.DOColor(color, 5f).SetEase(Ease.OutSine);
             await UniTask.WaitForSeconds(10);
             StartOneDay().Forget();
+        }
+        public void delayMusic1()
+        {
+            SoundManager.Instance.PlayEngine();
         }
     }
 }

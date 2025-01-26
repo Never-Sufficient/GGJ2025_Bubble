@@ -33,6 +33,7 @@ namespace ShipScene
             {
                 Debug.Log("交互！！");
                 Debug.Log(data);
+                SoundManager.Instance.EffectPlayStr("3");
                 this.TriggerEvent(EventName.StartFishing, data);
             }
         }

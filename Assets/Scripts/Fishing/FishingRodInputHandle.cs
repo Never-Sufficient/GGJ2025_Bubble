@@ -73,6 +73,7 @@ public class FishingRodInputHandle : MonoBehaviour
         if (hookEnterWater)
         {
             HookEnterWater();
+            Invoke("delayMusic1", 0.5f);
         }
 
         if (hookExitWater && getCollection)
@@ -311,5 +312,9 @@ public class FishingRodInputHandle : MonoBehaviour
         collection.GetComponent<SpriteRenderer>().sprite = data.fishSprite;
         collection.GetComponent<SpriteRenderer>().color = Color.black;
         hookEnterWater = true;
+    }
+    public void delayMusic1()
+    {
+        SoundManager.Instance.MusicPlayStr("11");
     }
 }

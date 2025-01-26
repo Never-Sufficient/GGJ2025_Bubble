@@ -37,7 +37,7 @@ public class SoundManager : MonoBehaviour
     }
 
 
-    [SerializeField] private AudioSource _musicSource, _effectsSource, _environment, leaves, wind, bird;
+    [SerializeField] private AudioSource _musicSource, _effectsSource, _environment, leaves, wind, bird,engine,hook;
 
     private void Awake()
     {
@@ -74,7 +74,7 @@ public class SoundManager : MonoBehaviour
         wind.Stop();
     }
 
-    public void PlayBoirSound()
+    public void PlayBirdSound()
     {
         bird.volume = _musicSource.volume;
         bird.Play();
@@ -82,6 +82,24 @@ public class SoundManager : MonoBehaviour
     public void StopBirdSound()
     {
         bird.Stop();
+    }
+    public void PlayEngine()
+    {
+        engine.volume = 0.5f;
+        engine.Play();
+    }
+    public void StopEngine()
+    {
+        engine.Stop();
+    }
+    public void PlayHookSound()
+    {
+        hook.volume = _musicSource.volume;
+        hook.Play();
+    }
+    public void StopHookSound()
+    {
+        hook.Stop();
     }
     public void EffectPlayClip(AudioClip clip)
     {
@@ -102,6 +120,18 @@ public class SoundManager : MonoBehaviour
         _effectsSource.volume = value;
         _environment.volume = value;
         effectsVol = value;
+    }
+    public float getEngineVolume()
+    {
+        return engine.volume;
+    }
+    public void enLargeEngineVoulume()
+    {
+        engine.volume++;
+    }
+    public void resetEngineVolume()
+    {
+        engine.volume = 0.5f;
     }
 
     public void ToggleEffects()

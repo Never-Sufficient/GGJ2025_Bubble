@@ -15,6 +15,7 @@ namespace ShipScene
         [SerializeField] private GameObject endingEnd;
         private void Start()
         {
+            SoundManager.Instance.PlaySound();
             openingStart.SetActive(true);
             opening.SetActive(false);
             ending.SetActive(false);

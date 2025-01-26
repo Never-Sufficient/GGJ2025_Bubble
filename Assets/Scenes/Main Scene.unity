@@ -3646,9 +3646,9 @@ MonoBehaviour:
   - _clipName: 18
     _clipSource: {fileID: 8300000, guid: eae95f7fc78a5d94786fbb352c7716d6, type: 3}
   - _clipName: 19
-    _clipSource: {fileID: 8300000, guid: ae2a3c144fb55f84da9926b8e2e1e913, type: 3}
+    _clipSource: {fileID: 8300000, guid: 2ef906d65cc96514494db8184260dd84, type: 3}
   - _clipName: 20
-    _clipSource: {fileID: 8300000, guid: 3052e169948485e49a881780f1d89b96, type: 3}
+    _clipSource: {fileID: 8300000, guid: 185f4449755abf243b67c106d8972e1b, type: 3}
   _soundPrefab: {fileID: 1348994414947594914, guid: c47c5160122fbf9419c70cf4bb899b6f, type: 3}
   _musicSource: {fileID: 404872575}
   _effectsSource: {fileID: 1927400294}

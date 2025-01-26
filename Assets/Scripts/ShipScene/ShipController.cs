@@ -70,6 +70,10 @@ namespace ShipScene
 
         private void Move(Vector2 moveDir)
         {
+            if (SoundManager.Instance.getEngineVolume() < 1f)
+            {
+                SoundManager.Instance.enLargeEngineVoulume();
+            }
             //平移力
             rb2d.AddForce(moveDir * shipData.moveForce);
             //平移阻力
@@ -99,6 +103,7 @@ namespace ShipScene
 
         private async UniTask StopMoving()
         {
+            SoundManager.Instance.resetEngineVolume();
             Vector2 lastVelocity = rb2d.velocity;
             while (rb2d.velocity.magnitude > 0.05f)
             {
