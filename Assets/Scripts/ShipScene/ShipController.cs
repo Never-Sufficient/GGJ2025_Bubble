@@ -3,6 +3,7 @@ using Cysharp.Threading.Tasks;
 using Data;
 using DG.Tweening;
 using EventCenter;
+using GameController;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -164,6 +165,16 @@ namespace ShipScene
         {
             fishing = false;
             animator.SetTrigger(CaughtFish);
+        }
+
+        public void Ending()
+        {
+            paused = true;
+        }
+
+        public void EndingCaught()
+        {
+            FindObjectOfType<EndingEventDirector>().EndCaught();
         }
 
     }
