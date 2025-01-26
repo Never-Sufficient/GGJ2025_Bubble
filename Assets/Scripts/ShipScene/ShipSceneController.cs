@@ -1,5 +1,6 @@
 using System;
 using Data;
+using EventCenter;
 using GameController;
 using UnityEngine;
 using Random = UnityEngine.Random;
@@ -17,6 +18,19 @@ namespace ShipScene
 
         private float spawnTimer = 0;
         private float spawnMinX, spawnMaxX, spawnMinY, spawnMaxY;
+        private bool activing = false;
+
+        private void Awake()
+        {
+            EventManager.Instance.AddListener(EventName.GameStart, OnGameStart);
+            EventManager.Instance.AddListener(EventName.TimerExpire, OnTimerExpire);
+        }
+
+        private void OnDestroy()
+        {
+            EventManager.Instance.RemoveListener(EventName.GameStart, OnGameStart);
+            EventManager.Instance.RemoveListener(EventName.TimerExpire, OnTimerExpire);
+        }
 
         private void Start()
         {
@@ -34,7 +48,8 @@ namespace ShipScene
 
         private void Update()
         {
-            BubbleSpawnCheck();
+            if(activing)
+                BubbleSpawnCheck();
         }
 
         private void BubbleSpawnCheck()
@@ -81,6 +96,21 @@ namespace ShipScene
             }
 
             return bubbleAndFishData;
+        }
+
+        private void OnGameStart()
+        {
+            activing = true;
+        }
+
+        private void OnTimerExpire()
+        {
+            activing = false;
+        }
+
+        public void SetBubbleSpawnActive(bool active)
+        {
+            activing = active;
         }
     }
 }

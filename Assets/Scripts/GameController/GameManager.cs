@@ -4,17 +4,22 @@ using DG.Tweening;
 using EventCenter;
 using ShipScene;
 using UnityEngine;
-using UnityEngine.UI;
+using UnityEngine.UIElements;
+using Image = UnityEngine.UI.Image;
 
 namespace GameController
 {
     public class GameManager : MonoBehaviour
     {
+        [SerializeField] private SpriteRenderer srBackground;
+        [SerializeField] private EndingEventDirector endingEventDirector;
+        
         [SerializeField] private float oneDayDuration;
         [SerializeField] private Image globalDark;
         [SerializeField] private Image globalDay;
         [SerializeField] private Image globalNumber;
         [SerializeField] private Sprite[] dayNumbers;
+        [SerializeField] private Sprite[] dayBackgrounds;
         private int dayCount;
         private GameTimer gameTimer;
 
@@ -87,11 +92,16 @@ namespace GameController
             globalNumber.DOColor(colorN, 5f).SetEase(Ease.OutSine);
             Debug.Log("day1");
 
+            if (dayCount == 5)
+            {
+                StartEndingEvent();
+            }
+
         }
 
         private void ChangeBackground()
         {
-            
+            srBackground.sprite = dayBackgrounds[dayCount - 1];
         }
 
         private async UniTask EndOneDay()
@@ -130,6 +140,11 @@ namespace GameController
             }
 
 
+        }
+
+        private void StartEndingEvent()
+        {
+            endingEventDirector.StartEndingEvent().Forget();
         }
     }
 }

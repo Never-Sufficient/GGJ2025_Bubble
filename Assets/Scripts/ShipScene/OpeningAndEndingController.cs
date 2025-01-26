@@ -3,6 +3,7 @@ using EventCenter;
 using GifImporter;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement;
 using UnityEngine.Serialization;
 
 namespace ShipScene
@@ -33,13 +34,32 @@ namespace ShipScene
                 opening.GetComponent<GifPlayer>().PlayOnce();
                 opening.GetComponent<GifPlayer>().OnComplete(OnOpeningEnd);
             }
+            if (Input.anyKeyDown && ending.activeSelf)
+            {
+                // SoundManager.Instance.EffectPlayStr("1");
+                ending.SetActive(false);
+                endingEnd.SetActive(true);
+                endingEnd.GetComponent<GifPlayer>().PlayOnce();
+                endingEnd.GetComponent<GifPlayer>().OnComplete(OnEndingEnd);
+            }
         }
 
-        public void OnOpeningEnd()
+        private void OnOpeningEnd()
         {
             title.SetActive(false);
             opening.SetActive(false);
             this.TriggerEvent(EventName.GameStart);
+        }
+
+        public void Ending()
+        {
+            ending.SetActive(true);
+        }
+
+        private void OnEndingEnd()
+        {
+            endingEnd.SetActive(false);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }
 }
