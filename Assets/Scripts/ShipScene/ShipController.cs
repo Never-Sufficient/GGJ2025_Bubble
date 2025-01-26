@@ -146,6 +146,7 @@ namespace ShipScene
             animationMoving = 1;
             GetComponent<Collider2D>().enabled = false;
             MoveToPosition(enterPosition.position).Forget();
+            animator.Play("ShipSailing");
         }
 
         private void OnTimeExpire()
