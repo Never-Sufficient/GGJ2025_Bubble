@@ -30,7 +30,7 @@ namespace ShipScene
         private Animator animator;
         
         private bool paused = false;
-        private int animationMoving = 0; // 0：未移动 1：移动到开始 2：移动到结束
+        private int animationMoving = 1; // 0：未移动 1：移动到开始 2：移动到结束
         private bool fishing = false;
 
         private void Awake()
@@ -175,6 +175,11 @@ namespace ShipScene
         public void EndingCaught()
         {
             FindObjectOfType<EndingEventDirector>().EndCaught();
+        }
+
+        public bool IsFishing()
+        {
+            return fishing;
         }
 
     }

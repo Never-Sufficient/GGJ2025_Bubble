@@ -50,6 +50,8 @@ namespace ShipScene
                 return;
             if (tip.activeSelf)
                 return;
+            if(other.gameObject.GetComponent<ShipController>().IsFishing())
+                return;
             shipHere = true;
             tip.transform.position = transform.position;
             tip.SetActive(true);
