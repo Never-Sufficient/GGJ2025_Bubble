@@ -19,26 +19,32 @@ MonoBehaviour:
     - minDepth: 1
       fishSprite: {fileID: 21300000, guid: 7e7ee9c454b4e3848b078e0b02bb19d8, type: 3}
       fishNameSprite: {fileID: -254092755, guid: 5f4f917a47f172245a304bfb1bc4b4aa, type: 3}
+      fishCostSprite: {fileID: 22917290, guid: e12ad56d571781b46bd4a875292a5c5f, type: 3}
       fishCost: 10
     - minDepth: 1
       fishSprite: {fileID: 21300000, guid: 090f4c2ba5d38a24b83692a60bc39016, type: 3}
       fishNameSprite: {fileID: -346130384, guid: 5f4f917a47f172245a304bfb1bc4b4aa, type: 3}
+      fishCostSprite: {fileID: 22917290, guid: e12ad56d571781b46bd4a875292a5c5f, type: 3}
       fishCost: 10
     - minDepth: 1
       fishSprite: {fileID: 21300000, guid: be65b616c5d862d45906fa86429edc8c, type: 3}
       fishNameSprite: {fileID: -300019872, guid: 5f4f917a47f172245a304bfb1bc4b4aa, type: 3}
+      fishCostSprite: {fileID: -1152305234, guid: e12ad56d571781b46bd4a875292a5c5f, type: 3}
       fishCost: 5
     - minDepth: 1
       fishSprite: {fileID: 21300000, guid: 8fd6fc4361fadfe4395dfe0ad14b427c, type: 3}
       fishNameSprite: {fileID: 1328000116, guid: 5f4f917a47f172245a304bfb1bc4b4aa, type: 3}
+      fishCostSprite: {fileID: -516768253, guid: e12ad56d571781b46bd4a875292a5c5f, type: 3}
       fishCost: 20
     - minDepth: 1
       fishSprite: {fileID: 21300000, guid: b0a512d97a63a1d488ab44e2c7b48201, type: 3}
       fishNameSprite: {fileID: 325301124, guid: 5f4f917a47f172245a304bfb1bc4b4aa, type: 3}
+      fishCostSprite: {fileID: 22917290, guid: e12ad56d571781b46bd4a875292a5c5f, type: 3}
       fishCost: 10
     - minDepth: 1
       fishSprite: {fileID: 21300000, guid: 87501e815ca8a184eb95fdcc5b7cd69e, type: 3}
       fishNameSprite: {fileID: -1959090716, guid: 5f4f917a47f172245a304bfb1bc4b4aa, type: 3}
+      fishCostSprite: {fileID: 51742940, guid: e12ad56d571781b46bd4a875292a5c5f, type: 3}
       fishCost: 5
   - chance: 0.3
     bubbleAnimationName: BubbleMidAnim
@@ -46,38 +52,47 @@ MonoBehaviour:
     - minDepth: 1
       fishSprite: {fileID: 21300000, guid: 4d3927b1ccf02d145a0ed0d2fdd8404a, type: 3}
       fishNameSprite: {fileID: 1278812423, guid: 5f4f917a47f172245a304bfb1bc4b4aa, type: 3}
+      fishCostSprite: {fileID: 378412127, guid: e12ad56d571781b46bd4a875292a5c5f, type: 3}
       fishCost: 20
     - minDepth: 1
       fishSprite: {fileID: 21300000, guid: 9258e34acb56900499911cdfea9e9bf9, type: 3}
       fishNameSprite: {fileID: -1475800323, guid: 5f4f917a47f172245a304bfb1bc4b4aa, type: 3}
+      fishCostSprite: {fileID: 336067100, guid: e12ad56d571781b46bd4a875292a5c5f, type: 3}
       fishCost: 30
     - minDepth: 1
       fishSprite: {fileID: 21300000, guid: 090f4c2ba5d38a24b83692a60bc39016, type: 3}
       fishNameSprite: {fileID: -346130384, guid: 5f4f917a47f172245a304bfb1bc4b4aa, type: 3}
+      fishCostSprite: {fileID: 22917290, guid: e12ad56d571781b46bd4a875292a5c5f, type: 3}
       fishCost: 10
     - minDepth: 1
       fishSprite: {fileID: 21300000, guid: be65b616c5d862d45906fa86429edc8c, type: 3}
       fishNameSprite: {fileID: -300019872, guid: 5f4f917a47f172245a304bfb1bc4b4aa, type: 3}
+      fishCostSprite: {fileID: 51742940, guid: e12ad56d571781b46bd4a875292a5c5f, type: 3}
       fishCost: 5
     - minDepth: 1
       fishSprite: {fileID: 21300000, guid: 8fd6fc4361fadfe4395dfe0ad14b427c, type: 3}
       fishNameSprite: {fileID: 1328000116, guid: 5f4f917a47f172245a304bfb1bc4b4aa, type: 3}
+      fishCostSprite: {fileID: -642892152, guid: e12ad56d571781b46bd4a875292a5c5f, type: 3}
       fishCost: 20
     - minDepth: 3
       fishSprite: {fileID: 21300000, guid: 96133786350141f4ba387c41b23ad382, type: 3}
       fishNameSprite: {fileID: 2038786437, guid: 5f4f917a47f172245a304bfb1bc4b4aa, type: 3}
+      fishCostSprite: {fileID: 256383052, guid: e12ad56d571781b46bd4a875292a5c5f, type: 3}
       fishCost: 80
     - minDepth: 1
       fishSprite: {fileID: 21300000, guid: 4938e424fcb58a04c9b61f97284ac58d, type: 3}
       fishNameSprite: {fileID: -148538685, guid: 5f4f917a47f172245a304bfb1bc4b4aa, type: 3}
+      fishCostSprite: {fileID: -516768253, guid: e12ad56d571781b46bd4a875292a5c5f, type: 3}
       fishCost: 20
     - minDepth: 3
       fishSprite: {fileID: 21300000, guid: 23f33f57c694e4543a3b94a3e3c743fb, type: 3}
       fishNameSprite: {fileID: -1575909404, guid: 5f4f917a47f172245a304bfb1bc4b4aa, type: 3}
+      fishCostSprite: {fileID: 256383052, guid: e12ad56d571781b46bd4a875292a5c5f, type: 3}
       fishCost: 80
     - minDepth: 1
       fishSprite: {fileID: 21300000, guid: 87501e815ca8a184eb95fdcc5b7cd69e, type: 3}
       fishNameSprite: {fileID: -1959090716, guid: 5f4f917a47f172245a304bfb1bc4b4aa, type: 3}
+      fishCostSprite: {fileID: 51742940, guid: e12ad56d571781b46bd4a875292a5c5f, type: 3}
       fishCost: 5
   - chance: 0.25
     bubbleAnimationName: BubbleBigAnim
@@ -85,30 +100,37 @@ MonoBehaviour:
     - minDepth: 1
       fishSprite: {fileID: 21300000, guid: cc826caf09967264bab1f5de4e677766, type: 3}
       fishNameSprite: {fileID: 2004857199, guid: 5f4f917a47f172245a304bfb1bc4b4aa, type: 3}
+      fishCostSprite: {fileID: -632455132, guid: e12ad56d571781b46bd4a875292a5c5f, type: 3}
       fishCost: 15
     - minDepth: 1
       fishSprite: {fileID: 21300000, guid: be65b616c5d862d45906fa86429edc8c, type: 3}
       fishNameSprite: {fileID: -300019872, guid: 5f4f917a47f172245a304bfb1bc4b4aa, type: 3}
+      fishCostSprite: {fileID: -1152305234, guid: e12ad56d571781b46bd4a875292a5c5f, type: 3}
       fishCost: 5
     - minDepth: 3
       fishSprite: {fileID: 21300000, guid: 96133786350141f4ba387c41b23ad382, type: 3}
       fishNameSprite: {fileID: 2038786437, guid: 5f4f917a47f172245a304bfb1bc4b4aa, type: 3}
+      fishCostSprite: {fileID: 6430287, guid: e12ad56d571781b46bd4a875292a5c5f, type: 3}
       fishCost: 80
     - minDepth: 1
       fishSprite: {fileID: 21300000, guid: 4938e424fcb58a04c9b61f97284ac58d, type: 3}
       fishNameSprite: {fileID: -148538685, guid: 5f4f917a47f172245a304bfb1bc4b4aa, type: 3}
+      fishCostSprite: {fileID: -516768253, guid: e12ad56d571781b46bd4a875292a5c5f, type: 3}
       fishCost: 20
     - minDepth: 1
       fishSprite: {fileID: 21300000, guid: 21a6e71c6aadca84ebd666839d0ca6b8, type: 3}
       fishNameSprite: {fileID: 1734656516, guid: 5f4f917a47f172245a304bfb1bc4b4aa, type: 3}
+      fishCostSprite: {fileID: -1943497612, guid: e12ad56d571781b46bd4a875292a5c5f, type: 3}
       fishCost: 60
     - minDepth: 1
       fishSprite: {fileID: 21300000, guid: 0fa803f28bfc77b48b3f3ecb03b82260, type: 3}
       fishNameSprite: {fileID: -1059093860, guid: 5f4f917a47f172245a304bfb1bc4b4aa, type: 3}
+      fishCostSprite: {fileID: 1303021220, guid: e12ad56d571781b46bd4a875292a5c5f, type: 3}
       fishCost: 70
     - minDepth: 1
       fishSprite: {fileID: 21300000, guid: e2c2ce6bf4e5a3047979c9b11cae4d5a, type: 3}
       fishNameSprite: {fileID: -1932986931, guid: 5f4f917a47f172245a304bfb1bc4b4aa, type: 3}
+      fishCostSprite: {fileID: 999563406, guid: e12ad56d571781b46bd4a875292a5c5f, type: 3}
       fishCost: 25
   - chance: 0.15
     bubbleAnimationName: BubbleHugeAnim
@@ -116,16 +138,20 @@ MonoBehaviour:
     - minDepth: 1
       fishSprite: {fileID: 21300000, guid: cc826caf09967264bab1f5de4e677766, type: 3}
       fishNameSprite: {fileID: 2004857199, guid: 5f4f917a47f172245a304bfb1bc4b4aa, type: 3}
+      fishCostSprite: {fileID: -632455132, guid: e12ad56d571781b46bd4a875292a5c5f, type: 3}
       fishCost: 15
     - minDepth: 2
       fishSprite: {fileID: 21300000, guid: ee79c13c66fc6594393ccc76372914f7, type: 3}
       fishNameSprite: {fileID: -233867951, guid: 5f4f917a47f172245a304bfb1bc4b4aa, type: 3}
+      fishCostSprite: {fileID: -1943497612, guid: e12ad56d571781b46bd4a875292a5c5f, type: 3}
       fishCost: 60
     - minDepth: 1
       fishSprite: {fileID: 21300000, guid: 21a6e71c6aadca84ebd666839d0ca6b8, type: 3}
       fishNameSprite: {fileID: 1734656516, guid: 5f4f917a47f172245a304bfb1bc4b4aa, type: 3}
+      fishCostSprite: {fileID: -1943497612, guid: e12ad56d571781b46bd4a875292a5c5f, type: 3}
       fishCost: 60
     - minDepth: 3
       fishSprite: {fileID: 21300000, guid: 34d39bb2dda19ff4793f55f284002b0a, type: 3}
       fishNameSprite: {fileID: -1855016479, guid: 5f4f917a47f172245a304bfb1bc4b4aa, type: 3}
+      fishCostSprite: {fileID: 521691795, guid: e12ad56d571781b46bd4a875292a5c5f, type: 3}
       fishCost: 100

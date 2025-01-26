@@ -1,5 +1,6 @@
 using EventCenter;
 using Singleton;
+using UnityEngine;
 
 namespace GameController
 {
@@ -36,7 +37,7 @@ namespace GameController
             set
             {
                 rodLevel = value;
-                this.TriggerEvent(EventName.ShipLevelChanged, rodLevel);
+                this.TriggerEvent(EventName.FishingRodLevelChanged, rodLevel);
             }
         }
 

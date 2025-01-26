@@ -31,8 +31,6 @@ namespace ShipScene
 
             if (interactAction.WasPressedThisFrame() && shipHere)
             {
-                Debug.Log("交互！！");
-                Debug.Log(data);
                 SoundManager.Instance.EffectPlayStr("3");
                 this.TriggerEvent(EventName.StartFishing, data);
             }

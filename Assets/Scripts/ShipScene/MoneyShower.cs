@@ -28,7 +28,6 @@ namespace ShipScene
 
         private void OnMoneyChanged(int money)
         {
-            Debug.Log(money);
             moneyText.text = money.ToString();
         }
     }

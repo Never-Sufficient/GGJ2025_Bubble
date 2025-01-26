@@ -14,6 +14,7 @@ namespace Data
             public int minDepth;
             public Sprite fishSprite;
             public Sprite fishNameSprite;
+            public Sprite fishCostSprite;
             public int fishCost;
         }
 
@@ -32,6 +33,7 @@ namespace Data
             public int minDepth;
             public Sprite fishSprite;
             public Sprite fishNameSprite;
+            public Sprite fishCostSprite;
             public int fishCost;
         }
 

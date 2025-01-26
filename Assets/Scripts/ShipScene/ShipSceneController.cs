@@ -73,6 +73,7 @@ namespace ShipScene
                         bubbleAndFishData.fishSprite = fishData.fishSprite;
                         bubbleAndFishData.fishNameSprite = fishData.fishNameSprite;
                         bubbleAndFishData.fishCost = fishData.fishCost;
+                        bubbleAndFishData.fishCostSprite = fishData.fishCostSprite;
                     }
 
                     break;

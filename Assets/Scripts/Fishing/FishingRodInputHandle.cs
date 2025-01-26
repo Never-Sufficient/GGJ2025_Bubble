@@ -45,11 +45,14 @@ public class FishingRodInputHandle : MonoBehaviour
         EventManager.Instance.AddListener<FishingDataSo.BubbleAndFishData>(EventName.StartFishing, setHookEnterWater);
         EventManager.Instance.AddListener(EventName.TimerExpire, HookExitWater);
     }
+
     private void OnDestroy()
     {
-        EventManager.Instance.RemoveListener<FishingDataSo.BubbleAndFishData>(EventName.StartFishing, setHookEnterWater);
+        EventManager.Instance.RemoveListener<FishingDataSo.BubbleAndFishData>(EventName.StartFishing,
+            setHookEnterWater);
         EventManager.Instance.RemoveListener(EventName.TimerExpire, HookExitWater);
     }
+
     private void Start()
     {
         topPoint = Vector2.zero;
@@ -62,8 +65,11 @@ public class FishingRodInputHandle : MonoBehaviour
 
     private void Update()
     {
-        accumulatedScroll += hookScrollAction.ReadValue<float>();
-        accumulatedMove += hookHorizontalMoveAction.ReadValue<float>();
+        if (isFishing)
+        {
+            accumulatedScroll += hookScrollAction.ReadValue<float>();
+            accumulatedMove += hookHorizontalMoveAction.ReadValue<float>();
+        }
     }
 
     private void FixedUpdate()
@@ -135,7 +141,7 @@ public class FishingRodInputHandle : MonoBehaviour
                     Camera.main.ScreenToWorldPoint(new Vector3(hook.transform.position.x, Screen.height * 0.666f,
                         hook.transform.position.z)).y), transform.position) < 0.01f)
         {
-            transform.position = new Vector2(transform.position.x,enterWaterPosition.position.y);
+            transform.position = new Vector2(transform.position.x, enterWaterPosition.position.y);
             hookEnterWater = false;
             isFishing = true;
         }
@@ -148,7 +154,7 @@ public class FishingRodInputHandle : MonoBehaviour
         transform.position = Vector2.MoveTowards(transform.position, exitWaterPosition.position, Time.deltaTime * 2.0f);
         if (Vector2.Distance(exitWaterPosition.position, transform.position) < 0.01f)
         {
-            hook.GetComponent<Rigidbody2D>().velocity = new Vector2(0,0);
+            hook.GetComponent<Rigidbody2D>().velocity = new Vector2(0, 0);
             transform.position = new Vector2(transform.position.x, exitWaterPosition.position.y);
             hookExitWater = false;
             getCollection = false;
@@ -214,7 +220,7 @@ public class FishingRodInputHandle : MonoBehaviour
     {
         Rigidbody2D rb2d = hook.GetComponent<Rigidbody2D>();
         float currentVelocity = rb2d.velocity.normalized.y;
-        if (currentVelocity != lastVelocity)
+        if (currentVelocity * lastVelocity <= 0)
         {
             variableScrollForce = fishingAbilityData.defaultScrollForce;
         }
@@ -276,7 +282,7 @@ public class FishingRodInputHandle : MonoBehaviour
             case 1:
                 localCGMD = collectionGenerateMinDepthArray[0];
                 topPoint = topPointArray[0].position;
-                bottomPoint= bottomPointArray[0].position;
+                bottomPoint = bottomPointArray[0].position;
                 maxDepth = maxDepthArray[0];
                 break;
             case 2:
@@ -294,11 +300,14 @@ public class FishingRodInputHandle : MonoBehaviour
             default:
                 break;
         }
-        GameObject collection = Instantiate(collectionPrefab, new Vector3(backGround.transform.position.x, localCGMD.position.y, backGround.transform.position.z), Quaternion.identity, backGround.transform);
+
+        GameObject collection = Instantiate(collectionPrefab,
+            new Vector3(backGround.transform.position.x, localCGMD.position.y, backGround.transform.position.z),
+            Quaternion.identity, backGround.transform);
         collection.GetComponent<SpriteRenderer>().sprite = data.fishSprite;
-        collection.GetComponent<SpriteRenderer>().color = Color.black;
         hookEnterWater = true;
     }
+
     public void delayMusic1()
     {
         SoundManager.Instance.MusicPlayStr("11");

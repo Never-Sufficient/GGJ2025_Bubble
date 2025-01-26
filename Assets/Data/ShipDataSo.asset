@@ -20,14 +20,14 @@ MonoBehaviour:
     rotateForce: 60
     rotateFriction: 0
   - level: 2
-    moveForce: 5
+    moveForce: 10
     drag: 1
-    friction: 0.5
+    friction: 3
     rotateForce: 60
     rotateFriction: 0
   - level: 3
-    moveForce: 5
+    moveForce: 17
     drag: 1
-    friction: 0.5
+    friction: 6
     rotateForce: 60
     rotateFriction: 0

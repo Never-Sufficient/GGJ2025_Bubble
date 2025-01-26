@@ -3,14 +3,16 @@ using Cysharp.Threading.Tasks;
 using Data;
 using DG.Tweening;
 using EventCenter;
+using GameController;
 using UnityEngine;
+using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 namespace ShipScene
 {
     public class FishShower : MonoBehaviour
     {
-        [SerializeField] private Image fishName, fish;
+        [SerializeField] private Image fishName, fish, fishCost;
         private FishingDataSo.BubbleAndFishData fishData;
 
         private void Awake()
@@ -31,10 +33,11 @@ namespace ShipScene
             transform.localScale = Vector3.zero;
         }
 
-        public async UniTask ShowFish(Sprite fishNameSprite, Sprite fishSprite)
+        public async UniTask ShowFish(Sprite fishNameSprite, Sprite fishSprite, Sprite fishCostSprite)
         {
             fishName.sprite = fishNameSprite;
             fish.sprite = fishSprite;
+            fishCost.sprite = fishCostSprite;
             await transform.DOScale(1, 0.5f).SetEase(Ease.OutBounce);
             await UniTask.WaitForSeconds(3);
             await transform.DOScale(0, 0.5f).SetEase(Ease.InSine);
@@ -49,7 +52,8 @@ namespace ShipScene
         {
             if (fishData == null)
                 return;
-            ShowFish(fishData.fishNameSprite, fishData.fishSprite).Forget();
+            ShowFish(fishData.fishNameSprite, fishData.fishSprite, fishData.fishCostSprite).Forget();
+            GameData.Instance.Money += fishData.fishCost;
         }
     }
 }
