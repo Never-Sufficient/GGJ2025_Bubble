@@ -1,3 +1,5 @@
+using Data;
+using EventCenter;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,10 +7,8 @@ using UnityEngine.InputSystem;
 
 public class FishingRodInputHandle : MonoBehaviour
 {
-    [SerializeField] private Transform lineStartPosition; //鱼线顶部
     [SerializeField] private GameObject hook; //底部鱼钩
     [SerializeField] private GameObject backGround; //可移动背景
-    [SerializeField] private LineRenderer fishingLine; //鱼线
     [SerializeField] private float defaultScrollForce; //力的初始值
     [SerializeField] private float variableScrollForce; //可变化力
     [SerializeField] private float maxScrollForce; //力的最大值
@@ -23,7 +23,7 @@ public class FishingRodInputHandle : MonoBehaviour
     private bool hookAtTop = false; //鱼钩顶部区域检测
     private bool hookAtMid = false; //鱼钩中间区域检测
     private bool hookAtBottom = false; //鱼钩底部区域检测
-    private bool getCollection = false; //钓到物品
+    public bool getCollection { get; private set; } = false; //钓到物品
     private bool hookEnterWater = false; //鱼钩正在入水状态检测，须外部初始化
     private bool hookExitWater = false; //鱼钩正在出水状态检测
     private bool isFishing = false;
@@ -35,12 +35,21 @@ public class FishingRodInputHandle : MonoBehaviour
     private float accumulatedScroll; //当前帧累计滚动距离
     private float accumulatedMove; //当前帧累计水平移动距离
 
+    private void Awake()
+    {
+        EventManager.Instance.AddListener<FishingDataSo.BubbleAndFishData>(EventName.StartFishing, setHookEnterWater);
+        EventManager.Instance.AddListener(EventName.TimerExpire, HookExitWater);
+    }
+    private void OnDestroy()
+    {
+        EventManager.Instance.RemoveListener<FishingDataSo.BubbleAndFishData>(EventName.StartFishing, setHookEnterWater);
+        EventManager.Instance.RemoveListener(EventName.TimerExpire, HookExitWater);
+    }
     private void Start()
     {
         hookScrollAction = InputSystem.actions.FindAction("HookScroll");
         hookHorizontalMoveAction = InputSystem.actions.FindAction("HookHorizontalMove");
         variableScrollForce = defaultScrollForce;
-        setHookEnterWater();
     }
 
     private void Update()
@@ -103,22 +112,21 @@ public class FishingRodInputHandle : MonoBehaviour
             GetHookPositionOnScreen();
             BackgroundEdgeRegress();
         }
-
-        DrawFishingLine();
     }
 
     private void HookEnterWater()
     {
+        this.TriggerEvent(EventName.GamePause);
         transform.position = Vector2.MoveTowards(transform.position,
             new Vector2(enterWaterPosition.position.x,
                 Camera.main.ScreenToWorldPoint(new Vector3(hook.transform.position.x, Screen.height * 0.666f,
-                    hook.transform.position.z)).y), Time.deltaTime * 1.0f);
+                    hook.transform.position.z)).y), Time.deltaTime * 2.0f);
         if (Vector2.Distance(
                 new Vector2(enterWaterPosition.position.x,
                     Camera.main.ScreenToWorldPoint(new Vector3(hook.transform.position.x, Screen.height * 0.666f,
                         hook.transform.position.z)).y), transform.position) < 0.01f)
         {
-            transform.position = enterWaterPosition.position;
+            transform.position = new Vector2(transform.position.x,enterWaterPosition.position.y);
             hookEnterWater = false;
             isFishing = true;
         }
@@ -127,12 +135,14 @@ public class FishingRodInputHandle : MonoBehaviour
     private void HookExitWater()
     {
         isFishing = false;
-        transform.position = Vector2.MoveTowards(transform.position, exitWaterPosition.position, Time.deltaTime * 1.0f);
+        transform.position = Vector2.MoveTowards(transform.position, exitWaterPosition.position, Time.deltaTime * 2.0f);
         if (Vector2.Distance(exitWaterPosition.position, transform.position) < 0.01f)
         {
-            transform.position = exitWaterPosition.position;
+            hook.GetComponent<Rigidbody2D>().velocity = new Vector2(0,0);
+            transform.position = new Vector2(transform.position.x, exitWaterPosition.position.y);
             hookExitWater = false;
             getCollection = false;
+            this.TriggerEvent(EventName.GameContinue);
         }
     }
 
@@ -243,12 +253,6 @@ public class FishingRodInputHandle : MonoBehaviour
         transform.Translate(hookHorizontalMove * horizontalMoveIntensity, 0.0f, 0.0f);
     }
 
-    private void DrawFishingLine() //画鱼线
-    {
-        Vector3[] points = new Vector3[2] { lineStartPosition.position, hook.transform.position };
-        fishingLine.positionCount = 2;
-        fishingLine.SetPositions(points);
-    }
 
     public void setTopPoint(Vector2 Point)
     {
@@ -270,7 +274,7 @@ public class FishingRodInputHandle : MonoBehaviour
         getCollection = true;
     }
 
-    public void setHookEnterWater()
+    public void setHookEnterWater(FishingDataSo.BubbleAndFishData data)
     {
         hookEnterWater = true;
     }

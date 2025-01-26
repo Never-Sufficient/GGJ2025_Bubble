@@ -21,8 +21,12 @@ public class Trap : MonoBehaviour
     {
         if (collision.tag == "Hook")
         {
-            Vector2 direction = (collision.gameObject.transform.position - transform.position).normalized;
-            collision.gameObject.GetComponent<Rigidbody2D>().AddForce(direction * trapForce, ForceMode2D.Impulse);
+            if(collision.GetComponent<FishingRodInputHandle>().getCollection == false)
+            {
+                Vector2 direction = new Vector2(0.0f, 1.0f);
+                collision.gameObject.GetComponent<Rigidbody2D>().AddForce(direction * trapForce, ForceMode2D.Impulse);
+            }
+            
         }
     }
 }

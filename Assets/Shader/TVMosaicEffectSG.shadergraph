@@ -957,8 +957,8 @@
     },
     "m_FragmentContext": {
         "m_Position": {
-            "x": 577.9999389648438,
-            "y": 1090.0
+            "x": 672.7999877929688,
+            "y": 1071.199951171875
         },
         "m_Blocks": [
             {
@@ -1325,10 +1325,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -3774.0,
-            "y": 429.0,
-            "width": 145.0,
-            "height": 129.0
+            "x": -4031.999755859375,
+            "y": 364.7999572753906,
+            "width": 208.0,
+            "height": 311.2000427246094
         }
     },
     "m_Slots": [
@@ -1342,7 +1342,7 @@
         "coordinates"
     ],
     "m_Precision": 0,
-    "m_PreviewExpanded": false,
+    "m_PreviewExpanded": true,
     "m_DismissedVersion": 0,
     "m_PreviewMode": 0,
     "m_CustomColors": {

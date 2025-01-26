@@ -918,10 +918,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98faa3e8657a008439b151dad5597ff9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lineStartPosition: {fileID: 1230375442}
   hook: {fileID: 1278941275}
   backGround: {fileID: 412285328}
-  fishingLine: {fileID: 1931773078}
   defaultScrollForce: 0.01
   variableScrollForce: 0
   maxScrollForce: 3
@@ -933,6 +931,37 @@ MonoBehaviour:
   friction: 1
   topPoint: {fileID: 751919248}
   bottomPoint: {fileID: 1150303331}
+--- !u!1 &1342420126
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1342420127}
+  m_Layer: 0
+  m_Name: ShipArea
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1342420127
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1342420126}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1498610164
 GameObject:
   m_ObjectHideFlags: 0
@@ -1329,3 +1358,4 @@ SceneRoots:
   - {fileID: 1236459044}
   - {fileID: 1028526018}
   - {fileID: 452177700}
+  - {fileID: 1342420127}

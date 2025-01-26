@@ -4,6 +4,7 @@ namespace EventCenter
     {
         GameStart,
         GamePause,
+        GameContinue,
         GameResume,
         TimerExpire,
         

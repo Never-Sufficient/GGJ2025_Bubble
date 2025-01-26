@@ -134,5 +134,6 @@ namespace ShipScene
             GetComponent<Collider2D>().enabled = false;
             MoveToPosition(exitPosition.position).Forget();
         }
+
     }
 }

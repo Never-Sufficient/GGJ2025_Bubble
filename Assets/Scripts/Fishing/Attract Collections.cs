@@ -1,3 +1,4 @@
+using EventCenter;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,11 +9,18 @@ public class AttractCollections : MonoBehaviour
     private GameObject hook;
     private bool isCatched = false;
     // Start is called before the first frame update
+    private void Awake()
+    {
+        EventManager.Instance.AddListener(EventName.GameContinue, OnCollectionDestroy);
+    }
     void Start()
     {
         
     }
-
+    private void OnDestroy()
+    {
+        EventManager.Instance.RemoveListener(EventName.GameContinue, OnCollectionDestroy);
+    }
     // Update is called once per frame
     void Update()
     {
@@ -39,5 +47,8 @@ public class AttractCollections : MonoBehaviour
             }
         }
     }
-
+    private void OnCollectionDestroy()
+    {
+        Destroy(gameObject);
+    }
 }
