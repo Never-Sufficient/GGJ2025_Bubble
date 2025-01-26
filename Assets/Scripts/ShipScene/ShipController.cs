@@ -1,5 +1,6 @@
 using System;
 using Cysharp.Threading.Tasks;
+using Data;
 using DG.Tweening;
 using EventCenter;
 using UnityEngine;
@@ -9,6 +10,9 @@ namespace ShipScene
 {
     public class ShipController : MonoBehaviour
     {
+        private static readonly int StartFish = Animator.StringToHash("StartFish");
+        private static readonly int CaughtFish = Animator.StringToHash("CaughtFish");
+
         // [SerializeField] [Tooltip("移动力大小")] private float moveForce;
         // [SerializeField] [Tooltip("空气阻力")] private float drag;
         // [SerializeField] [Tooltip("摩擦阻力")] private float friction;
@@ -17,22 +21,31 @@ namespace ShipScene
         [SerializeField] private Transform exitPosition, enterPosition;
 
         private ShipData shipData;
+        
         private InputAction moveAction;
+        
         private Rigidbody2D rb2d;
         private SpriteRenderer sr;
+        private Animator animator;
+        
         private bool paused = false;
         private int animationMoving = 0; // 0：未移动 1：移动到开始 2：移动到结束
+        private bool fishing = false;
 
         private void Awake()
         {
             EventManager.Instance.AddListener(EventName.StartOneDay, OnGameStart);
             EventManager.Instance.AddListener(EventName.TimerExpire, OnTimeExpire);
+            EventManager.Instance.AddListener<FishingDataSo.BubbleAndFishData>(EventName.StartFishing, OnStartFish);
+            EventManager.Instance.AddListener(EventName.CaughtFish, OnCaughtFish);
         }
 
         private void OnDestroy()
         {
             EventManager.Instance.RemoveListener(EventName.StartOneDay, OnGameStart);
             EventManager.Instance.RemoveListener(EventName.TimerExpire, OnTimeExpire);
+            EventManager.Instance.RemoveListener<FishingDataSo.BubbleAndFishData>(EventName.StartFishing, OnStartFish);
+            EventManager.Instance.RemoveListener(EventName.CaughtFish, OnCaughtFish);
         }
 
         private void Start()
@@ -41,11 +54,12 @@ namespace ShipScene
             shipData = GetComponent<ShipData>();
             rb2d = GetComponent<Rigidbody2D>();
             sr = GetComponent<SpriteRenderer>();
+            animator = GetComponent<Animator>();
         }
 
         private void FixedUpdate()
         {
-            if (!paused && animationMoving == 0)
+            if (!paused && animationMoving == 0 && !fishing)
             {
                 var moveDir = moveAction.ReadValue<Vector2>();
                 // RotateToDir(moveDir);
@@ -133,6 +147,18 @@ namespace ShipScene
             animationMoving = 2;
             GetComponent<Collider2D>().enabled = false;
             MoveToPosition(exitPosition.position).Forget();
+        }
+
+        private void OnStartFish(FishingDataSo.BubbleAndFishData data)
+        {
+            fishing = true;
+            animator.SetTrigger(StartFish);
+        }
+
+        private void OnCaughtFish()
+        {
+            fishing = false;
+            animator.SetTrigger(CaughtFish);
         }
 
     }

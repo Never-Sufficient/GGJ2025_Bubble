@@ -4,12 +4,12 @@ namespace EventCenter
     {
         GameStart,
         GamePause,
-        GameContinue,
         GameResume,
         StartOneDay,
         TimerExpire,
         
         StartFishing,
+        CaughtFish,
         ShipLevelChanged,
     }
 }

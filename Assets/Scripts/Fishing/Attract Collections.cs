@@ -11,7 +11,7 @@ public class AttractCollections : MonoBehaviour
     // Start is called before the first frame update
     private void Awake()
     {
-        EventManager.Instance.AddListener(EventName.GameContinue, OnCollectionDestroy);
+        EventManager.Instance.AddListener(EventName.CaughtFish, OnCollectionDestroy);
     }
     void Start()
     {
@@ -19,7 +19,7 @@ public class AttractCollections : MonoBehaviour
     }
     private void OnDestroy()
     {
-        EventManager.Instance.RemoveListener(EventName.GameContinue, OnCollectionDestroy);
+        EventManager.Instance.RemoveListener(EventName.CaughtFish, OnCollectionDestroy);
     }
     // Update is called once per frame
     void Update()

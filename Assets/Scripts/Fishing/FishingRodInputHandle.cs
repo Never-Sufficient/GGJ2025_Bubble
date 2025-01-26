@@ -142,7 +142,7 @@ public class FishingRodInputHandle : MonoBehaviour
             transform.position = new Vector2(transform.position.x, exitWaterPosition.position.y);
             hookExitWater = false;
             getCollection = false;
-            this.TriggerEvent(EventName.GameContinue);
+            this.TriggerEvent(EventName.CaughtFish);
         }
     }
 

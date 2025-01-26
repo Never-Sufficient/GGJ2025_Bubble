@@ -48,7 +48,11 @@ namespace GifImporter
             if (index > frames.Count - 1)
             {
                 if(playOnlyOnce)
+                {
                     callback?.Invoke();
+                    this.enabled = false;
+                    return;
+                }
                 else
                     index %= frames.Count;
             }
@@ -79,7 +83,8 @@ namespace GifImporter
         {
             _index = 0;
             _flip = 0;
-            OnEnable();
+            this.enabled = false;
+            this.enabled = true;
         }
 
         public void PlayOnce()

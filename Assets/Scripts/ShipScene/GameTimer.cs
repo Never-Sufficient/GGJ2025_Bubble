@@ -17,7 +17,7 @@ namespace ShipScene
         private void Awake()
         {
             EventManager.Instance.AddListener(EventName.GamePause, OnGamePause);
-            EventManager.Instance.AddListener(EventName.GameContinue, OnGameContinue);
+            EventManager.Instance.AddListener(EventName.CaughtFish, OnGameContinue);
         }
         private void Start()
         {
@@ -31,7 +31,7 @@ namespace ShipScene
         private void OnDisable()
         {
             EventManager.Instance.RemoveListener(EventName.GamePause, OnGamePause);
-            EventManager.Instance.RemoveListener(EventName.GameContinue, OnGameContinue);
+            EventManager.Instance.RemoveListener(EventName.CaughtFish, OnGameContinue);
         }
         public void InitTimer(float duration)
         {
