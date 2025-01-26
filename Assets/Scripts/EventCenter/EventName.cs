@@ -6,6 +6,7 @@ namespace EventCenter
         GamePause,
         GameContinue,
         GameResume,
+        StartOneDay,
         TimerExpire,
         
         StartFishing,

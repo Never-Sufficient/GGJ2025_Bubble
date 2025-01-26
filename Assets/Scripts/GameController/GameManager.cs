@@ -17,27 +17,32 @@ namespace GameController
 
         private void Awake()
         {
+            EventManager.Instance.AddListener(EventName.GameStart, OnGameStart);
             EventManager.Instance.AddListener(EventName.TimerExpire, OnTimerExpire);
         }
 
         private void OnDestroy()
         {
+            EventManager.Instance.RemoveListener(EventName.GameStart, OnGameStart);
             EventManager.Instance.RemoveListener(EventName.TimerExpire, OnTimerExpire);
         }
 
         private void Start()
         {
             gameTimer = FindObjectOfType<GameTimer>();
-            GameStart().Forget();
         }
 
-        private async UniTask GameStart()
+        private void GameStart()
         {
             var color = globalDark.color;
             color.a = 1;
             globalDark.color = color;
-            await UniTask.WaitForSeconds(1);
             StartOneDay().Forget();
+        }
+
+        private void OnGameStart()
+        {
+            GameStart();
         }
 
         private void OnTimerExpire()
@@ -50,7 +55,7 @@ namespace GameController
             dayCount++;
             gameTimer.InitTimer(oneDayDuration);
             ChangeBackground();
-            this.TriggerEvent(EventName.GameStart);
+            this.TriggerEvent(EventName.StartOneDay);
 
             var color = globalDark.color;
             color.a = 0;

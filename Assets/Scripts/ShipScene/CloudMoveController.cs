@@ -11,13 +11,13 @@ namespace ShipScene
 
         private void Awake()
         {
-            EventManager.Instance.AddListener(EventName.GameStart, OnGameStart);
+            EventManager.Instance.AddListener(EventName.StartOneDay, OnGameStart);
             EventManager.Instance.AddListener(EventName.TimerExpire, OnTimerExpire);
         }
 
         private void OnDestroy()
         {
-            EventManager.Instance.RemoveListener(EventName.GameStart, OnGameStart);
+            EventManager.Instance.RemoveListener(EventName.StartOneDay, OnGameStart);
             EventManager.Instance.RemoveListener(EventName.TimerExpire, OnTimerExpire);
         }
 
