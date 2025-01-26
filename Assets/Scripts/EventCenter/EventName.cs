@@ -10,6 +10,10 @@ namespace EventCenter
         
         StartFishing,
         CaughtFish,
+        
         ShipLevelChanged,
+        FishingRodLevelChanged,
+        FishingLineLevelChanged,
+        MoneyChanged,
     }
 }

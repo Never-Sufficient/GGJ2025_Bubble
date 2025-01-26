@@ -11,13 +11,13 @@ namespace ShipScene
 
         private void Awake()
         {
-            EventManager.Instance.AddListener(EventName.StartOneDay, OnGameStart);
+            EventManager.Instance.AddListener(EventName.StartOneDay, OnStartOneDay);
             EventManager.Instance.AddListener(EventName.TimerExpire, OnTimerExpire);
         }
 
         private void OnDestroy()
         {
-            EventManager.Instance.RemoveListener(EventName.StartOneDay, OnGameStart);
+            EventManager.Instance.RemoveListener(EventName.StartOneDay, OnStartOneDay);
             EventManager.Instance.RemoveListener(EventName.TimerExpire, OnTimerExpire);
         }
 
@@ -34,7 +34,7 @@ namespace ShipScene
                 Mathf.Lerp(startPosition.position.y, endPosition.position.y, gameTimer.PercentOfGame));
         }
 
-        private void OnGameStart()
+        private void OnStartOneDay()
         {
             active = true;
         }

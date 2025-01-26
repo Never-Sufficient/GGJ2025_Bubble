@@ -59,7 +59,7 @@ namespace ShipScene
         {
             while (true)
             {
-                Debug.Log(timer);
+                // Debug.Log(timer);
                 await UniTask.WaitForSeconds(0.5f);
             }
             // ReSharper disable once FunctionNeverReturns
