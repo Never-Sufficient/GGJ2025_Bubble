@@ -11,7 +11,7 @@ public class MaxDepthData : MonoBehaviour
 
     private void Awake()
     {
-        EventManager.Instance.AddListener<int>(EventName.MaxDepthLeveChanged, OnMaxDepthLevelChanged);
+        EventManager.Instance.AddListener<int>(EventName.FishingLineLevelChanged, OnMaxDepthLevelChanged);
     }
 
     private void Start()
@@ -21,7 +21,7 @@ public class MaxDepthData : MonoBehaviour
 
     private void OnDestroy()
     {
-        EventManager.Instance.RemoveListener<int>(EventName.MaxDepthLeveChanged, OnMaxDepthLevelChanged);
+        EventManager.Instance.RemoveListener<int>(EventName.FishingLineLevelChanged, OnMaxDepthLevelChanged);
     }
 
     private void OnMaxDepthLevelChanged(int level)

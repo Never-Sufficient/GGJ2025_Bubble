@@ -1037,7 +1037,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 240791759}
         m_TargetAssemblyTypeName: ShipScene.CheckboxController, Assembly-CSharp
-        m_MethodName: 
+        m_MethodName: TryUpgradeRod
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5152,6 +5152,7 @@ GameObject:
   - component: {fileID: 1937107002}
   - component: {fileID: 1937107001}
   - component: {fileID: 1937107000}
+  - component: {fileID: 1937107003}
   m_Layer: 0
   m_Name: FishingHook
   m_TagString: Hook
@@ -5187,9 +5188,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98faa3e8657a008439b151dad5597ff9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collectionPrefab: {fileID: 0}
   hook: {fileID: 1937106998}
   backGround: {fileID: 1613163672}
-  defaultScrollForce: 0.01
   variableScrollForce: 0
   maxScrollForce: 3
   scrollForceGrowingSpeedIntensity: 0.00001
@@ -5198,6 +5199,10 @@ MonoBehaviour:
   exitWaterPosition: {fileID: 450382783}
   drag: 1
   friction: 1
+  collectionGenerateMinDepthArray: []
+  topPointArray: []
+  bottomPointArray: []
+  maxDepthArray: []
   topPoint: {fileID: 422206053}
   bottomPoint: {fileID: 483261313}
 --- !u!58 &1937107001
@@ -5262,6 +5267,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1937107003
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1937106998}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc841e7fe752a414ead7db3a94240bd6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultScrollForce: 0
+  fishingAbilityData: {fileID: 11400000, guid: 56267babd59e6f841beb6f5b1eb151c3, type: 2}
 --- !u!1 &1964572132
 GameObject:
   m_ObjectHideFlags: 0
@@ -5654,9 +5673,13 @@ MonoBehaviour:
   musicVol: 1
   effectsVol: 0
   _soundClipList: []
+  _soundPrefab: {fileID: 0}
   _musicSource: {fileID: 404872575}
   _effectsSource: {fileID: 1927400294}
   _environment: {fileID: 0}
+  leaves: {fileID: 0}
+  wind: {fileID: 0}
+  bird: {fileID: 0}
 --- !u!4 &2067352770
 Transform:
   m_ObjectHideFlags: 0

@@ -15,7 +15,5 @@ namespace EventCenter
         FishingRodLevelChanged,
         FishingLineLevelChanged,
         MoneyChanged,
-        FishingAbilityLevelChanged,
-        MaxDepthLeveChanged
     }
 }

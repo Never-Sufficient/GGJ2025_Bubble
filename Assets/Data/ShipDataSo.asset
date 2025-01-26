@@ -19,3 +19,15 @@ MonoBehaviour:
     friction: 0.5
     rotateForce: 60
     rotateFriction: 0
+  - level: 2
+    moveForce: 5
+    drag: 1
+    friction: 0.5
+    rotateForce: 60
+    rotateFriction: 0
+  - level: 3
+    moveForce: 5
+    drag: 1
+    friction: 0.5
+    rotateForce: 60
+    rotateFriction: 0

@@ -11,7 +11,7 @@ public class FishingAbilityData : MonoBehaviour
 
     private void Awake()
     {
-        EventManager.Instance.AddListener<int>(EventName.FishingAbilityLevelChanged, OnFishingAbilityLevelChanged);
+        EventManager.Instance.AddListener<int>(EventName.FishingRodLevelChanged, OnFishingAbilityLevelChanged);
     }
 
     private void Start()
@@ -21,7 +21,7 @@ public class FishingAbilityData : MonoBehaviour
 
     private void OnDestroy()
     {
-        EventManager.Instance.RemoveListener<int>(EventName.FishingAbilityLevelChanged, OnFishingAbilityLevelChanged);
+        EventManager.Instance.RemoveListener<int>(EventName.FishingRodLevelChanged, OnFishingAbilityLevelChanged);
     }
 
     private void OnFishingAbilityLevelChanged(int level)
