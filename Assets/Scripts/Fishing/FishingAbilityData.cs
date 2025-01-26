@@ -33,6 +33,8 @@ public class FishingAbilityData : MonoBehaviour
 
     private FishingAbilityDataSo.FishingAbilityLevelData FindLevelInData(int level)
     {
+        Debug.Log("level:"+level);
+        Debug.Log("fishingAbilityData:" + fishingAbilityData);
         return fishingAbilityData.fishingAbilityLevelDataList.Find(entry => entry.level == level);
     }
 }

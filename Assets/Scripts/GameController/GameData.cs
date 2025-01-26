@@ -6,7 +6,7 @@ namespace GameController
 {
     public class GameData : SingletonBase<GameData>
     {
-        private int money = 10000;
+        private int money = 0;
         private int shipLevel = 1;
         private int rodLevel = 1;
         private int depthCanReach = 1;
