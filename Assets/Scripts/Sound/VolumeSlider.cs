@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class VolumeSlider : MonoBehaviour
+/*public class VolumeSlider : MonoBehaviour
 {
     [Tooltip("直接把相应的Slider控件(音效/音乐)挂过来就行")]
     [SerializeField] private Slider _slider;
@@ -32,4 +32,4 @@ public class VolumeSlider : MonoBehaviour
         if (_toggleMusic) SoundManager.Instance.ToggleMusic();
     }
 
-}
+}*/

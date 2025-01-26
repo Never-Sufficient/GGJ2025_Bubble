@@ -25,6 +25,7 @@ namespace ShipScene
         {
             if (Input.anyKeyDown && openingStart.activeSelf)
             {
+                SoundManager.Instance.EffectPlayStr("1");
                 openingStart.SetActive(false);
                 opening.SetActive(true);
                 opening.GetComponent<GifPlayer>().PlayOnce();

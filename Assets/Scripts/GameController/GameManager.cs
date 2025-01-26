@@ -34,6 +34,7 @@ namespace GameController
 
         private void GameStart()
         {
+            
             var color = globalDark.color;
             color.a = 1;
             globalDark.color = color;
