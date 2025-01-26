@@ -32,13 +32,13 @@ namespace GameController
 
         private void Start()
         {
+            dayCount = 1;
             gameTimer = FindObjectOfType<GameTimer>();
         }
 
         private void GameStart()
         {
             SoundManager.Instance.PlayBirdSound();
-            SoundManager.Instance.EffectPlayStr("19");
             Invoke("delayMusic1", 6.0f);
             var color = globalDark.color;
             color.a = 1;
@@ -58,9 +58,18 @@ namespace GameController
 
         private async UniTask StartOneDay()
         {
+            SoundManager.Instance.EffectPlayStr("19");
+            if (dayCount == 1)
+            {
+                var colorD1 = globalDay.color;
+                colorD1.a = 1;
+                globalDay.DOColor(colorD1, 2f).SetEase(Ease.OutSine);
 
-            dayCount++;
-            changeDayNumber(dayCount);
+                var colorN1 = globalNumber.color;
+                colorN1.a = 1;
+                globalNumber.DOColor(colorN1, 2f).SetEase(Ease.OutSine);
+
+            }
             gameTimer.InitTimer(oneDayDuration);
             ChangeBackground();
             this.TriggerEvent(EventName.StartOneDay);
@@ -87,6 +96,8 @@ namespace GameController
 
         private async UniTask EndOneDay()
         {
+            dayCount++;
+            changeDayNumber(dayCount);
             SoundManager.Instance.EffectPlayStr("20");
             var color = globalDark.color;
             color.a = 1;
@@ -110,22 +121,6 @@ namespace GameController
         {
             switch (dayCount)
             {
-                case 1:
-                    var colorD1 = globalDay.color;
-                    colorD1.a = 1;
-                    globalDay.DOColor(colorD1, 2.5f).SetEase(Ease.OutSine);
-
-                    var colorN1 = globalNumber.color;
-                    colorN1.a = 1;
-                    globalNumber.DOColor(colorN1, 2.5f).SetEase(Ease.OutSine);
-                    var colorD2 = globalDay.color;
-                    colorD2.a = 0;
-                    globalDay.DOColor(colorD2, 5f).SetEase(Ease.OutSine);
-
-                    var colorN2 = globalNumber.color;
-                    colorN2.a = 0;
-                    globalNumber.DOColor(colorN2, 5f).SetEase(Ease.OutSine);
-                    break;
                 case 2: globalNumber.sprite = dayNumbers[1]; break;
                 case 3: globalNumber.sprite = dayNumbers[2]; break;
                 case 4: globalNumber.sprite = dayNumbers[3]; break;
