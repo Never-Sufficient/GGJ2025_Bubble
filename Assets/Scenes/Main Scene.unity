@@ -2293,7 +2293,7 @@ MonoBehaviour:
   bubblePool: {fileID: 1094343144}
   tip: {fileID: 82585116}
   bubbleSpawnDelay: 1
-  fishingDataSo: {fileID: 11400000, guid: b4cbb179f03f08b4b9ca9c1164a23f5e, type: 2}
+  fishingDataSo: {fileID: 0}
 --- !u!1 &1512802179
 GameObject:
   m_ObjectHideFlags: 0
