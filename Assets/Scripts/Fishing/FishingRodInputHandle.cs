@@ -4,6 +4,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.InputSystem.LowLevel;
 
 public class FishingRodInputHandle : MonoBehaviour
 {
@@ -41,6 +42,7 @@ public class FishingRodInputHandle : MonoBehaviour
     private float accumulatedScroll; //当前帧累计滚动距离
     private float accumulatedMove; //当前帧累计水平移动距离
     private FishingAbilityData fishingAbilityData;
+    private Vector3 lastCursorPosition = Vector3.zero;
 
     private void Awake()
     {
@@ -161,6 +163,8 @@ public class FishingRodInputHandle : MonoBehaviour
             hookExitWater = false;
             getCollection = false;
             this.TriggerEvent(EventName.CaughtFish);
+            Mouse.current.WarpCursorPosition(lastCursorPosition);
+            Cursor.visible = true;
         }
     }
 
@@ -295,6 +299,8 @@ public class FishingRodInputHandle : MonoBehaviour
 
     public void setHookEnterWater(FishingDataSo.BubbleAndFishData data)
     {
+        Cursor.visible = false;
+        lastCursorPosition = Input.mousePosition;
         Transform localCGMD = null;
         switch (data.minDepth)
         {
