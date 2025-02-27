@@ -1677,7 +1677,7 @@ Transform:
   m_GameObject: {fileID: 421703874}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1691,7 +1691,7 @@ Transform:
   - {fileID: 98398677}
   - {fileID: 1802141357}
   - {fileID: 758905861}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 2102558868}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &450382782
 GameObject:
@@ -2284,7 +2284,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &751186160
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3489,7 +3489,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -12
   m_Sprite: {fileID: 21300000, guid: 8169af50768f9af48bad5c1519be08a6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -4582,7 +4582,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1854250088}
   - {fileID: 1453274145}
@@ -6363,6 +6363,7 @@ MonoBehaviour:
   collectionPrefab: {fileID: 6011934462178365633, guid: c785e8e1b8466124e8cc81d8e4ec4f2c, type: 3}
   hook: {fileID: 1937106998}
   backGround: {fileID: 1026365288}
+  trapPrefab: {fileID: 4077020271737629066, guid: 2495dd5b8f45068489c8aa14bd9db2bb, type: 3}
   variableScrollForce: 0.005
   maxScrollForce: 3
   scrollForceGrowingSpeedIntensity: 0.00001
@@ -7008,7 +7009,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2102558865}
-  m_Enabled: 0
+  m_Enabled: 1
 --- !u!20 &2102558867
 Camera:
   m_ObjectHideFlags: 0
@@ -7072,7 +7073,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 421703875}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2102558869
@@ -7414,7 +7416,6 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 751186163}
-  - {fileID: 421703875}
   - {fileID: 2102558868}
   - {fileID: 2000963688}
   - {fileID: 1629954772}

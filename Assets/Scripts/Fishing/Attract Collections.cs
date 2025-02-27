@@ -12,6 +12,7 @@ public class AttractCollections : MonoBehaviour
     private void Awake()
     {
         EventManager.Instance.AddListener(EventName.CaughtFish, OnCollectionDestroy);
+        EventManager.Instance.AddListener(EventName.TimerExpire, OnCollectionDestroy);
     }
     void Start()
     {
@@ -20,6 +21,7 @@ public class AttractCollections : MonoBehaviour
     private void OnDestroy()
     {
         EventManager.Instance.RemoveListener(EventName.CaughtFish, OnCollectionDestroy);
+        EventManager.Instance.RemoveListener(EventName.TimerExpire, OnCollectionDestroy);
     }
     // Update is called once per frame
     void Update()
@@ -43,7 +45,7 @@ public class AttractCollections : MonoBehaviour
                 }
 
                 hook = collision.gameObject;
-                hook.GetComponent<FishingRodInputHandle>().setGotCollection();
+                hook.GetComponent<FishingRodInputHandle>().setGotCollection(true);
                 isCatched = true;
             }
             else
@@ -55,5 +57,11 @@ public class AttractCollections : MonoBehaviour
     private void OnCollectionDestroy()
     {
         Destroy(gameObject);
+    }
+    private void OnTimerExpire()
+    {
+        gameObject.GetComponent<CircleCollider2D>().isTrigger = false;
+        //hook.GetComponent<FishingRodInputHandle>().setGotCollection(false);
+        Destroy(gameObject,5.0f);
     }
 }

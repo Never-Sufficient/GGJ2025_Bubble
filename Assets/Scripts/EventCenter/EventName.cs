@@ -3,7 +3,6 @@ namespace EventCenter
     public enum EventName
     {
         GameStart,
-        GamePause,
         GameResume,
         StartOneDay,
         TimerExpire,

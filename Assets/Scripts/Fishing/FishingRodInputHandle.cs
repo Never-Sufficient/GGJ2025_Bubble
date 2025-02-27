@@ -10,6 +10,7 @@ public class FishingRodInputHandle : MonoBehaviour
     [SerializeField] private GameObject collectionPrefab;
     [SerializeField] private GameObject hook; //底部鱼钩
     [SerializeField] private GameObject backGround; //可移动背景
+    [SerializeField] private GameObject trapPrefab;
     [SerializeField] private float variableScrollForce; //可变化力
     [SerializeField] private float maxScrollForce; //力的最大值
     [SerializeField] private float scrollForceGrowingSpeedIntensity; //力的变化速率
@@ -44,14 +45,14 @@ public class FishingRodInputHandle : MonoBehaviour
     private void Awake()
     {
         EventManager.Instance.AddListener<FishingDataSo.BubbleAndFishData>(EventName.StartFishing, setHookEnterWater);
-        EventManager.Instance.AddListener(EventName.TimerExpire, HookExitWater);
+        EventManager.Instance.AddListener(EventName.TimerExpire, NoTimeToGetCollection);
     }
 
     private void OnDestroy()
     {
         EventManager.Instance.RemoveListener<FishingDataSo.BubbleAndFishData>(EventName.StartFishing,
             setHookEnterWater);
-        EventManager.Instance.RemoveListener(EventName.TimerExpire, HookExitWater);
+        EventManager.Instance.RemoveListener(EventName.TimerExpire, NoTimeToGetCollection);
     }
 
     private void Start()
@@ -82,13 +83,11 @@ public class FishingRodInputHandle : MonoBehaviour
         if (hookEnterWater)
         {
             HookEnterWater();
-            Invoke("delayMusic1", 0.5f);
         }
 
         if (hookExitWater && getCollection)
         {
             HookExitWater();
-            Invoke("delayMusic2",0.5f);
         }
 
         if (isFishing)
@@ -133,7 +132,7 @@ public class FishingRodInputHandle : MonoBehaviour
 
     private void HookEnterWater()
     {
-        this.TriggerEvent(EventName.GamePause);
+        Invoke("delayMusic1", 0.5f);
         transform.position = Vector2.MoveTowards(transform.position,
             new Vector2(enterWaterPosition.position.x,
                 Camera.main.ScreenToWorldPoint(new Vector3(hook.transform.position.x, Screen.height * 0.666f,
@@ -151,6 +150,7 @@ public class FishingRodInputHandle : MonoBehaviour
 
     private void HookExitWater()
     {
+        Invoke("delayMusic2", 0.5f);
         isFishing = false;
         gameObject.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
         transform.position = Vector2.MoveTowards(transform.position, exitWaterPosition.position, Time.deltaTime * 2.0f);
@@ -288,9 +288,9 @@ public class FishingRodInputHandle : MonoBehaviour
         transform.Translate(hookHorizontalMove * horizontalMoveIntensity, 0.0f, 0.0f);
     }
 
-    public void setGotCollection()
+    public void setGotCollection(bool getCollection)
     {
-        getCollection = true;
+        this.getCollection = getCollection;
     }
 
     public void setHookEnterWater(FishingDataSo.BubbleAndFishData data)
@@ -319,14 +319,24 @@ public class FishingRodInputHandle : MonoBehaviour
             default:
                 break;
         }
-
+        Instantiate(trapPrefab, new Vector3(backGround.transform.position.x + (Random.value > 0.5f ? 2.8f : -2.8f), collectionGenerateMinDepthArray[0].position.y +(Random.Range(3.75f,6.25f)* (Random.value > 0.5f ? 1 : -1)), backGround.transform.position.z -1),
+            Quaternion.identity, backGround.transform);
+        Instantiate(trapPrefab, new Vector3(backGround.transform.position.x + (Random.value > 0.5f ? 2.8f : -2.8f), collectionGenerateMinDepthArray[1].position.y + (Random.Range(3.75f, 6.25f) * (Random.value > 0.5f ? 1 : -1)), backGround.transform.position.z - 1),
+            Quaternion.identity, backGround.transform);
         GameObject collection = Instantiate(collectionPrefab,
             new Vector3(backGround.transform.position.x, localCGMD.position.y, backGround.transform.position.z),
             Quaternion.identity, backGround.transform);
         collection.GetComponent<SpriteRenderer>().sprite = data.fishSprite;
         hookEnterWater = true;
     }
-
+    public void NoTimeToGetCollection()
+    {
+        Invoke("delayMusic2", 0.5f);
+        isFishing = false;
+        transform.position = Vector2.MoveTowards(transform.position, exitWaterPosition.position, Time.deltaTime * 3f);
+        hookExitWater = false;
+        getCollection = false;
+    }
     public void delayMusic1()
     {
         SoundManager.Instance.MusicPlayStr("11");

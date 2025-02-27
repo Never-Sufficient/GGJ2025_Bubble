@@ -1,3 +1,4 @@
+using EventCenter;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
@@ -6,12 +7,38 @@ using UnityEngine;
 public class Trap : MonoBehaviour
 {
     [SerializeField] private float trapForce;
+    [SerializeField] private Sprite[] trapArray;
     // Start is called before the first frame update
+    private void Awake()
+    {
+        EventManager.Instance.AddListener(EventName.CaughtFish, OnTrapDestroy);
+        EventManager.Instance.AddListener(EventName.TimerExpire, OnTrapDestroy);
+    }
     void Start()
     {
-
+        int trapNumber = Random.Range(0, 4);
+        gameObject.GetComponent<SpriteRenderer>().sprite = trapArray[trapNumber];
+        if (trapNumber <= 1)
+        {
+            if (transform.localPosition.x > 0)
+            {
+                gameObject.GetComponent<Transform>().rotation = Quaternion.Euler(new Vector3(Random.Range(0, 2) * 180f, 180f, 0f));
+            }
+        }
+        else
+        {
+            if (transform.localPosition.x < 0)
+            {
+                gameObject.GetComponent<Transform>().rotation = Quaternion.Euler(new Vector3(Random.Range(0, 2) * 180f, 180f, 0f));
+            }
+        }
+        gameObject.AddComponent<PolygonCollider2D>();
     }
-
+    private void OnDestroy()
+    {
+        EventManager.Instance.RemoveListener(EventName.CaughtFish, OnTrapDestroy);
+        EventManager.Instance.RemoveListener(EventName.TimerExpire, OnTrapDestroy);
+    }
     // Update is called once per frame
     void Update()
     {
@@ -30,5 +57,13 @@ public class Trap : MonoBehaviour
             }
 
         }
+    }
+    private void OnTrapDestroy()
+    {
+        Destroy(gameObject);
+    }
+    private void OnTimerExpire()
+    {
+        Destroy(gameObject, 5.0f);
     }
 }
