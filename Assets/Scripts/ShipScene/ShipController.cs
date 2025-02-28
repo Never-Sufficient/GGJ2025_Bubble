@@ -154,11 +154,13 @@ namespace ShipScene
             animationMoving = 2;
             GetComponent<Collider2D>().enabled = false;
             MoveToPosition(exitPosition.position).Forget();
+            OnCaughtFish();
         }
 
         private void OnStartFish(FishingDataSo.BubbleAndFishData data)
         {
             fishing = true;
+            rb2d.velocity *= 0.2f;
             animator.SetTrigger(StartFish);
         }
 

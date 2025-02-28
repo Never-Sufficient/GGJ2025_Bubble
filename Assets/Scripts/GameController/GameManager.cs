@@ -109,6 +109,7 @@ namespace GameController
         {
             dayCount++;
             changeDayNumber(dayCount);
+            Invoke("stopEngineSound", 7f);
             SoundManager.Instance.EffectPlayStr("20");
             var color = globalDark.color;
             color.a = 1;
@@ -142,6 +143,10 @@ namespace GameController
         private void StartEndingEvent()
         {
             endingEventDirector.StartEndingEvent().Forget();
+        }
+        private void stopEngineSound()
+        {
+            SoundManager.Instance.StopEngine();
         }
     }
 }

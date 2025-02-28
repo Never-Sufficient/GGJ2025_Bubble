@@ -131,7 +131,7 @@ public class SoundManager : MonoBehaviour
     }
     public void enLargeEngineVoulume()
     {
-        engine.volume++;
+        engine.volume += 0.01f;
     }
     public void resetEngineVolume()
     {

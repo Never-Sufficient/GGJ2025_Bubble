@@ -1,4 +1,6 @@
+using Cysharp.Threading.Tasks;
 using Data;
+using DG.Tweening;
 using EventCenter;
 using System.Collections;
 using System.Collections.Generic;
@@ -47,14 +49,14 @@ public class FishingRodInputHandle : MonoBehaviour
     private void Awake()
     {
         EventManager.Instance.AddListener<FishingDataSo.BubbleAndFishData>(EventName.StartFishing, setHookEnterWater);
-        EventManager.Instance.AddListener(EventName.TimerExpire, NoTimeToGetCollection);
+        EventManager.Instance.AddListener(EventName.TimerExpire, OnTimeExpire);
     }
 
     private void OnDestroy()
     {
         EventManager.Instance.RemoveListener<FishingDataSo.BubbleAndFishData>(EventName.StartFishing,
             setHookEnterWater);
-        EventManager.Instance.RemoveListener(EventName.TimerExpire, NoTimeToGetCollection);
+        EventManager.Instance.RemoveListener(EventName.TimerExpire, OnTimeExpire);
     }
 
     private void Start()
@@ -76,8 +78,9 @@ public class FishingRodInputHandle : MonoBehaviour
         }
     }
 
-    private void FixedUpdate()
+    private async void FixedUpdate()
     {
+        //Debug.Log(Mathf.Abs(hook.GetComponent<Rigidbody2D>().velocity.y));
         // Debug.Log("getCollection" + getCollection);
         // Debug.Log("hookExitWater" + hookExitWater);
         // Debug.Log(backGround.transform.position.y > topPoint.transform.position.y);
@@ -101,19 +104,19 @@ public class FishingRodInputHandle : MonoBehaviour
             if (hookAtMid)
             {
                 backGround.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
-                HookScroll(hookScroll);
+                HookScroll(hookScroll).Forget();
             }
 
             if (hookAtBottom && hookScroll > 0)
             {
                 backGround.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
-                HookScroll(hookScroll);
+                HookScroll(hookScroll).Forget();
             }
 
             if (hookAtTop && hookScroll < 0)
             {
                 backGround.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
-                HookScroll(hookScroll);
+                HookScroll(hookScroll).Forget();
             }
 
             if ((hookAtTop && hookScroll > 0) || (hookAtBottom && hookScroll < 0))
@@ -121,7 +124,7 @@ public class FishingRodInputHandle : MonoBehaviour
                 if (backGround.transform.position.y <= topPoint.y &&
                     backGround.transform.position.y >= bottomPoint.y)
                 {
-                    BackGroundScroll(hookScroll);
+                    BackGroundScroll(hookScroll).Forget();
                     //currentDepth = Mathf.Abs(bottomPoint.position.y - hook.transform.position.y) / Mathf.Abs(topPoint.position.y - bottomPoint.transform.position.y) * maxDepth;
                 }
             }
@@ -222,8 +225,9 @@ public class FishingRodInputHandle : MonoBehaviour
         }
     }
 
-    private void HookScroll(float hookScroll) //鱼钩滚动
+    private async UniTaskVoid HookScroll(float hookScroll) //鱼钩滚动
     {
+        await UniTask.WaitForFixedUpdate();
         Rigidbody2D rb2d = hook.GetComponent<Rigidbody2D>();
         float currentVelocity = rb2d.velocity.normalized.y;
         if (currentVelocity * lastVelocity <= 0)
@@ -237,14 +241,15 @@ public class FishingRodInputHandle : MonoBehaviour
             {
                 variableScrollForce += scrollForceGrowingSpeedIntensity;
             }
-            if (!SoundManager.Instance.getHookState() && Mathf.Abs( rb2d.velocity.normalized.y) >= 0.2f)
+            if (!SoundManager.Instance.getHookState() && Mathf.Abs( rb2d.velocity.y) >= 1f)
             {
                 SoundManager.Instance.PlayHookSound();
             }
 
         }
-        else
+        if(Mathf.Abs(rb2d.velocity.y) < 1f)
         {
+            print(1);
             SoundManager.Instance.StopHookSound();
         }
 
@@ -254,8 +259,9 @@ public class FishingRodInputHandle : MonoBehaviour
         lastVelocity = currentVelocity;
     }
 
-    private void BackGroundScroll(float hookScroll) //背景滚动
+    private async UniTaskVoid BackGroundScroll(float hookScroll) //背景滚动
     {
+        await UniTask.WaitForFixedUpdate();
         Rigidbody2D rb2d = backGround.GetComponent<Rigidbody2D>();
         float currentVelocity = rb2d.velocity.normalized.y;
         if (currentVelocity != lastVelocity)
@@ -269,13 +275,14 @@ public class FishingRodInputHandle : MonoBehaviour
             {
                 variableScrollForce += scrollForceGrowingSpeedIntensity;
             }
-            if (!SoundManager.Instance.getHookState())
+            if (!SoundManager.Instance.getHookState() && Mathf.Abs(rb2d.velocity.y) >= 1f)
             {
                 SoundManager.Instance.PlayHookSound();
             }
         }
-        else
+        if (Mathf.Abs(rb2d.velocity.y) < 1f)
         {
+            print(2);
             SoundManager.Instance.StopHookSound();
         }
 
@@ -335,13 +342,31 @@ public class FishingRodInputHandle : MonoBehaviour
         collection.GetComponent<SpriteRenderer>().sprite = data.fishSprite;
         hookEnterWater = true;
     }
-    public void NoTimeToGetCollection()
+    public void move()
     {
         Invoke("delayMusic2", 0.5f);
         isFishing = false;
         transform.position = Vector2.MoveTowards(transform.position, exitWaterPosition.position, Time.deltaTime * 3f);
         hookExitWater = false;
         getCollection = false;
+    }
+    private async UniTaskVoid NoTimeToGetCollection(Vector2 position)
+    {
+        isFishing = false;
+        getCollection = false;
+        hookExitWater = false;
+        await UniTask.WaitForFixedUpdate();
+        await backGround.GetComponent<Rigidbody2D>().DOMove(bottomPoint, 2.5f);
+        gameObject.GetComponent<Rigidbody2D>().DOMove(position, 3f).SetEase(Ease.InOutCubic).onComplete = () =>
+        {
+            GetComponent<Collider2D>().enabled = true;
+            delayMusic2();
+        };
+    }
+    private void OnTimeExpire()
+    {
+        GetComponent<Collider2D>().enabled = false;
+        NoTimeToGetCollection(exitWaterPosition.position).Forget();
     }
     public void delayMusic1()
     {
