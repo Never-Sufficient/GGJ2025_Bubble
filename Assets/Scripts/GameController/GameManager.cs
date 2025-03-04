@@ -99,7 +99,6 @@ namespace GameController
             }
 
         }
-
         private void ChangeBackground()
         {
             srBackground.sprite = dayBackgrounds[dayCount - 1];
