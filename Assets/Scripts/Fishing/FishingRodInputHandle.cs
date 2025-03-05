@@ -10,6 +10,7 @@ using UnityEngine.InputSystem.LowLevel;
 
 public class FishingRodInputHandle : MonoBehaviour
 {
+    [SerializeField] private GameObject BubbleGeneratorPrefab;
     [SerializeField] private GameObject collectionPrefab;
     [SerializeField] private GameObject hook; //底部鱼钩
     [SerializeField] private GameObject backGround; //可移动背景
@@ -340,6 +341,9 @@ public class FishingRodInputHandle : MonoBehaviour
             new Vector3(backGround.transform.position.x, localCGMD.position.y, backGround.transform.position.z),
             Quaternion.identity, backGround.transform);
         collection.GetComponent<SpriteRenderer>().sprite = data.fishSprite;
+        Instantiate(BubbleGeneratorPrefab,
+            new Vector3(backGround.transform.position.x, localCGMD.position.y, backGround.transform.position.z),
+            Quaternion.Euler(new Vector3(-90f, 0f, 0f)), backGround.transform);
         hookEnterWater = true;
     }
     public void move()
