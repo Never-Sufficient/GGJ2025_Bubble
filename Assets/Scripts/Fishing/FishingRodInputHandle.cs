@@ -362,6 +362,8 @@ public class FishingRodInputHandle : MonoBehaviour
     private async UniTaskVoid NoTimeToGetCollection(Vector2 position)
     {
         isFishing = false;
+        hook.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+        backGround.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
         getCollection = false;
         hookExitWater = false;
         await UniTask.WaitForFixedUpdate();

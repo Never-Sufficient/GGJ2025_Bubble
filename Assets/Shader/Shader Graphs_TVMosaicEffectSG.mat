@@ -55,11 +55,18 @@ Material:
     - _Fullscreen_SrcAlphaBlend: 1
     - _Fullscreen_SrcColorBlend: 2
     - _HorizontalSpace: 0.592
+    - _NoiseAmount: 0.013
+    - _NoiseScale: 100
     - _QueueControl: 0
     - _QueueOffset: 0
     - _Resolution: 1024
+    - _ScaningLineSpeed: 1
+    - _ScanningLine: 30
+    - _ScanningLinesAmount: 0.048
     - _VerticalSpace: 0.5
-    m_Colors: []
+    m_Colors:
+    - _Color: {r: 2.670157, g: 2.670157, b: 2.670157, a: 0}
+    - _NoiseSpeed: {r: 0, g: 0.03, b: 0, a: 0}
   m_BuildTextureStacks: []
 --- !u!114 &5100352218372742785
 MonoBehaviour:
