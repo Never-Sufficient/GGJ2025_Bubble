@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "name": "Clam",
+    "desc": "",
+    "cost": 10,
+    "sprite_path": "Sprite-clam",
+    "name_sprite_path": "Sprite-names_13",
+    "cost_sprite_path": "Sprite-Valuetable_1"
+  },
+  {
+    "id": 2,
+    "name": "Crab",
+    "desc": "",
+    "cost": 15,
+    "sprite_path": "Sprite-crab",
+    "name_sprite_path": "Sprite-names_4",
+    "cost_sprite_path": "Sprite-Valuetable_3"
+  }
+]

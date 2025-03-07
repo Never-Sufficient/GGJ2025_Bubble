@@ -1,4 +1,5 @@
 using System;
+using cfg;
 using Data;
 using EventCenter;
 using UnityEngine;
@@ -8,14 +9,11 @@ namespace ShipScene
 {
     public class Bubble : MonoBehaviour
     {
-        [SerializeField] private float minScale, maxScale;
-        [SerializeField] private float expansionSpeed;
-
         private BubblePool bubblePool;
         private GameObject tip;
         private InputAction interactAction;
         private bool shipHere = false;
-        private FishingDataSo.BubbleAndFishData data;
+        private FishCfg data;
 
         private void Start()
         {
@@ -50,7 +48,7 @@ namespace ShipScene
                 return;
             if (tip.activeSelf)
                 return;
-            if(other.gameObject.GetComponent<ShipController>().IsFishing())
+            if (other.gameObject.GetComponent<ShipController>().IsFishing())
                 return;
             shipHere = true;
             tip.transform.position = transform.position;
@@ -65,20 +63,16 @@ namespace ShipScene
             tip?.SetActive(false);
         }
 
-        public void Init(GameObject tip, BubblePool bubblePool, Vector2 position, float minScale, float maxScale,
-            float expansionSpeed, FishingDataSo.BubbleAndFishData bubbleAndFishData)
+        public void Init(GameObject tip, BubblePool bubblePool, Vector2 position, string bubbleAnimationName,
+            FishCfg fishCfg)
         {
             this.tip = tip;
             this.bubblePool = bubblePool;
             transform.position = position;
-            this.minScale = minScale;
-            this.maxScale = maxScale;
-            this.expansionSpeed = expansionSpeed;
-            this.data = bubbleAndFishData;
-            transform.localScale = new Vector3(minScale, minScale, minScale);
+            this.data = fishCfg;
 
             gameObject.SetActive(true);
-            GetComponent<Animator>().Play(data.bubbleAnimationName);
+            GetComponent<Animator>().Play(bubbleAnimationName);
         }
     }
 }

@@ -1,0 +1,114 @@
+[
+  {
+    "id": 1,
+    "bubble_id": 1,
+    "reachable_depth": 1,
+    "probability": 0.6,
+    "fish_ids": [
+      1,
+      2
+    ]
+  },
+  {
+    "id": 2,
+    "bubble_id": 1,
+    "reachable_depth": 1,
+    "probability": 0.3,
+    "fish_ids": [
+      1
+    ]
+  },
+  {
+    "id": 3,
+    "bubble_id": 1,
+    "reachable_depth": 1,
+    "probability": 0.1,
+    "fish_ids": [
+      2
+    ]
+  },
+  {
+    "id": 4,
+    "bubble_id": 2,
+    "reachable_depth": 1,
+    "probability": 0.6,
+    "fish_ids": [
+      1,
+      2
+    ]
+  },
+  {
+    "id": 5,
+    "bubble_id": 2,
+    "reachable_depth": 1,
+    "probability": 0.3,
+    "fish_ids": [
+      1
+    ]
+  },
+  {
+    "id": 6,
+    "bubble_id": 2,
+    "reachable_depth": 1,
+    "probability": 0.1,
+    "fish_ids": [
+      2
+    ]
+  },
+  {
+    "id": 7,
+    "bubble_id": 3,
+    "reachable_depth": 1,
+    "probability": 0.6,
+    "fish_ids": [
+      1,
+      2
+    ]
+  },
+  {
+    "id": 8,
+    "bubble_id": 3,
+    "reachable_depth": 1,
+    "probability": 0.3,
+    "fish_ids": [
+      1
+    ]
+  },
+  {
+    "id": 9,
+    "bubble_id": 3,
+    "reachable_depth": 1,
+    "probability": 0.1,
+    "fish_ids": [
+      2
+    ]
+  },
+  {
+    "id": 10,
+    "bubble_id": 4,
+    "reachable_depth": 1,
+    "probability": 0.6,
+    "fish_ids": [
+      1,
+      2
+    ]
+  },
+  {
+    "id": 11,
+    "bubble_id": 4,
+    "reachable_depth": 1,
+    "probability": 0.3,
+    "fish_ids": [
+      1
+    ]
+  },
+  {
+    "id": 12,
+    "bubble_id": 4,
+    "reachable_depth": 1,
+    "probability": 0.1,
+    "fish_ids": [
+      2
+    ]
+  }
+]

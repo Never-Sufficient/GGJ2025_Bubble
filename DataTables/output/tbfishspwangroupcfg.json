@@ -1,0 +1,12 @@
+[
+  {
+    "id": 1,
+    "bubble_id": 1,
+    "reachable_depth": 1,
+    "probability": 0.6,
+    "fish_ids": [
+      1,
+      2
+    ]
+  }
+]

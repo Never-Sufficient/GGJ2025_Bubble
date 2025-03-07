@@ -1,4 +1,5 @@
 using System;
+using cfg;
 using Cysharp.Threading.Tasks;
 using Data;
 using DG.Tweening;
@@ -37,7 +38,7 @@ namespace ShipScene
         {
             EventManager.Instance.AddListener(EventName.StartOneDay, OnGameStart);
             EventManager.Instance.AddListener(EventName.TimerExpire, OnTimeExpire);
-            EventManager.Instance.AddListener<FishingDataSo.BubbleAndFishData>(EventName.StartFishing, OnStartFish);
+            EventManager.Instance.AddListener<FishCfg>(EventName.StartFishing, OnStartFish);
             EventManager.Instance.AddListener(EventName.CaughtFish, OnCaughtFish);
         }
 
@@ -45,7 +46,7 @@ namespace ShipScene
         {
             EventManager.Instance.RemoveListener(EventName.StartOneDay, OnGameStart);
             EventManager.Instance.RemoveListener(EventName.TimerExpire, OnTimeExpire);
-            EventManager.Instance.RemoveListener<FishingDataSo.BubbleAndFishData>(EventName.StartFishing, OnStartFish);
+            EventManager.Instance.RemoveListener<FishCfg>(EventName.StartFishing, OnStartFish);
             EventManager.Instance.RemoveListener(EventName.CaughtFish, OnCaughtFish);
         }
 
@@ -157,7 +158,7 @@ namespace ShipScene
             OnCaughtFish();
         }
 
-        private void OnStartFish(FishingDataSo.BubbleAndFishData data)
+        private void OnStartFish(FishCfg data)
         {
             fishing = true;
             rb2d.velocity *= 0.2f;

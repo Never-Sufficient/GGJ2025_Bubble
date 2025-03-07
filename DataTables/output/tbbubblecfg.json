@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "probability": 0.15,
+    "anim_name": "BubbleHugeAnim"
+  },
+  {
+    "id": 2,
+    "probability": 0.25,
+    "anim_name": "BubbleBigAnim"
+  },
+  {
+    "id": 3,
+    "probability": 0.3,
+    "anim_name": "BubbleMidAnim"
+  },
+  {
+    "id": 4,
+    "probability": 0.3,
+    "anim_name": "BubbleSamllAnim"
+  }
+]

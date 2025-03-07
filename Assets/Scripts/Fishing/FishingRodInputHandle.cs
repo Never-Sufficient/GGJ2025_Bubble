@@ -4,9 +4,13 @@ using DG.Tweening;
 using EventCenter;
 using System.Collections;
 using System.Collections.Generic;
+using cfg;
+using GameController;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.LowLevel;
+using YooAsset;
 
 public class FishingRodInputHandle : MonoBehaviour
 {
@@ -49,14 +53,13 @@ public class FishingRodInputHandle : MonoBehaviour
 
     private void Awake()
     {
-        EventManager.Instance.AddListener<FishingDataSo.BubbleAndFishData>(EventName.StartFishing, setHookEnterWater);
+        EventManager.Instance.AddListener<FishCfg>(EventName.StartFishing, setHookEnterWater);
         EventManager.Instance.AddListener(EventName.TimerExpire, OnTimeExpire);
     }
 
     private void OnDestroy()
     {
-        EventManager.Instance.RemoveListener<FishingDataSo.BubbleAndFishData>(EventName.StartFishing,
-            setHookEnterWater);
+        EventManager.Instance.RemoveListener<FishCfg>(EventName.StartFishing, setHookEnterWater);
         EventManager.Instance.RemoveListener(EventName.TimerExpire, OnTimeExpire);
     }
 
@@ -250,7 +253,7 @@ public class FishingRodInputHandle : MonoBehaviour
         }
         if(Mathf.Abs(rb2d.velocity.y) < 1f)
         {
-            print(1);
+            //print(1);
             SoundManager.Instance.StopHookSound();
         }
 
@@ -283,7 +286,7 @@ public class FishingRodInputHandle : MonoBehaviour
         }
         if (Mathf.Abs(rb2d.velocity.y) < 1f)
         {
-            print(2);
+           // print(2);
             SoundManager.Instance.StopHookSound();
         }
 
@@ -305,12 +308,12 @@ public class FishingRodInputHandle : MonoBehaviour
         this.getCollection = getCollection;
     }
 
-    public void setHookEnterWater(FishingDataSo.BubbleAndFishData data)
+    public void setHookEnterWater(FishCfg data)
     {
         Cursor.visible = false;
         lastCursorPosition = Input.mousePosition;
         Transform localCGMD = null;
-        switch (data.minDepth)
+        switch (GameData.Instance.DepthCanReach)
         {
             case 1:
                 localCGMD = collectionGenerateMinDepthArray[0];
@@ -340,7 +343,9 @@ public class FishingRodInputHandle : MonoBehaviour
         GameObject collection = Instantiate(collectionPrefab,
             new Vector3(backGround.transform.position.x, localCGMD.position.y, backGround.transform.position.z),
             Quaternion.identity, backGround.transform);
-        collection.GetComponent<SpriteRenderer>().sprite = data.fishSprite;
+        var pathPrefix = "Assets/Arts/Sprites/Fish/";
+        var package=YooAssets.GetPackage("DefaultPackage");
+        collection.GetComponent<SpriteRenderer>().sprite = package.LoadSubAssetsSync(pathPrefix + data.SpritePath).GetSubAssetObject<Sprite>(data.SpritePath);
         Instantiate(BubbleGeneratorPrefab,
             new Vector3(backGround.transform.position.x, localCGMD.position.y, backGround.transform.position.z),
             Quaternion.Euler(new Vector3(-90f, 0f, 0f)), backGround.transform);

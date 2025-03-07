@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "name": "Clam",
+    "desc": "",
+    "cost": 10,
+    "sprite_path": "test",
+    "name_sprite_path": "test",
+    "cost_sprite_path": "test"
+  },
+  {
+    "id": 2,
+    "name": "Crab",
+    "desc": "",
+    "cost": 15,
+    "sprite_path": "test2",
+    "name_sprite_path": "test3",
+    "cost_sprite_path": "test4"
+  }
+]

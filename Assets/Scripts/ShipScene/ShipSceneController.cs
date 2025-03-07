@@ -1,8 +1,13 @@
 using System;
+using System.Collections.Generic;
+using System.Linq;
+using cfg;
+using Config;
 using Data;
 using EventCenter;
 using GameController;
 using UnityEngine;
+using Utils;
 using Random = UnityEngine.Random;
 
 namespace ShipScene
@@ -14,7 +19,6 @@ namespace ShipScene
         [SerializeField] private BubblePool bubblePool;
         [SerializeField] private GameObject tip;
         [SerializeField] private float bubbleSpawnDelay;
-        [SerializeField] private FishingDataSo fishingDataSo;
 
         private float spawnTimer = 0;
         private float spawnMinX, spawnMaxX, spawnMinY, spawnMaxY;
@@ -48,7 +52,7 @@ namespace ShipScene
 
         private void Update()
         {
-            if(activing)
+            if (activing)
                 BubbleSpawnCheck();
         }
 
@@ -60,42 +64,30 @@ namespace ShipScene
                 spawnTimer -= bubbleSpawnDelay;
                 var spawnPosition = new Vector2(Random.Range(spawnMinX, spawnMaxX), Random.Range(spawnMinY, spawnMaxY));
                 var bubble = bubblePool.Instance.Get();
-                bubble.GetComponent<Bubble>()
-                    .Init(tip, bubblePool, spawnPosition, 1, 2, 0.3f, RandomChooseBubbleAndFish());
+                var (bubbleAnimName, fishCfg) = RandomChooseBubbleAndFish();
+                bubble.GetComponent<Bubble>().Init(tip, bubblePool, spawnPosition, bubbleAnimName, fishCfg);
             }
         }
 
-        private FishingDataSo.BubbleAndFishData RandomChooseBubbleAndFish()
+        private (string bubbleAnimName, FishCfg fishCfg) RandomChooseBubbleAndFish()
         {
-            var randomValue = Random.Range(0f, 1f);
-            FishingDataSo.BubbleAndFishData bubbleAndFishData = new();
-            foreach (var bubbleData in fishingDataSo.bubbleDataList)
-            {
-                randomValue -= bubbleData.chance;
-                if (randomValue <= 0)
-                {
-                    bubbleAndFishData.bubbleAnimationName = bubbleData.bubbleAnimationName;
-                    if (bubbleData.fishDataList.Count > 0)
-                    {
-                        FishingDataSo.FishData fishData;
-                        do
-                        {
-                            var randomValue2 = Random.Range(0, bubbleData.fishDataList.Count - 1);
-                            fishData = bubbleData.fishDataList[randomValue2];
-                        } while (GameData.Instance.DepthCanReach < fishData.minDepth);
-
-                        bubbleAndFishData.minDepth = fishData.minDepth;
-                        bubbleAndFishData.fishSprite = fishData.fishSprite;
-                        bubbleAndFishData.fishNameSprite = fishData.fishNameSprite;
-                        bubbleAndFishData.fishCost = fishData.fishCost;
-                        bubbleAndFishData.fishCostSprite = fishData.fishCostSprite;
-                    }
-
-                    break;
-                }
-            }
-
-            return bubbleAndFishData;
+            string bubbleAnimName = "";
+            FishCfg fishCfg = null;
+            //读配置表 选择Bubble类型 记录bubbleAnimName
+            var randomValue = Random.Range(0, ConfigManager.Instance.Tables.TbBubbleCfg.DataList.Count);
+            var bubbleCfg = ConfigManager.Instance.Tables.TbBubbleCfg.DataList[randomValue];
+            bubbleAnimName = bubbleCfg.AnimName;
+            //读当前数据 选择深度
+            var curDepthCanReach = GameData.Instance.DepthCanReach;
+            //读配置表 利用BubbleId和深度选择鱼 记录fishCfg
+            var fishCfgs = (from cfg in ConfigManager.Instance.Tables.TbFishSpwanGroup.DataList
+                where cfg.BubbleId == bubbleCfg.Id && cfg.ReachableDepth == curDepthCanReach
+                select cfg).ToList();
+            var probability = fishCfgs.Select(cfg => cfg.Probability).ToList();
+            var fishIds= fishCfgs[RandomUtils.RandomSelect(probability)].FishIds;
+            randomValue = Random.Range(0, fishIds.Length);
+            fishCfg = ConfigManager.Instance.Tables.TbFishCfg.Get(fishIds[randomValue]);
+            return (bubbleAnimName, fishCfg);
         }
 
         private void OnOneDayStart()
