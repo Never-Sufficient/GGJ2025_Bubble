@@ -16,5 +16,158 @@
     "sprite_path": "Sprite-crab",
     "name_sprite_path": "Sprite-names_4",
     "cost_sprite_path": "Sprite-Valuetable_3"
+  },
+  {
+    "id": 3,
+    "name": "PinkBass",
+    "desc": "",
+    "cost": 20,
+    "sprite_path": "Sprite-Pink Bass",
+    "name_sprite_path": "Sprite-names_0",
+    "cost_sprite_path": "Sprite-Valuetable_9"
+  },
+  {
+    "id": 4,
+    "name": "BlackCarp",
+    "desc": "",
+    "cost": 25,
+    "sprite_path": "Sprite-Blackcarp",
+    "name_sprite_path": "Sprite-names_2",
+    "cost_sprite_path": "Sprite-Valuetable_17"
+  },
+  {
+    "id": 5,
+    "name": "Catfish",
+    "desc": "",
+    "cost": 100,
+    "sprite_path": "Sprite-catfish",
+    "name_sprite_path": "Sprite-names_3",
+    "cost_sprite_path": "Sprite-Valuetable_15"
+  },
+  {
+    "id": 6,
+    "name": "ChubbyChub",
+    "desc": "",
+    "cost": 35,
+    "sprite_path": "Sprite-chubby chub",
+    "name_sprite_path": "Sprite-names_8",
+    "cost_sprite_path": "Sprite-Valuetable_18"
+  },
+  {
+    "id": 7,
+    "name": "ClassicBass",
+    "desc": "",
+    "cost": 20,
+    "sprite_path": "Sprite-Classic Bass",
+    "name_sprite_path": "Sprite-names_1",
+    "cost_sprite_path": "Sprite-Valuetable_7"
+  },
+  {
+    "id": 8,
+    "name": "ColorfulCarp",
+    "desc": "",
+    "cost": 30,
+    "sprite_path": "Sprite-Colorfullookingcarp",
+    "name_sprite_path": "Sprite-names_17",
+    "cost_sprite_path": "Sprite-Valuetable_2"
+  },
+  {
+    "id": 9,
+    "name": "DinosaurFish",
+    "desc": "",
+    "cost": 60,
+    "sprite_path": "Sprite-dinosaurfish",
+    "name_sprite_path": "Sprite-names_19",
+    "cost_sprite_path": "Sprite-Valuetable_5"
+  },
+  {
+    "id": 10,
+    "name": "FishFoam",
+    "desc": "",
+    "cost": 5,
+    "sprite_path": "Sprite-fishshapedfoam",
+    "name_sprite_path": "Sprite-names_10",
+    "cost_sprite_path": "Sprite-Valuetable_6"
+  },
+  {
+    "id": 11,
+    "name": "GrassCarp",
+    "desc": "",
+    "cost": 15,
+    "sprite_path": "Sprite-grasscarp",
+    "name_sprite_path": "Sprite-names_5",
+    "cost_sprite_path": "Sprite-Valuetable_4"
+  },
+  {
+    "id": 12,
+    "name": "MudFish",
+    "desc": "",
+    "cost": 20,
+    "sprite_path": "Sprite-mudfish",
+    "name_sprite_path": "Sprite-names_7",
+    "cost_sprite_path": "Sprite-Valuetable_9"
+  },
+  {
+    "id": 13,
+    "name": "NeverSeenBefore",
+    "desc": "",
+    "cost": 80,
+    "sprite_path": "Sprite-Neverseenthisbefore",
+    "name_sprite_path": "Sprite-names_14",
+    "cost_sprite_path": "Sprite-Valuetable_12"
+  },
+  {
+    "id": 14,
+    "name": "RainbowTrout",
+    "desc": "",
+    "cost": 60,
+    "sprite_path": "Sprite-rainbowtrout",
+    "name_sprite_path": "Sprite-names_6",
+    "cost_sprite_path": "Sprite-Valuetable_10"
+  },
+  {
+    "id": 15,
+    "name": "Snail",
+    "desc": "",
+    "cost": 10,
+    "sprite_path": "Sprite-snail",
+    "name_sprite_path": "Sprite-names_11",
+    "cost_sprite_path": "Sprite-Valuetable_11"
+  },
+  {
+    "id": 16,
+    "name": "SoftShellTurtle",
+    "desc": "",
+    "cost": 70,
+    "sprite_path": "Sprite-softshellturtle",
+    "name_sprite_path": "Sprite-names_12",
+    "cost_sprite_path": "Sprite-Valuetable_13"
+  },
+  {
+    "id": 17,
+    "name": "ThisNotEdible",
+    "desc": "",
+    "cost": 80,
+    "sprite_path": "Sprite-thisnotedible",
+    "name_sprite_path": "Sprite-names_16",
+    "cost_sprite_path": "Sprite-Valuetable_8"
+  },
+  {
+    "id": 18,
+    "name": "ToyFish",
+    "desc": "",
+    "cost": 5,
+    "sprite_path": "Sprite-toyfishbone",
+    "name_sprite_path": "Sprite-names_18",
+    "cost_sprite_path": "Sprite-Valuetable_14"
+  },
+  {
+    "id": 19,
+    "name": "OldWatch",
+    "desc": "",
+    "cost": 60,
+    "sprite_path": "watch",
+    "name_sprite_path": "Sprite-names_9",
+    "cost_sprite_path": "Sprite-Valuetable_20"
   }
 ]
