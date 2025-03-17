@@ -22,7 +22,7 @@
     "name": "PinkBass",
     "desc": "",
     "cost": 20,
-    "sprite_path": "Sprite-Pink Bass",
+    "sprite_path": "Sprite-PinkBass",
     "name_sprite_path": "Sprite-names_0",
     "cost_sprite_path": "Sprite-Valuetable_9"
   },
@@ -58,7 +58,7 @@
     "name": "ClassicBass",
     "desc": "",
     "cost": 20,
-    "sprite_path": "Sprite-Classic Bass",
+    "sprite_path": "Sprite-ClassicBass",
     "name_sprite_path": "Sprite-names_1",
     "cost_sprite_path": "Sprite-Valuetable_7"
   },
