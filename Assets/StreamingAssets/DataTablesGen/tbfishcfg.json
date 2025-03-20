@@ -6,7 +6,7 @@
     "cost": 10,
     "sprite_path": "Sprite-clam",
     "name_sprite_path": "Sprite-names_13",
-    "cost_sprite_path": "Sprite-Valuetable_1"
+    "cost_sprite_path": "Sprite-blackcarp-value"
   },
   {
     "id": 2,
@@ -15,7 +15,7 @@
     "cost": 15,
     "sprite_path": "Sprite-crab",
     "name_sprite_path": "Sprite-names_4",
-    "cost_sprite_path": "Sprite-Valuetable_3"
+    "cost_sprite_path": "Sprite-blackcarp-value"
   },
   {
     "id": 3,
@@ -24,7 +24,7 @@
     "cost": 20,
     "sprite_path": "Sprite-PinkBass",
     "name_sprite_path": "Sprite-names_0",
-    "cost_sprite_path": "Sprite-Valuetable_9"
+    "cost_sprite_path": "Sprite-blackcarp-value"
   },
   {
     "id": 4,
@@ -33,7 +33,7 @@
     "cost": 25,
     "sprite_path": "Sprite-Blackcarp",
     "name_sprite_path": "Sprite-names_2",
-    "cost_sprite_path": "Sprite-Valuetable_17"
+    "cost_sprite_path": "Sprite-blackcarp-value"
   },
   {
     "id": 5,
@@ -42,7 +42,7 @@
     "cost": 100,
     "sprite_path": "Sprite-catfish",
     "name_sprite_path": "Sprite-names_3",
-    "cost_sprite_path": "Sprite-Valuetable_15"
+    "cost_sprite_path": "Sprite-blackcarp-value"
   },
   {
     "id": 6,
@@ -51,7 +51,7 @@
     "cost": 35,
     "sprite_path": "Sprite-chubby chub",
     "name_sprite_path": "Sprite-names_8",
-    "cost_sprite_path": "Sprite-Valuetable_18"
+    "cost_sprite_path": "Sprite-blackcarp-value"
   },
   {
     "id": 7,
@@ -60,7 +60,7 @@
     "cost": 20,
     "sprite_path": "Sprite-ClassicBass",
     "name_sprite_path": "Sprite-names_1",
-    "cost_sprite_path": "Sprite-Valuetable_7"
+    "cost_sprite_path": "Sprite-blackcarp-value"
   },
   {
     "id": 8,
@@ -69,7 +69,7 @@
     "cost": 30,
     "sprite_path": "Sprite-Colorfullookingcarp",
     "name_sprite_path": "Sprite-names_17",
-    "cost_sprite_path": "Sprite-Valuetable_2"
+    "cost_sprite_path": "Sprite-blackcarp-value"
   },
   {
     "id": 9,
@@ -78,7 +78,7 @@
     "cost": 60,
     "sprite_path": "Sprite-dinosaurfish",
     "name_sprite_path": "Sprite-names_19",
-    "cost_sprite_path": "Sprite-Valuetable_5"
+    "cost_sprite_path": "Sprite-blackcarp-value"
   },
   {
     "id": 10,
@@ -87,7 +87,7 @@
     "cost": 5,
     "sprite_path": "Sprite-fishshapedfoam",
     "name_sprite_path": "Sprite-names_10",
-    "cost_sprite_path": "Sprite-Valuetable_6"
+    "cost_sprite_path": "Sprite-blackcarp-value"
   },
   {
     "id": 11,
@@ -96,7 +96,7 @@
     "cost": 15,
     "sprite_path": "Sprite-grasscarp",
     "name_sprite_path": "Sprite-names_5",
-    "cost_sprite_path": "Sprite-Valuetable_4"
+    "cost_sprite_path": "Sprite-blackcarp-value"
   },
   {
     "id": 12,
@@ -105,7 +105,7 @@
     "cost": 20,
     "sprite_path": "Sprite-mudfish",
     "name_sprite_path": "Sprite-names_7",
-    "cost_sprite_path": "Sprite-Valuetable_9"
+    "cost_sprite_path": "Sprite-blackcarp-value"
   },
   {
     "id": 13,
@@ -114,7 +114,7 @@
     "cost": 80,
     "sprite_path": "Sprite-Neverseenthisbefore",
     "name_sprite_path": "Sprite-names_14",
-    "cost_sprite_path": "Sprite-Valuetable_12"
+    "cost_sprite_path": "Sprite-blackcarp-value"
   },
   {
     "id": 14,
@@ -123,7 +123,7 @@
     "cost": 60,
     "sprite_path": "Sprite-rainbowtrout",
     "name_sprite_path": "Sprite-names_6",
-    "cost_sprite_path": "Sprite-Valuetable_10"
+    "cost_sprite_path": "Sprite-blackcarp-value"
   },
   {
     "id": 15,
@@ -132,7 +132,7 @@
     "cost": 10,
     "sprite_path": "Sprite-snail",
     "name_sprite_path": "Sprite-names_11",
-    "cost_sprite_path": "Sprite-Valuetable_11"
+    "cost_sprite_path": "Sprite-blackcarp-value"
   },
   {
     "id": 16,
@@ -141,7 +141,7 @@
     "cost": 70,
     "sprite_path": "Sprite-softshellturtle",
     "name_sprite_path": "Sprite-names_12",
-    "cost_sprite_path": "Sprite-Valuetable_13"
+    "cost_sprite_path": "Sprite-blackcarp-value"
   },
   {
     "id": 17,
@@ -150,7 +150,7 @@
     "cost": 80,
     "sprite_path": "Sprite-thisnotedible",
     "name_sprite_path": "Sprite-names_16",
-    "cost_sprite_path": "Sprite-Valuetable_8"
+    "cost_sprite_path": "Sprite-blackcarp-value"
   },
   {
     "id": 18,
@@ -159,7 +159,7 @@
     "cost": 5,
     "sprite_path": "Sprite-toyfishbone",
     "name_sprite_path": "Sprite-names_18",
-    "cost_sprite_path": "Sprite-Valuetable_14"
+    "cost_sprite_path": "Sprite-blackcarp-value"
   },
   {
     "id": 19,
@@ -168,6 +168,6 @@
     "cost": 60,
     "sprite_path": "watch",
     "name_sprite_path": "Sprite-names_9",
-    "cost_sprite_path": "Sprite-Valuetable_20"
+    "cost_sprite_path": "Sprite-blackcarp-value"
   }
 ]
