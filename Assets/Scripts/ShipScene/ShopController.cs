@@ -41,6 +41,7 @@ namespace ShipScene
         {
             if (GameData.Instance.Money >= 100 && GameData.Instance.ShipLevel == level - 1)
             {
+                SoundManager.Instance.EffectPlayStr("2");
                 GameData.Instance.Money -= 100;
                 caller.GetComponent<Image>().color = Color.white;
                 GameData.Instance.ShipLevel++;
@@ -51,6 +52,7 @@ namespace ShipScene
         {
             if (GameData.Instance.Money >= 100 && GameData.Instance.DepthCanReach == level - 1)
             {
+                SoundManager.Instance.EffectPlayStr("2");
                 GameData.Instance.Money -= 100;
                 caller.GetComponent<Image>().color = Color.white;
                 GameData.Instance.DepthCanReach++;
@@ -61,6 +63,7 @@ namespace ShipScene
         {
             if (GameData.Instance.Money >= 100 && GameData.Instance.RodLevel == level - 1)
             {
+                SoundManager.Instance.EffectPlayStr("2");
                 GameData.Instance.Money -= 100;
                 caller.GetComponent<Image>().color = Color.white;
                 GameData.Instance.RodLevel++;

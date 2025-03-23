@@ -31,7 +31,7 @@ public class FishingRodInputHandle : MonoBehaviour
     [SerializeField] private Transform[] topPointArray;
     [SerializeField] private Transform[] bottomPointArray;
     [SerializeField] private float[] maxDepthArray;
-    [SerializeField] private GameObject[] rocks;
+    [SerializeField] private Transform[] rocksGenerateTransforms;
     private InputAction hookScrollAction, hookHorizontalMoveAction;
     private float lastVelocity = 0;
     private bool hookAtTop = false; //鱼钩顶部区域检测
@@ -313,25 +313,24 @@ public class FishingRodInputHandle : MonoBehaviour
         Cursor.visible = false;
         lastCursorPosition = Input.mousePosition;
         Transform localCGMD = null;
+        maxDepth = maxDepthArray[GameData.Instance.DepthCanReach - 1];
         switch (GameData.Instance.DepthCanReach)
         {
             case 1:
                 localCGMD = collectionGenerateMinDepthArray[0];
                 topPoint = topPointArray[0].position;
                 bottomPoint = bottomPointArray[0].position;
-                maxDepth = maxDepthArray[0];
+
                 break;
             case 2:
                 localCGMD = collectionGenerateMinDepthArray[1];
                 topPoint = topPointArray[1].position;
                 bottomPoint = bottomPointArray[1].position;
-                maxDepth = maxDepthArray[1];
                 break;
             case 3:
                 localCGMD = collectionGenerateMinDepthArray[2];
                 topPoint = topPointArray[2].position;
                 bottomPoint = bottomPointArray[2].position;
-                maxDepth = maxDepthArray[2];
                 break;
             default:
                 break;
@@ -340,6 +339,14 @@ public class FishingRodInputHandle : MonoBehaviour
             Quaternion.identity, backGround.transform);
         Instantiate(trapPrefab, new Vector3(backGround.transform.position.x + (Random.value > 0.5f ? 2.8f : -2.8f), collectionGenerateMinDepthArray[1].position.y + (Random.Range(3.75f, 6.25f) * (Random.value > 0.5f ? 1 : -1)), backGround.transform.position.z - 1),
             Quaternion.identity, backGround.transform);
+        for(int i = 0;i< rocksGenerateTransforms.Length; i++)
+        {
+            if(Random.value > 0.333f)
+            {
+                Instantiate(trapPrefab, new Vector3(backGround.transform.position.x + (Random.value > 0.5f ? 2.8f : -2.8f), rocksGenerateTransforms[i].position.y + (Random.Range(0f, 2f) * (Random.value > 0.5f ? 1 : -1)), backGround.transform.position.z - 1),
+            Quaternion.identity, backGround.transform);
+            }
+        }
         GameObject collection = Instantiate(collectionPrefab,
             new Vector3(backGround.transform.position.x, localCGMD.position.y, backGround.transform.position.z),
             Quaternion.identity, backGround.transform);
