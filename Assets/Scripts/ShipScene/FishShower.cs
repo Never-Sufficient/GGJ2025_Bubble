@@ -41,7 +41,8 @@ namespace ShipScene
             SoundManager.Instance.EffectPlayStr("14");
             var pathPrefix = "Assets/Arts/Sprites/Fish/";
             var package = YooAssets.GetPackage("DefaultPackage");
-            fishName.sprite = package.LoadSubAssetsSync(pathPrefix + "Sprite-names (2)").GetSubAssetObject<Sprite>(fishNameSprite);
+            fishName.sprite ??= package.LoadSubAssetsSync(pathPrefix + "Sprite-names").GetSubAssetObject<Sprite>(fishNameSprite);
+            fishName.sprite ??= package.LoadSubAssetsSync(pathPrefix + "Sprite-names (2)").GetSubAssetObject<Sprite>(fishNameSprite);
             fish.sprite = package.LoadSubAssetsSync(pathPrefix + fishSprite).GetSubAssetObject<Sprite>(fishSprite);
             fishCost.sprite = package.LoadSubAssetsSync(pathPrefix + "FishValues/" + fishCostSprite).GetSubAssetObject<Sprite>(fishCostSprite);
             await transform.DOScale(1, 0.5f).SetEase(Ease.OutBounce);

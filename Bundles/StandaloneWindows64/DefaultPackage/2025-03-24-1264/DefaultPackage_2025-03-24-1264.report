@@ -2,14 +2,14 @@
     "Summary": {
         "YooVersion": "2.2.12",
         "UnityVersion": "2022.3.52f1c1",
-        "BuildDate": "2025/3/7 20:26:50",
-        "BuildSeconds": 19,
+        "BuildDate": "2025/3/24 21:04:49",
+        "BuildSeconds": 24,
         "BuildTarget": 19,
         "BuildPipeline": "ScriptableBuildPipeline",
         "BuildBundleType": 2,
         "BuildPackageName": "DefaultPackage",
-        "BuildPackageVersion": "2025-03-07-1225",
-        "BuildPackageNote": "2025/3/7 20:26:30",
+        "BuildPackageVersion": "2025-03-24-1264",
+        "BuildPackageNote": "2025/3/24 21:04:24",
         "UniqueBundleName": false,
         "EnableAddressable": false,
         "LocationToLower": false,
@@ -24,10 +24,10 @@
         "CompressOption": 2,
         "DisableWriteTypeTree": false,
         "IgnoreTypeTreeChanges": true,
-        "AssetFileTotalCount": 169,
-        "MainAssetTotalCount": 169,
-        "AllBundleTotalCount": 13,
-        "AllBundleTotalSize": 19881605,
+        "AssetFileTotalCount": 192,
+        "MainAssetTotalCount": 192,
+        "AllBundleTotalCount": 14,
+        "AllBundleTotalSize": 19924155,
         "EncryptedBundleTotalCount": 0,
         "EncryptedBundleTotalSize": 0
     },
@@ -446,11 +446,200 @@
         },
         {
             "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Fish/FishValues/Sprite-blackcarp-value.png",
+            "AssetGUID": "513fcf0a775b5034e9393e7cc671ee0f",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites_fish_fishvalues.bundle",
+            "MainBundleSize": 9179,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Fish/FishValues/Sprite-brokenwatch-value.png",
+            "AssetGUID": "2330119c1fa49df42a707ad2a76e24cf",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites_fish_fishvalues.bundle",
+            "MainBundleSize": 9179,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Fish/FishValues/Sprite-catfish-value.png",
+            "AssetGUID": "ffc331b45b4afde4589560dfbaef1f97",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites_fish_fishvalues.bundle",
+            "MainBundleSize": 9179,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Fish/FishValues/Sprite-chubbychub-value.png",
+            "AssetGUID": "e853e9998f0c5ef45875ad6f6c7ce010",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites_fish_fishvalues.bundle",
+            "MainBundleSize": 9179,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Fish/FishValues/Sprite-clam-value.png",
+            "AssetGUID": "89f060673c328bc4a9a6c63df477413d",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites_fish_fishvalues.bundle",
+            "MainBundleSize": 9179,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Fish/FishValues/Sprite-classicbass-value.png",
+            "AssetGUID": "46e05aa5aeac8c44286789243b3658e6",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites_fish_fishvalues.bundle",
+            "MainBundleSize": 9179,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Fish/FishValues/Sprite-colorfullookingcarp-value.png",
+            "AssetGUID": "ee2f64e91bc08bc449722f2a389b6bc3",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites_fish_fishvalues.bundle",
+            "MainBundleSize": 9179,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Fish/FishValues/Sprite-crab-value.png",
+            "AssetGUID": "cd3d98102133efc45b1abf90eb691084",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites_fish_fishvalues.bundle",
+            "MainBundleSize": 9179,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Fish/FishValues/Sprite-dinosaurfish-value.png",
+            "AssetGUID": "8015d523e5d11774b8387d8145a0a5c6",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites_fish_fishvalues.bundle",
+            "MainBundleSize": 9179,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Fish/FishValues/Sprite-fishshapedfoam-value.png",
+            "AssetGUID": "90802e4e7cadeef4f9380cc9da3bd436",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites_fish_fishvalues.bundle",
+            "MainBundleSize": 9179,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Fish/FishValues/Sprite-grasscarp-value.png",
+            "AssetGUID": "2e33dacd1afba3a4a9f71e516be4982a",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites_fish_fishvalues.bundle",
+            "MainBundleSize": 9179,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Fish/FishValues/Sprite-mudfish-value.png",
+            "AssetGUID": "f03ff840f424fe748be4c3331dac0c9c",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites_fish_fishvalues.bundle",
+            "MainBundleSize": 9179,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Fish/FishValues/Sprite-neverseenthisbefore-value.png",
+            "AssetGUID": "874f9505e2b1e5944b054cd693d4b5a2",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites_fish_fishvalues.bundle",
+            "MainBundleSize": 9179,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Fish/FishValues/Sprite-pinkbass-value.png",
+            "AssetGUID": "8f85924d5b4f6204fa2ce0fd9c2194f7",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites_fish_fishvalues.bundle",
+            "MainBundleSize": 9179,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Fish/FishValues/Sprite-rainbowtrout-value.png",
+            "AssetGUID": "ae13cff99fb2c4148ba0a006421c7dd6",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites_fish_fishvalues.bundle",
+            "MainBundleSize": 9179,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Fish/FishValues/Sprite-snail-value.png",
+            "AssetGUID": "e4bd150c89945164fa4ad79bd76554af",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites_fish_fishvalues.bundle",
+            "MainBundleSize": 9179,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Fish/FishValues/Sprite-softshellturtle-value.png",
+            "AssetGUID": "9dc82bc1d304ba340900b3fcd031fa02",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites_fish_fishvalues.bundle",
+            "MainBundleSize": 9179,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Fish/FishValues/Sprite-thisnotedible-value.png",
+            "AssetGUID": "5471654a41117aa4b8a9202cc92b9b92",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites_fish_fishvalues.bundle",
+            "MainBundleSize": 9179,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Fish/FishValues/Sprite-toyfishbone-value.png",
+            "AssetGUID": "1e2127a79658bbe44b6241b41b4eeec3",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites_fish_fishvalues.bundle",
+            "MainBundleSize": 9179,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Fish/FishValues/Sprite-trout-value.png",
+            "AssetGUID": "cb30909742569574aa042178797a2031",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites_fish_fishvalues.bundle",
+            "MainBundleSize": 9179,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Fish/FishValues/Sprite-wallet-value.png",
+            "AssetGUID": "249f55297f37da54ab7c0c511538bc9b",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites_fish_fishvalues.bundle",
+            "MainBundleSize": 9179,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
             "AssetPath": "Assets/Arts/Sprites/Fish/Sprite-Blackcarp.png",
             "AssetGUID": "e2c2ce6bf4e5a3047979c9b11cae4d5a",
             "AssetTags": [],
             "MainBundleName": "assets_arts_sprites_fish.bundle",
-            "MainBundleSize": 141985,
+            "MainBundleSize": 169110,
             "DependAssets": []
         },
         {
@@ -459,7 +648,7 @@
             "AssetGUID": "34d39bb2dda19ff4793f55f284002b0a",
             "AssetTags": [],
             "MainBundleName": "assets_arts_sprites_fish.bundle",
-            "MainBundleSize": 141985,
+            "MainBundleSize": 169110,
             "DependAssets": []
         },
         {
@@ -468,7 +657,7 @@
             "AssetGUID": "61bbfb4cfe3938a46baf1df8f7f3ce4a",
             "AssetTags": [],
             "MainBundleName": "assets_arts_sprites_fish.bundle",
-            "MainBundleSize": 141985,
+            "MainBundleSize": 169110,
             "DependAssets": []
         },
         {
@@ -477,7 +666,7 @@
             "AssetGUID": "7e7ee9c454b4e3848b078e0b02bb19d8",
             "AssetTags": [],
             "MainBundleName": "assets_arts_sprites_fish.bundle",
-            "MainBundleSize": 141985,
+            "MainBundleSize": 169110,
             "DependAssets": []
         },
         {
@@ -486,7 +675,7 @@
             "AssetGUID": "4d3927b1ccf02d145a0ed0d2fdd8404a",
             "AssetTags": [],
             "MainBundleName": "assets_arts_sprites_fish.bundle",
-            "MainBundleSize": 141985,
+            "MainBundleSize": 169110,
             "DependAssets": []
         },
         {
@@ -495,7 +684,7 @@
             "AssetGUID": "9258e34acb56900499911cdfea9e9bf9",
             "AssetTags": [],
             "MainBundleName": "assets_arts_sprites_fish.bundle",
-            "MainBundleSize": 141985,
+            "MainBundleSize": 169110,
             "DependAssets": []
         },
         {
@@ -504,7 +693,7 @@
             "AssetGUID": "090f4c2ba5d38a24b83692a60bc39016",
             "AssetTags": [],
             "MainBundleName": "assets_arts_sprites_fish.bundle",
-            "MainBundleSize": 141985,
+            "MainBundleSize": 169110,
             "DependAssets": []
         },
         {
@@ -513,7 +702,7 @@
             "AssetGUID": "ee79c13c66fc6594393ccc76372914f7",
             "AssetTags": [],
             "MainBundleName": "assets_arts_sprites_fish.bundle",
-            "MainBundleSize": 141985,
+            "MainBundleSize": 169110,
             "DependAssets": []
         },
         {
@@ -522,7 +711,7 @@
             "AssetGUID": "be65b616c5d862d45906fa86429edc8c",
             "AssetTags": [],
             "MainBundleName": "assets_arts_sprites_fish.bundle",
-            "MainBundleSize": 141985,
+            "MainBundleSize": 169110,
             "DependAssets": []
         },
         {
@@ -531,7 +720,7 @@
             "AssetGUID": "cc826caf09967264bab1f5de4e677766",
             "AssetTags": [],
             "MainBundleName": "assets_arts_sprites_fish.bundle",
-            "MainBundleSize": 141985,
+            "MainBundleSize": 169110,
             "DependAssets": []
         },
         {
@@ -540,7 +729,7 @@
             "AssetGUID": "8fd6fc4361fadfe4395dfe0ad14b427c",
             "AssetTags": [],
             "MainBundleName": "assets_arts_sprites_fish.bundle",
-            "MainBundleSize": 141985,
+            "MainBundleSize": 169110,
             "DependAssets": []
         },
         {
@@ -549,7 +738,16 @@
             "AssetGUID": "9773d4ba6ba22a04489efac5ea96b3ab",
             "AssetTags": [],
             "MainBundleName": "assets_arts_sprites_fish.bundle",
-            "MainBundleSize": 141985,
+            "MainBundleSize": 169110,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Fish/Sprite-names (2).png",
+            "AssetGUID": "e4923f62c5562e7418cc2351e475d181",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites_fish.bundle",
+            "MainBundleSize": 169110,
             "DependAssets": []
         },
         {
@@ -558,7 +756,7 @@
             "AssetGUID": "5f4f917a47f172245a304bfb1bc4b4aa",
             "AssetTags": [],
             "MainBundleName": "assets_arts_sprites_fish.bundle",
-            "MainBundleSize": 141985,
+            "MainBundleSize": 169110,
             "DependAssets": []
         },
         {
@@ -567,7 +765,7 @@
             "AssetGUID": "96133786350141f4ba387c41b23ad382",
             "AssetTags": [],
             "MainBundleName": "assets_arts_sprites_fish.bundle",
-            "MainBundleSize": 141985,
+            "MainBundleSize": 169110,
             "DependAssets": []
         },
         {
@@ -576,7 +774,7 @@
             "AssetGUID": "4938e424fcb58a04c9b61f97284ac58d",
             "AssetTags": [],
             "MainBundleName": "assets_arts_sprites_fish.bundle",
-            "MainBundleSize": 141985,
+            "MainBundleSize": 169110,
             "DependAssets": []
         },
         {
@@ -585,7 +783,7 @@
             "AssetGUID": "21a6e71c6aadca84ebd666839d0ca6b8",
             "AssetTags": [],
             "MainBundleName": "assets_arts_sprites_fish.bundle",
-            "MainBundleSize": 141985,
+            "MainBundleSize": 169110,
             "DependAssets": []
         },
         {
@@ -594,7 +792,7 @@
             "AssetGUID": "b0a512d97a63a1d488ab44e2c7b48201",
             "AssetTags": [],
             "MainBundleName": "assets_arts_sprites_fish.bundle",
-            "MainBundleSize": 141985,
+            "MainBundleSize": 169110,
             "DependAssets": []
         },
         {
@@ -603,7 +801,7 @@
             "AssetGUID": "0fa803f28bfc77b48b3f3ecb03b82260",
             "AssetTags": [],
             "MainBundleName": "assets_arts_sprites_fish.bundle",
-            "MainBundleSize": 141985,
+            "MainBundleSize": 169110,
             "DependAssets": []
         },
         {
@@ -612,7 +810,7 @@
             "AssetGUID": "23f33f57c694e4543a3b94a3e3c743fb",
             "AssetTags": [],
             "MainBundleName": "assets_arts_sprites_fish.bundle",
-            "MainBundleSize": 141985,
+            "MainBundleSize": 169110,
             "DependAssets": []
         },
         {
@@ -621,7 +819,7 @@
             "AssetGUID": "87501e815ca8a184eb95fdcc5b7cd69e",
             "AssetTags": [],
             "MainBundleName": "assets_arts_sprites_fish.bundle",
-            "MainBundleSize": 141985,
+            "MainBundleSize": 169110,
             "DependAssets": []
         },
         {
@@ -630,7 +828,7 @@
             "AssetGUID": "347e94025d358184798e01369e465fb3",
             "AssetTags": [],
             "MainBundleName": "assets_arts_sprites_fish.bundle",
-            "MainBundleSize": 141985,
+            "MainBundleSize": 169110,
             "DependAssets": []
         },
         {
@@ -639,7 +837,7 @@
             "AssetGUID": "e12ad56d571781b46bd4a875292a5c5f",
             "AssetTags": [],
             "MainBundleName": "assets_arts_sprites_fish.bundle",
-            "MainBundleSize": 141985,
+            "MainBundleSize": 169110,
             "DependAssets": []
         },
         {
@@ -648,7 +846,7 @@
             "AssetGUID": "710eda7f51cc1374b81abfc25bf9440b",
             "AssetTags": [],
             "MainBundleName": "assets_arts_sprites_fish.bundle",
-            "MainBundleSize": 141985,
+            "MainBundleSize": 169110,
             "DependAssets": []
         },
         {
@@ -657,7 +855,7 @@
             "AssetGUID": "723e07c3aa076a2499f3e08c1c16e4b8",
             "AssetTags": [],
             "MainBundleName": "assets_arts_sprites_fish.bundle",
-            "MainBundleSize": 141985,
+            "MainBundleSize": 169110,
             "DependAssets": []
         },
         {
@@ -666,7 +864,7 @@
             "AssetGUID": "9eba76ccab716d743a14af8210c6a510",
             "AssetTags": [],
             "MainBundleName": "assets_arts_sprites.bundle",
-            "MainBundleSize": 145378,
+            "MainBundleSize": 151697,
             "DependAssets": []
         },
         {
@@ -1330,7 +1528,7 @@
             "AssetGUID": "6f0bf613303d6474f82ed730df6064a9",
             "AssetTags": [],
             "MainBundleName": "assets_arts_sprites.bundle",
-            "MainBundleSize": 145378,
+            "MainBundleSize": 151697,
             "DependAssets": []
         },
         {
@@ -1339,7 +1537,7 @@
             "AssetGUID": "bb3ba5f86e621df4c9feca7b34d85512",
             "AssetTags": [],
             "MainBundleName": "assets_arts_sprites.bundle",
-            "MainBundleSize": 145378,
+            "MainBundleSize": 151697,
             "DependAssets": []
         },
         {
@@ -1348,7 +1546,7 @@
             "AssetGUID": "66cbcef5ed3e8ea44b25d16c14200864",
             "AssetTags": [],
             "MainBundleName": "assets_arts_sprites.bundle",
-            "MainBundleSize": 145378,
+            "MainBundleSize": 151697,
             "DependAssets": []
         },
         {
@@ -1357,7 +1555,7 @@
             "AssetGUID": "8656fbabac8b53a4a89f5e2d14405de2",
             "AssetTags": [],
             "MainBundleName": "assets_arts_sprites.bundle",
-            "MainBundleSize": 145378,
+            "MainBundleSize": 151697,
             "DependAssets": []
         },
         {
@@ -1366,7 +1564,7 @@
             "AssetGUID": "51015423acdc02248a807f9d787db66b",
             "AssetTags": [],
             "MainBundleName": "assets_arts_sprites.bundle",
-            "MainBundleSize": 145378,
+            "MainBundleSize": 151697,
             "DependAssets": []
         },
         {
@@ -1375,7 +1573,7 @@
             "AssetGUID": "a10d964ee94aa594b96aea7c3973efc9",
             "AssetTags": [],
             "MainBundleName": "assets_arts_sprites.bundle",
-            "MainBundleSize": 145378,
+            "MainBundleSize": 151697,
             "DependAssets": []
         },
         {
@@ -1384,7 +1582,7 @@
             "AssetGUID": "75d53a2259976cc429b852971a9da301",
             "AssetTags": [],
             "MainBundleName": "assets_arts_sprites.bundle",
-            "MainBundleSize": 145378,
+            "MainBundleSize": 151697,
             "DependAssets": []
         },
         {
@@ -1393,7 +1591,7 @@
             "AssetGUID": "1e85620a6f4027941840de5c42ec80b3",
             "AssetTags": [],
             "MainBundleName": "assets_arts_sprites.bundle",
-            "MainBundleSize": 145378,
+            "MainBundleSize": 151697,
             "DependAssets": []
         },
         {
@@ -1402,7 +1600,7 @@
             "AssetGUID": "9c3bfd503d35fab46b671b5da4fa88bf",
             "AssetTags": [],
             "MainBundleName": "assets_arts_sprites.bundle",
-            "MainBundleSize": 145378,
+            "MainBundleSize": 151697,
             "DependAssets": []
         },
         {
@@ -1411,7 +1609,7 @@
             "AssetGUID": "c97f6cfac248a1740b07c965c3ce2b33",
             "AssetTags": [],
             "MainBundleName": "assets_arts_sprites.bundle",
-            "MainBundleSize": 145378,
+            "MainBundleSize": 151697,
             "DependAssets": []
         },
         {
@@ -1420,7 +1618,16 @@
             "AssetGUID": "8b94fce568fa2a54e9f28d3434252f2f",
             "AssetTags": [],
             "MainBundleName": "assets_arts_sprites.bundle",
-            "MainBundleSize": 145378,
+            "MainBundleSize": 151697,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Sprite-new water.png",
+            "AssetGUID": "52cac98e34f3ba442b0a6ccdf9461a72",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites.bundle",
+            "MainBundleSize": 151697,
             "DependAssets": []
         },
         {
@@ -1429,7 +1636,7 @@
             "AssetGUID": "49896bb36977db64d80d26ae48797106",
             "AssetTags": [],
             "MainBundleName": "assets_arts_sprites.bundle",
-            "MainBundleSize": 145378,
+            "MainBundleSize": 151697,
             "DependAssets": []
         },
         {
@@ -1438,7 +1645,7 @@
             "AssetGUID": "12c41be6ada67d344abb21ebed35a38a",
             "AssetTags": [],
             "MainBundleName": "assets_arts_sprites.bundle",
-            "MainBundleSize": 145378,
+            "MainBundleSize": 151697,
             "DependAssets": []
         },
         {
@@ -1447,7 +1654,7 @@
             "AssetGUID": "8b53ccc90c37c1c4390e890380d6b034",
             "AssetTags": [],
             "MainBundleName": "assets_arts_sprites.bundle",
-            "MainBundleSize": 145378,
+            "MainBundleSize": 151697,
             "DependAssets": []
         },
         {
@@ -1456,7 +1663,7 @@
             "AssetGUID": "d7032d1f0bfb24148a544d78fee7eea0",
             "AssetTags": [],
             "MainBundleName": "assets_arts_sprites.bundle",
-            "MainBundleSize": 145378,
+            "MainBundleSize": 151697,
             "DependAssets": []
         },
         {
@@ -1465,7 +1672,7 @@
             "AssetGUID": "e38d3d9ec28bb1c40a63e5aa78569588",
             "AssetTags": [],
             "MainBundleName": "assets_arts_sprites.bundle",
-            "MainBundleSize": 145378,
+            "MainBundleSize": 151697,
             "DependAssets": []
         },
         {
@@ -1474,7 +1681,7 @@
             "AssetGUID": "c22ffd45d8ad92a45a4be51ae91c2705",
             "AssetTags": [],
             "MainBundleName": "assets_arts_sprites.bundle",
-            "MainBundleSize": 145378,
+            "MainBundleSize": 151697,
             "DependAssets": []
         },
         {
@@ -1483,7 +1690,7 @@
             "AssetGUID": "8595e8d431ef38541acc3bd4182cb86c",
             "AssetTags": [],
             "MainBundleName": "assets_arts_sprites.bundle",
-            "MainBundleSize": 145378,
+            "MainBundleSize": 151697,
             "DependAssets": []
         },
         {
@@ -1492,7 +1699,7 @@
             "AssetGUID": "7dceaebda71366f44ad04a5581743123",
             "AssetTags": [],
             "MainBundleName": "assets_arts_sprites.bundle",
-            "MainBundleSize": 145378,
+            "MainBundleSize": 151697,
             "DependAssets": []
         },
         {
@@ -1501,7 +1708,7 @@
             "AssetGUID": "42d442d8a82d9444cbb3db4aecafa944",
             "AssetTags": [],
             "MainBundleName": "assets_arts_sprites.bundle",
-            "MainBundleSize": 145378,
+            "MainBundleSize": 151697,
             "DependAssets": []
         },
         {
@@ -1510,7 +1717,7 @@
             "AssetGUID": "c2d2d9ce896aad342ae89846a6441001",
             "AssetTags": [],
             "MainBundleName": "assets_arts_sprites.bundle",
-            "MainBundleSize": 145378,
+            "MainBundleSize": 151697,
             "DependAssets": []
         },
         {
@@ -1519,7 +1726,7 @@
             "AssetGUID": "921f8794ec016f445a0a5e5b2a06727c",
             "AssetTags": [],
             "MainBundleName": "assets_arts_sprites.bundle",
-            "MainBundleSize": 145378,
+            "MainBundleSize": 151697,
             "DependAssets": []
         },
         {
@@ -1528,7 +1735,7 @@
             "AssetGUID": "853b45c82785a254fa206b711343b96a",
             "AssetTags": [],
             "MainBundleName": "assets_arts_sprites.bundle",
-            "MainBundleSize": 145378,
+            "MainBundleSize": 151697,
             "DependAssets": []
         },
         {
@@ -1537,7 +1744,7 @@
             "AssetGUID": "521b2fa90457b5f48ab6eae6d42a31e2",
             "AssetTags": [],
             "MainBundleName": "assets_arts_sprites.bundle",
-            "MainBundleSize": 145378,
+            "MainBundleSize": 151697,
             "DependAssets": []
         },
         {
@@ -1546,7 +1753,7 @@
             "AssetGUID": "8169af50768f9af48bad5c1519be08a6",
             "AssetTags": [],
             "MainBundleName": "assets_arts_sprites.bundle",
-            "MainBundleSize": 145378,
+            "MainBundleSize": 151697,
             "DependAssets": []
         },
         {
@@ -1555,7 +1762,7 @@
             "AssetGUID": "a888d3e3fa99e4f40ba418d0acf68a28",
             "AssetTags": [],
             "MainBundleName": "assets_arts_sprites.bundle",
-            "MainBundleSize": 145378,
+            "MainBundleSize": 151697,
             "DependAssets": []
         },
         {
@@ -1564,7 +1771,7 @@
             "AssetGUID": "f30a8b6dfa63f7b4ca34ce3792951b29",
             "AssetTags": [],
             "MainBundleName": "assets_arts_sprites.bundle",
-            "MainBundleSize": 145378,
+            "MainBundleSize": 151697,
             "DependAssets": []
         },
         {
@@ -1573,7 +1780,7 @@
             "AssetGUID": "a3bd2f2de6703d14a84257ff2d9c1044",
             "AssetTags": [],
             "MainBundleName": "assets_arts_sprites_帧动画（sheet).bundle",
-            "MainBundleSize": 56014,
+            "MainBundleSize": 55941,
             "DependAssets": []
         },
         {
@@ -1582,7 +1789,7 @@
             "AssetGUID": "636e07775c095e74ab8e815aee53d16b",
             "AssetTags": [],
             "MainBundleName": "assets_arts_sprites_帧动画（sheet).bundle",
-            "MainBundleSize": 56014,
+            "MainBundleSize": 55941,
             "DependAssets": []
         },
         {
@@ -1591,7 +1798,7 @@
             "AssetGUID": "0f2a23fa638adb946ad4054337ddd364",
             "AssetTags": [],
             "MainBundleName": "assets_arts_sprites_帧动画（sheet).bundle",
-            "MainBundleSize": 56014,
+            "MainBundleSize": 55941,
             "DependAssets": []
         },
         {
@@ -1600,7 +1807,7 @@
             "AssetGUID": "9d7d12e1df45c614b91561265c49c7fc",
             "AssetTags": [],
             "MainBundleName": "assets_arts_sprites_帧动画（sheet).bundle",
-            "MainBundleSize": 56014,
+            "MainBundleSize": 55941,
             "DependAssets": []
         },
         {
@@ -1609,7 +1816,7 @@
             "AssetGUID": "edd0267178c544f409ce7bb1ca5358dd",
             "AssetTags": [],
             "MainBundleName": "assets_arts_sprites_帧动画（sheet).bundle",
-            "MainBundleSize": 56014,
+            "MainBundleSize": 55941,
             "DependAssets": []
         },
         {
@@ -1618,7 +1825,7 @@
             "AssetGUID": "9dc90265d48c7264191b3f3f8c95d4fb",
             "AssetTags": [],
             "MainBundleName": "assets_arts_sprites_帧动画（sheet).bundle",
-            "MainBundleSize": 56014,
+            "MainBundleSize": 55941,
             "DependAssets": []
         },
         {
@@ -1627,7 +1834,7 @@
             "AssetGUID": "a230a176889b66a4fbe854910babc0c7",
             "AssetTags": [],
             "MainBundleName": "assets_arts_sprites_帧动画（sheet).bundle",
-            "MainBundleSize": 56014,
+            "MainBundleSize": 55941,
             "DependAssets": []
         },
         {
@@ -1636,7 +1843,7 @@
             "AssetGUID": "45f71366ed29d23458e77af459b4bcd0",
             "AssetTags": [],
             "MainBundleName": "assets_arts_sprites_帧动画（sheet).bundle",
-            "MainBundleSize": 56014,
+            "MainBundleSize": 55941,
             "DependAssets": []
         },
         {
@@ -1645,7 +1852,7 @@
             "AssetGUID": "76f6fda57b131be44b3f41b104b37c20",
             "AssetTags": [],
             "MainBundleName": "assets_arts_sprites_帧动画（sheet).bundle",
-            "MainBundleSize": 56014,
+            "MainBundleSize": 55941,
             "DependAssets": []
         },
         {
@@ -1654,7 +1861,7 @@
             "AssetGUID": "03d70e04484742140a5001ddf3216b5c",
             "AssetTags": [],
             "MainBundleName": "assets_arts_sprites_帧动画（sheet).bundle",
-            "MainBundleSize": 56014,
+            "MainBundleSize": 55941,
             "DependAssets": []
         },
         {
@@ -1663,7 +1870,7 @@
             "AssetGUID": "27f49908331bcb740a9a29e899a87f5c",
             "AssetTags": [],
             "MainBundleName": "assets_arts_sprites_帧动画（sheet).bundle",
-            "MainBundleSize": 56014,
+            "MainBundleSize": 55941,
             "DependAssets": []
         }
     ],
@@ -1764,10 +1971,10 @@
         },
         {
             "BundleName": "assets_arts_sprites.bundle",
-            "FileName": "ecc35ef2322bac9946ef02e07a139491.bundle",
-            "FileHash": "ecc35ef2322bac9946ef02e07a139491",
-            "FileCRC": "0bc91232",
-            "FileSize": 145378,
+            "FileName": "2110f46265240e32c1dcba5d2bbfe1be.bundle",
+            "FileHash": "2110f46265240e32c1dcba5d2bbfe1be",
+            "FileCRC": "efd39fd8",
+            "FileSize": 151697,
             "Encrypted": false,
             "Tags": [],
             "DependBundles": [],
@@ -1784,6 +1991,7 @@
                 "Assets/Arts/Sprites/Sprite-daycounter-export.png",
                 "Assets/Arts/Sprites/Sprite-E.png",
                 "Assets/Arts/Sprites/Sprite-hook.png",
+                "Assets/Arts/Sprites/Sprite-new water.png",
                 "Assets/Arts/Sprites/Sprite-obstacle1.png",
                 "Assets/Arts/Sprites/Sprite-obstacle2.png",
                 "Assets/Arts/Sprites/Sprite-obstacle3.png",
@@ -1804,10 +2012,10 @@
         },
         {
             "BundleName": "assets_arts_sprites_fish.bundle",
-            "FileName": "f6d602468208a114fcf1fc74be198d10.bundle",
-            "FileHash": "f6d602468208a114fcf1fc74be198d10",
-            "FileCRC": "2a1986af",
-            "FileSize": 141985,
+            "FileName": "fc1ab169acb3e014b77ca4ca712e0a65.bundle",
+            "FileHash": "fc1ab169acb3e014b77ca4ca712e0a65",
+            "FileCRC": "a2d64265",
+            "FileSize": 169110,
             "Encrypted": false,
             "Tags": [],
             "DependBundles": [],
@@ -1824,6 +2032,7 @@
                 "Assets/Arts/Sprites/Fish/Sprite-grasscarp.png",
                 "Assets/Arts/Sprites/Fish/Sprite-mudfish.png",
                 "Assets/Arts/Sprites/Fish/Sprite-names (1).png",
+                "Assets/Arts/Sprites/Fish/Sprite-names (2).png",
                 "Assets/Arts/Sprites/Fish/Sprite-names.png",
                 "Assets/Arts/Sprites/Fish/Sprite-Neverseenthisbefore.png",
                 "Assets/Arts/Sprites/Fish/Sprite-PinkBass.png",
@@ -1836,6 +2045,39 @@
                 "Assets/Arts/Sprites/Fish/Sprite-Valuetable.png",
                 "Assets/Arts/Sprites/Fish/Sprite-wallet.png",
                 "Assets/Arts/Sprites/Fish/watch.png"
+            ]
+        },
+        {
+            "BundleName": "assets_arts_sprites_fish_fishvalues.bundle",
+            "FileName": "f8df18b1db5bad052cd6568def0f216f.bundle",
+            "FileHash": "f8df18b1db5bad052cd6568def0f216f",
+            "FileCRC": "e0f37334",
+            "FileSize": 9179,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundles": [],
+            "AllBuiltinAssets": [
+                "Assets/Arts/Sprites/Fish/FishValues/Sprite-blackcarp-value.png",
+                "Assets/Arts/Sprites/Fish/FishValues/Sprite-brokenwatch-value.png",
+                "Assets/Arts/Sprites/Fish/FishValues/Sprite-catfish-value.png",
+                "Assets/Arts/Sprites/Fish/FishValues/Sprite-chubbychub-value.png",
+                "Assets/Arts/Sprites/Fish/FishValues/Sprite-clam-value.png",
+                "Assets/Arts/Sprites/Fish/FishValues/Sprite-classicbass-value.png",
+                "Assets/Arts/Sprites/Fish/FishValues/Sprite-colorfullookingcarp-value.png",
+                "Assets/Arts/Sprites/Fish/FishValues/Sprite-crab-value.png",
+                "Assets/Arts/Sprites/Fish/FishValues/Sprite-dinosaurfish-value.png",
+                "Assets/Arts/Sprites/Fish/FishValues/Sprite-fishshapedfoam-value.png",
+                "Assets/Arts/Sprites/Fish/FishValues/Sprite-grasscarp-value.png",
+                "Assets/Arts/Sprites/Fish/FishValues/Sprite-mudfish-value.png",
+                "Assets/Arts/Sprites/Fish/FishValues/Sprite-neverseenthisbefore-value.png",
+                "Assets/Arts/Sprites/Fish/FishValues/Sprite-pinkbass-value.png",
+                "Assets/Arts/Sprites/Fish/FishValues/Sprite-rainbowtrout-value.png",
+                "Assets/Arts/Sprites/Fish/FishValues/Sprite-snail-value.png",
+                "Assets/Arts/Sprites/Fish/FishValues/Sprite-softshellturtle-value.png",
+                "Assets/Arts/Sprites/Fish/FishValues/Sprite-thisnotedible-value.png",
+                "Assets/Arts/Sprites/Fish/FishValues/Sprite-toyfishbone-value.png",
+                "Assets/Arts/Sprites/Fish/FishValues/Sprite-trout-value.png",
+                "Assets/Arts/Sprites/Fish/FishValues/Sprite-wallet-value.png"
             ]
         },
         {
@@ -1984,10 +2226,10 @@
         },
         {
             "BundleName": "assets_arts_sprites_帧动画（sheet).bundle",
-            "FileName": "7d10f16ecd7c6f4efb5746d8759e9218.bundle",
-            "FileHash": "7d10f16ecd7c6f4efb5746d8759e9218",
-            "FileCRC": "3b513032",
-            "FileSize": 56014,
+            "FileName": "18e98881b50fca321f94edf0f50a8e83.bundle",
+            "FileHash": "18e98881b50fca321f94edf0f50a8e83",
+            "FileCRC": "a884bd10",
+            "FileSize": 55941,
             "Encrypted": false,
             "Tags": [],
             "DependBundles": [],
