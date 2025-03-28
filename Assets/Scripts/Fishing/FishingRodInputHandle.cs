@@ -50,7 +50,7 @@ public class FishingRodInputHandle : MonoBehaviour
     private float accumulatedMove; //当前帧累计水平移动距离
     private FishingAbilityData fishingAbilityData;
     private Vector3 lastCursorPosition = Vector3.zero;
-
+    private bool rocksCompleted = false;
     private void Awake()
     {
         EventManager.Instance.AddListener<FishCfg>(EventName.StartFishing, setHookEnterWater);
@@ -169,6 +169,7 @@ public class FishingRodInputHandle : MonoBehaviour
             transform.position = new Vector2(transform.position.x, exitWaterPosition.position.y);
             hookExitWater = false;
             getCollection = false;
+            rocksCompleted = false;
             this.TriggerEvent(EventName.CaughtFish);
             Mouse.current.WarpCursorPosition(lastCursorPosition);
             Cursor.visible = true;
@@ -335,18 +336,19 @@ public class FishingRodInputHandle : MonoBehaviour
             default:
                 break;
         }
-        Instantiate(trapPrefab, new Vector3(backGround.transform.position.x + (Random.value > 0.5f ? 2.8f : -2.8f), collectionGenerateMinDepthArray[0].position.y +(Random.Range(3.75f,6.25f)* (Random.value > 0.5f ? 1 : -1)), backGround.transform.position.z -1),
+        Instantiate(trapPrefab, new Vector3(backGround.transform.position.x + (Random.value > 0.5f ? 2.8f : -2.8f), collectionGenerateMinDepthArray[0].position.y +(Random.Range(3.75f, 5f)* (Random.value > 0.5f ? 1 : -1)), backGround.transform.position.z -1),
             Quaternion.identity, backGround.transform);
-        Instantiate(trapPrefab, new Vector3(backGround.transform.position.x + (Random.value > 0.5f ? 2.8f : -2.8f), collectionGenerateMinDepthArray[1].position.y + (Random.Range(3.75f, 6.25f) * (Random.value > 0.5f ? 1 : -1)), backGround.transform.position.z - 1),
+        Instantiate(trapPrefab, new Vector3(backGround.transform.position.x + (Random.value > 0.5f ? 2.8f : -2.8f), collectionGenerateMinDepthArray[1].position.y + (Random.Range(3.75f, 5f) * (Random.value > 0.5f ? 1 : -1)), backGround.transform.position.z - 1),
             Quaternion.identity, backGround.transform);
         for(int i = 0;i< rocksGenerateTransforms.Length; i++)
         {
-            if(Random.value > 0.333f)
+            if(Random.value > 0.333f && !rocksCompleted)
             {
-                Instantiate(trapPrefab, new Vector3(backGround.transform.position.x + (Random.value > 0.5f ? 2.8f : -2.8f), rocksGenerateTransforms[i].position.y + (Random.Range(0f, 2f) * (Random.value > 0.5f ? 1 : -1)), backGround.transform.position.z - 1),
+                Instantiate(trapPrefab, new Vector3(backGround.transform.position.x + (Random.value > 0.5f ? 2.8f : -2.8f), rocksGenerateTransforms[i].position.y + (Random.Range(0f, 1f) * (Random.value > 0.5f ? 1 : -1)), backGround.transform.position.z - 1),
             Quaternion.identity, backGround.transform);
             }
         }
+        rocksCompleted = true;
         GameObject collection = Instantiate(collectionPrefab,
             new Vector3(backGround.transform.position.x, localCGMD.position.y, backGround.transform.position.z),
             Quaternion.identity, backGround.transform);
@@ -376,6 +378,7 @@ public class FishingRodInputHandle : MonoBehaviour
         backGround.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
         getCollection = false;
         hookExitWater = false;
+        rocksCompleted = false;
         await UniTask.WaitForFixedUpdate();
         await backGround.GetComponent<Rigidbody2D>().DOMove(bottomPoint, 2.5f);
         gameObject.GetComponent<Rigidbody2D>().DOMove(position, 3f).SetEase(Ease.InOutCubic).onComplete = () =>

@@ -103,7 +103,19 @@ public class Boot : MonoBehaviour
     
             if(initOperation.Status == EOperationStatus.Succeed)
                 Debug.Log("资源包初始化成功！");
-            else 
+            else
+                Debug.LogError($"资源包初始化失败：{initOperation.Error}");
+        }
+        else if (playMode == EPlayMode.WebPlayMode)
+        {
+            var WebServerSystemParams = FileSystemParameters.CreateDefaultWebServerFileSystemParameters();
+            var initParameters = new WebPlayModeParameters();
+            initParameters.WebServerFileSystemParameters = WebServerSystemParams;
+            var initOperation = package.InitializeAsync(initParameters);
+            yield return initOperation;
+            if (initOperation.Status == EOperationStatus.Succeed)
+                Debug.Log("资源包初始化成功！");
+            else
                 Debug.LogError($"资源包初始化失败：{initOperation.Error}");
         }
     }
