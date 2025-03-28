@@ -13,10 +13,12 @@ MonoBehaviour:
   m_Name: BuildinCatalog
   m_EditorClassIdentifier: 
   PackageName: DefaultPackage
-  PackageVersion: 2025-03-29-15
+  PackageVersion: 2025-03-29-121
   Wrappers:
   - BundleGUID: 05176f5138c39bacefaea63e62753df2
     FileName: 05176f5138c39bacefaea63e62753df2.bundle
+  - BundleGUID: 0a8f75caf31cb4215fefe3d38c49e95e
+    FileName: 0a8f75caf31cb4215fefe3d38c49e95e.bundle
   - BundleGUID: 0e4605385eb2b94fe69f5a00122b48c0
     FileName: 0e4605385eb2b94fe69f5a00122b48c0.bundle
   - BundleGUID: 1f44f576d24a5079ebacb9619cb26132
@@ -35,8 +37,6 @@ MonoBehaviour:
     FileName: 7909aa4479506b147e7b7dfa88819113.bundle
   - BundleGUID: 82a678262f91efff1c589ad92541dd1b
     FileName: 82a678262f91efff1c589ad92541dd1b.bundle
-  - BundleGUID: 9622dcded3aa35a1f0aa5fd0f20b1a3b
-    FileName: 9622dcded3aa35a1f0aa5fd0f20b1a3b.bundle
   - BundleGUID: d6ec6df4f6219016d753b20636324658
     FileName: d6ec6df4f6219016d753b20636324658.bundle
   - BundleGUID: e44cc819a3ffe98f09b74e16d1d214fa

@@ -9,20 +9,33 @@
 
 using Luban;
 using SimpleJSON;
+using Cysharp.Threading.Tasks;
 
 namespace cfg
 {
 public partial class Tables
 {
-    public TbBubbleCfg TbBubbleCfg {get; }
-    public TbFishCfg TbFishCfg {get; }
-    public TbFishSpwanGroup TbFishSpwanGroup {get; }
+    public TbBubbleCfg TbBubbleCfg {get;private set; }
+    public TbFishCfg TbFishCfg {get;private set; }
+    public TbFishSpwanGroup TbFishSpwanGroup {get;private set; }
 
-    public Tables(System.Func<string, JSONNode> loader)
+    public Tables()
+    {
+    }
+
+    public void Init(System.Func<string, JSONNode> loader)
     {
         TbBubbleCfg = new TbBubbleCfg(loader("tbbubblecfg"));
         TbFishCfg = new TbFishCfg(loader("tbfishcfg"));
         TbFishSpwanGroup = new TbFishSpwanGroup(loader("tbfishspwangroup"));
+        ResolveRef();
+    }
+
+    public async UniTask Init(System.Func<string, UniTask<JSONNode>> loader)
+    {
+        TbBubbleCfg = new TbBubbleCfg(await loader("tbbubblecfg"));
+        TbFishCfg = new TbFishCfg(await loader("tbfishcfg"));
+        TbFishSpwanGroup = new TbFishSpwanGroup(await loader("tbfishspwangroup"));
         ResolveRef();
     }
     

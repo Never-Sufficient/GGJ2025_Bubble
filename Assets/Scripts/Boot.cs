@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using Config;
 using Cysharp.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -53,6 +54,8 @@ public class Boot : MonoBehaviour
         var version = await RequestPackageVersion();
         await UpdatePackageManifest(version);
 
+        await ConfigManager.Instance.Init();
+
         // 切换到主页面场景
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
@@ -85,27 +88,27 @@ public class Boot : MonoBehaviour
             else
                 Debug.LogError($"资源包初始化失败：{initOperation.Error}");
         }
-        else if (playMode == EPlayMode.WebPlayMode)
-        {
-            string defaultHostServer = "http://localhost/StreamingAssets/yoo";
-            string fallbackHostServer = "http://localhost/StreamingAssets/yoo";
-            //说明：RemoteServices类定义请参考联机运行模式！
-            IRemoteServices remoteServices = new RemoteServices(defaultHostServer, fallbackHostServer);
-            var webServerFileSystemParams = FileSystemParameters.CreateDefaultWebServerFileSystemParameters();
-            var webRemoteFileSystemParams = FileSystemParameters.CreateDefaultWebRemoteFileSystemParameters(remoteServices); //支持跨域下载
-    
-            var initParameters = new WebPlayModeParameters();
-            initParameters.WebServerFileSystemParameters = webServerFileSystemParams;
-            initParameters.WebRemoteFileSystemParameters = webRemoteFileSystemParams;
-    
-            var initOperation = package.InitializeAsync(initParameters);
-            yield return initOperation;
-    
-            if(initOperation.Status == EOperationStatus.Succeed)
-                Debug.Log("资源包初始化成功！");
-            else
-                Debug.LogError($"资源包初始化失败：{initOperation.Error}");
-        }
+        // else if (playMode == EPlayMode.WebPlayMode)
+        // {
+        //     string defaultHostServer = "http://localhost/StreamingAssets/yoo";
+        //     string fallbackHostServer = "http://localhost/StreamingAssets/yoo";
+        //     //说明：RemoteServices类定义请参考联机运行模式！
+        //     IRemoteServices remoteServices = new RemoteServices(defaultHostServer, fallbackHostServer);
+        //     var webServerFileSystemParams = FileSystemParameters.CreateDefaultWebServerFileSystemParameters();
+        //     var webRemoteFileSystemParams = FileSystemParameters.CreateDefaultWebRemoteFileSystemParameters(remoteServices); //支持跨域下载
+        //
+        //     var initParameters = new WebPlayModeParameters();
+        //     initParameters.WebServerFileSystemParameters = webServerFileSystemParams;
+        //     initParameters.WebRemoteFileSystemParameters = webRemoteFileSystemParams;
+        //
+        //     var initOperation = package.InitializeAsync(initParameters);
+        //     yield return initOperation;
+        //
+        //     if(initOperation.Status == EOperationStatus.Succeed)
+        //         Debug.Log("资源包初始化成功！");
+        //     else
+        //         Debug.LogError($"资源包初始化失败：{initOperation.Error}");
+        // }
         else if (playMode == EPlayMode.WebPlayMode)
         {
             var WebServerSystemParams = FileSystemParameters.CreateDefaultWebServerFileSystemParameters();
