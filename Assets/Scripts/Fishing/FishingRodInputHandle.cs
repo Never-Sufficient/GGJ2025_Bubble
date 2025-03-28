@@ -308,7 +308,7 @@ public class FishingRodInputHandle : MonoBehaviour
         this.getCollection = getCollection;
     }
 
-    public void setHookEnterWater(FishCfg data)
+    public async void setHookEnterWater(FishCfg data)
     {
         Cursor.visible = false;
         lastCursorPosition = Input.mousePosition;
@@ -352,7 +352,10 @@ public class FishingRodInputHandle : MonoBehaviour
             Quaternion.identity, backGround.transform);
         var pathPrefix = "Assets/Arts/Sprites/Fish/";
         var package=YooAssets.GetPackage("DefaultPackage");
-        collection.GetComponent<SpriteRenderer>().sprite = package.LoadSubAssetsSync(pathPrefix + data.SpritePath).GetSubAssetObject<Sprite>(data.SpritePath);
+        // collection.GetComponent<SpriteRenderer>().sprite = package.LoadSubAssetsSync(pathPrefix + data.SpritePath).GetSubAssetObject<Sprite>(data.SpritePath);
+        var handle = package.LoadSubAssetsAsync(pathPrefix + data.SpritePath);
+        await handle.ToUniTask();
+        collection.GetComponent<SpriteRenderer>().sprite = handle.GetSubAssetObject<Sprite>(data.SpritePath);
         Instantiate(BubbleGeneratorPrefab,
             new Vector3(backGround.transform.position.x, localCGMD.position.y, backGround.transform.position.z),
             Quaternion.Euler(new Vector3(-90f, 0f, 0f)), backGround.transform);

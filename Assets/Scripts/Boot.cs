@@ -8,6 +8,25 @@ using YooAsset;
 
 public class Boot : MonoBehaviour
 {
+    private class RemoteServices : IRemoteServices
+    {
+        private readonly string _defaultHostServer;
+        private readonly string _fallbackHostServer;
+
+        public RemoteServices(string defaultHostServer, string fallbackHostServer)
+        {
+            _defaultHostServer = defaultHostServer;
+            _fallbackHostServer = fallbackHostServer;
+        }
+        string IRemoteServices.GetRemoteMainURL(string fileName)
+        {
+            return $"{_defaultHostServer}/{fileName}";
+        }
+        string IRemoteServices.GetRemoteFallbackURL(string fileName)
+        {
+            return $"{_fallbackHostServer}/{fileName}";
+        }
+    }
     /// <summary>
     /// 资源系统运行模式
     /// </summary>
@@ -64,6 +83,27 @@ public class Boot : MonoBehaviour
             if (initOperation.Status == EOperationStatus.Succeed)
                 Debug.Log("资源包初始化成功！");
             else
+                Debug.LogError($"资源包初始化失败：{initOperation.Error}");
+        }
+        else if (playMode == EPlayMode.WebPlayMode)
+        {
+            string defaultHostServer = "http://localhost/StreamingAssets/yoo";
+            string fallbackHostServer = "http://localhost/StreamingAssets/yoo";
+            //说明：RemoteServices类定义请参考联机运行模式！
+            IRemoteServices remoteServices = new RemoteServices(defaultHostServer, fallbackHostServer);
+            var webServerFileSystemParams = FileSystemParameters.CreateDefaultWebServerFileSystemParameters();
+            var webRemoteFileSystemParams = FileSystemParameters.CreateDefaultWebRemoteFileSystemParameters(remoteServices); //支持跨域下载
+    
+            var initParameters = new WebPlayModeParameters();
+            initParameters.WebServerFileSystemParameters = webServerFileSystemParams;
+            initParameters.WebRemoteFileSystemParameters = webRemoteFileSystemParams;
+    
+            var initOperation = package.InitializeAsync(initParameters);
+            yield return initOperation;
+    
+            if(initOperation.Status == EOperationStatus.Succeed)
+                Debug.Log("资源包初始化成功！");
+            else 
                 Debug.LogError($"资源包初始化失败：{initOperation.Error}");
         }
     }

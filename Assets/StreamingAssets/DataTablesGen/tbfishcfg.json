@@ -176,7 +176,7 @@
     "desc": "",
     "cost": 20,
     "sprite_path": "Sprite-trout",
-    "name_sprite_path": "Sprite-names_(2)_22",
+    "name_sprite_path": "Sprite-names (2)_22",
     "cost_sprite_path": "Sprite-trout-value"
   },
   {
@@ -185,7 +185,7 @@
     "desc": "",
     "cost": 20,
     "sprite_path": "Sprite-Godfeastsonthefifthday",
-    "name_sprite_path": "Sprite-names_(2)_21",
+    "name_sprite_path": "Sprite-names (2)_21",
     "cost_sprite_path": "Sprite-blackcarp-value"
   },
   {
@@ -194,7 +194,7 @@
     "desc": "",
     "cost": 40,
     "sprite_path": "Sprite-wallet",
-    "name_sprite_path": "Sprite-names_(2)_20",
+    "name_sprite_path": "Sprite-names (2)_20",
     "cost_sprite_path": "Sprite-wallet-value"
   }
 ]

@@ -1,0 +1,2262 @@
+{
+    "Summary": {
+        "YooVersion": "2.2.12",
+        "UnityVersion": "2022.3.52f1c1",
+        "BuildDate": "2025/3/28 21:26:58",
+        "BuildSeconds": 20,
+        "BuildTarget": 19,
+        "BuildPipeline": "ScriptableBuildPipeline",
+        "BuildBundleType": 2,
+        "BuildPackageName": "DefaultPackage",
+        "BuildPackageVersion": "2025-03-28-1286",
+        "BuildPackageNote": "2025/3/28 21:26:37",
+        "UniqueBundleName": false,
+        "EnableAddressable": false,
+        "LocationToLower": false,
+        "IncludeAssetGUID": false,
+        "AutoCollectShaders": true,
+        "IgnoreRuleName": "YooAsset.Editor.NormalIgnoreRule",
+        "ClearBuildCacheFiles": false,
+        "UseAssetDependencyDB": true,
+        "EnableSharePackRule": true,
+        "EncryptionClassName": "null",
+        "FileNameStyle": 0,
+        "CompressOption": 2,
+        "DisableWriteTypeTree": false,
+        "IgnoreTypeTreeChanges": true,
+        "AssetFileTotalCount": 193,
+        "MainAssetTotalCount": 193,
+        "AllBundleTotalCount": 14,
+        "AllBundleTotalSize": 19929439,
+        "EncryptedBundleTotalCount": 0,
+        "EncryptedBundleTotalSize": 0
+    },
+    "AssetInfos": [
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Animations/Bubble/Bubble Animator Controller.controller",
+            "AssetGUID": "98d18d23edc693241b0d212426058346",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_animations_bubble.bundle",
+            "MainBundleSize": 13642,
+            "DependAssets": [
+                "Assets/Arts/Animations/Bubble/BubbleBigAnim.anim",
+                "Assets/Arts/Animations/Bubble/BubbleHugeAnim.anim",
+                "Assets/Arts/Animations/Bubble/BubbleMidAnim.anim",
+                "Assets/Arts/Animations/Bubble/BubbleSmallAnim.anim",
+                "Assets/Arts/Sprites/帧动画（sheet)/Sprite-bubbles-Sheet.png",
+                "Assets/Arts/Sprites/帧动画（sheet)/Sprite-minimumbubbles-Sheet.png",
+                "Assets/Arts/Sprites/帧动画（sheet)/Sprite-smolbubbles-Sheet.png",
+                "Assets/Arts/Sprites/帧动画（sheet)/Sprite-XLbubbles-Sheet.png"
+            ]
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Animations/Bubble/BubbleBigAnim.anim",
+            "AssetGUID": "d77e322d1d41c204eab55e5b12567194",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_animations_bubble.bundle",
+            "MainBundleSize": 13642,
+            "DependAssets": [
+                "Assets/Arts/Sprites/帧动画（sheet)/Sprite-bubbles-Sheet.png"
+            ]
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Animations/Bubble/BubbleHugeAnim.anim",
+            "AssetGUID": "ef2dd06ed9118994bae3319002a42b37",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_animations_bubble.bundle",
+            "MainBundleSize": 13642,
+            "DependAssets": [
+                "Assets/Arts/Sprites/帧动画（sheet)/Sprite-XLbubbles-Sheet.png"
+            ]
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Animations/Bubble/BubbleMidAnim.anim",
+            "AssetGUID": "8ff197c315b02734c90616fc0be89571",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_animations_bubble.bundle",
+            "MainBundleSize": 13642,
+            "DependAssets": [
+                "Assets/Arts/Sprites/帧动画（sheet)/Sprite-smolbubbles-Sheet.png"
+            ]
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Animations/Bubble/BubbleSmallAnim.anim",
+            "AssetGUID": "5bead73c35337044ea1e3c4aee45d3aa",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_animations_bubble.bundle",
+            "MainBundleSize": 13642,
+            "DependAssets": [
+                "Assets/Arts/Sprites/帧动画（sheet)/Sprite-minimumbubbles-Sheet.png"
+            ]
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Animations/Bubble/Ending Bubble Animator Controller.controller",
+            "AssetGUID": "f11160ab6153426488813b802bfe3bfb",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_animations_bubble.bundle",
+            "MainBundleSize": 13642,
+            "DependAssets": [
+                "Assets/Arts/Animations/Bubble/EndingBubbleBigAnim.anim",
+                "Assets/Arts/Sprites/帧动画（sheet)/Sprite-bubbles-Sheet.png"
+            ]
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Animations/Bubble/EndingBubbleBigAnim.anim",
+            "AssetGUID": "4dea517a6f154c64b91e5a979d3f2b38",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_animations_bubble.bundle",
+            "MainBundleSize": 13642,
+            "DependAssets": [
+                "Assets/Arts/Sprites/帧动画（sheet)/Sprite-bubbles-Sheet.png"
+            ]
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Animations/Ripple/RippleAnimation.anim",
+            "AssetGUID": "a6f47d11e3bf71740a9a8cf5e3a332fc",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_animations_ripple.bundle",
+            "MainBundleSize": 9488,
+            "DependAssets": [
+                "Assets/Arts/Sprites/帧动画（sheet)/Sprite-boatripple-Sheet.png"
+            ]
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Animations/Ripple/RippleAnimator.controller",
+            "AssetGUID": "506af06143fea9846b13ff2ff2cedac9",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_animations_ripple.bundle",
+            "MainBundleSize": 9488,
+            "DependAssets": [
+                "Assets/Arts/Animations/Ripple/RippleAnimation.anim",
+                "Assets/Arts/Sprites/帧动画（sheet)/Sprite-boatripple-Sheet.png"
+            ]
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Animations/Ship/EndCatch.anim",
+            "AssetGUID": "a3e51ec6734143f4eb071cb5c27efbe0",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_animations_ship.bundle",
+            "MainBundleSize": 11350,
+            "DependAssets": [
+                "Assets/Arts/Sprites/帧动画（sheet)/Sprite-endingcatch-Sheet.png"
+            ]
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Animations/Ship/EndLoop.anim",
+            "AssetGUID": "6c1a22189c9004641801bca0f5d9acf1",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_animations_ship.bundle",
+            "MainBundleSize": 11350,
+            "DependAssets": [
+                "Assets/Arts/Sprites/帧动画（sheet)/Sprite-endloop-Sheet.png"
+            ]
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Animations/Ship/ShipAnimator.controller",
+            "AssetGUID": "67289515e88720f42ab247d078a112cf",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_animations_ship.bundle",
+            "MainBundleSize": 11350,
+            "DependAssets": [
+                "Assets/Arts/Animations/Ship/EndCatch.anim",
+                "Assets/Arts/Animations/Ship/EndLoop.anim",
+                "Assets/Arts/Animations/Ship/ShipCaughtFish.anim",
+                "Assets/Arts/Animations/Ship/ShipFishing.anim",
+                "Assets/Arts/Animations/Ship/ShipSailing.anim",
+                "Assets/Arts/Animations/Ship/ShipStartFish.anim",
+                "Assets/Arts/Sprites/帧动画（sheet)/Sprite-catch-Sheet.png",
+                "Assets/Arts/Sprites/帧动画（sheet)/Sprite-endingcatch-Sheet.png",
+                "Assets/Arts/Sprites/帧动画（sheet)/Sprite-endloop-Sheet.png",
+                "Assets/Arts/Sprites/帧动画（sheet)/Sprite-fishingidle-Sheet.png",
+                "Assets/Arts/Sprites/帧动画（sheet)/Sprite-sailing-Sheet.png",
+                "Assets/Arts/Sprites/帧动画（sheet)/Sprite-startfishing-Sheet.png"
+            ]
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Animations/Ship/ShipCaughtFish.anim",
+            "AssetGUID": "b86434c2eb84d74498b7d1aa3823508d",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_animations_ship.bundle",
+            "MainBundleSize": 11350,
+            "DependAssets": [
+                "Assets/Arts/Sprites/帧动画（sheet)/Sprite-catch-Sheet.png"
+            ]
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Animations/Ship/ShipFishing.anim",
+            "AssetGUID": "35f5baaffa2aa594fa39d760000c96a2",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_animations_ship.bundle",
+            "MainBundleSize": 11350,
+            "DependAssets": [
+                "Assets/Arts/Sprites/帧动画（sheet)/Sprite-fishingidle-Sheet.png"
+            ]
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Animations/Ship/ShipSailing.anim",
+            "AssetGUID": "61cdc9952e570c54a93128d272681211",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_animations_ship.bundle",
+            "MainBundleSize": 11350,
+            "DependAssets": [
+                "Assets/Arts/Sprites/帧动画（sheet)/Sprite-sailing-Sheet.png"
+            ]
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Animations/Ship/ShipStartFish.anim",
+            "AssetGUID": "80e790a51641a794ba9a55910b68ba8a",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_animations_ship.bundle",
+            "MainBundleSize": 11350,
+            "DependAssets": [
+                "Assets/Arts/Sprites/帧动画（sheet)/Sprite-startfishing-Sheet.png"
+            ]
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Audio/button-press.wav",
+            "AssetGUID": "f758b89ec4349a9428b4ffc36e4da233",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_audio.bundle",
+            "MainBundleSize": 6366664,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Audio/morning(new).wav",
+            "AssetGUID": "2ef906d65cc96514494db8184260dd84",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_audio.bundle",
+            "MainBundleSize": 6366664,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Audio/morning(supernew).wav",
+            "AssetGUID": "0e8cb0878260d8948a3367c7f2ef3982",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_audio.bundle",
+            "MainBundleSize": 6366664,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Audio/morning.wav",
+            "AssetGUID": "ae2a3c144fb55f84da9926b8e2e1e913",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_audio.bundle",
+            "MainBundleSize": 6366664,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Audio/night.wav",
+            "AssetGUID": "3052e169948485e49a881780f1d89b96",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_audio.bundle",
+            "MainBundleSize": 6366664,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Audio/night_new.wav",
+            "AssetGUID": "185f4449755abf243b67c106d8972e1b",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_audio.bundle",
+            "MainBundleSize": 6366664,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Audio/shop_button.wav",
+            "AssetGUID": "2b1635356b67de6429317558f3a603de",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_audio.bundle",
+            "MainBundleSize": 6366664,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Audio/升级音效.wav",
+            "AssetGUID": "389e530eab3329a4eb1a80448025517e",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_audio.bundle",
+            "MainBundleSize": 6366664,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Audio/垂钓音效.wav",
+            "AssetGUID": "7d4fea707d0f38542b2a5b9ba5b8ef7c",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_audio.bundle",
+            "MainBundleSize": 6366664,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Audio/小船移动音效.mp3",
+            "AssetGUID": "ce9bf19a71370e84d81a0a211749c527",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_audio.bundle",
+            "MainBundleSize": 6366664,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Audio/放线音效.wav",
+            "AssetGUID": "0a5ef30c8e572354599b22b740191c4d",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_audio.bundle",
+            "MainBundleSize": 6366664,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Audio/日期显示.mp3",
+            "AssetGUID": "5303db6a24217934cb3b4b50ec06979b",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_audio.bundle",
+            "MainBundleSize": 6366664,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Audio/枪响.wav",
+            "AssetGUID": "466ee23ef3695ab41a2b5cd82ae6b76c",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_audio.bundle",
+            "MainBundleSize": 6366664,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Audio/标题开场小动画.wav",
+            "AssetGUID": "b73f112971eaf4c4184f0989bc41e775",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_audio.bundle",
+            "MainBundleSize": 6366664,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Audio/树叶声.wav",
+            "AssetGUID": "771dc8eeaa1070c4ca0a47b1152e3dd5",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_audio.bundle",
+            "MainBundleSize": 6366664,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Audio/水下碰到礁石.wav",
+            "AssetGUID": "50ef6da2f6714ae46aea449d1f932dfc",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_audio.bundle",
+            "MainBundleSize": 6366664,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Audio/水中背景音.mp3",
+            "AssetGUID": "7d656e4bb3c7fa647b198bdaae4b0e2e",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_audio.bundle",
+            "MainBundleSize": 6366664,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Audio/结局配乐.mp3",
+            "AssetGUID": "64a8656cfa2fe3241b15be34a2c3382c",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_audio.bundle",
+            "MainBundleSize": 6366664,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Audio/连续泡泡音效.mp3",
+            "AssetGUID": "6729c4aad41cae845920c8df4a807d13",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_audio.bundle",
+            "MainBundleSize": 6366664,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Audio/金钱音效.wav",
+            "AssetGUID": "b13da7ea7037bf748b52133b7201c283",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_audio.bundle",
+            "MainBundleSize": 6366664,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Audio/钓到垃圾时的声音.mp3",
+            "AssetGUID": "981f0f9029072794ca330f7504d80a9b",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_audio.bundle",
+            "MainBundleSize": 6366664,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Audio/风声.mp3",
+            "AssetGUID": "2fc848d60651bc147b9e7d6e4e199ac6",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_audio.bundle",
+            "MainBundleSize": 6366664,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Audio/鱼咬钩的声音.wav",
+            "AssetGUID": "abff06a3224515e408a36f5b9e50109f",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_audio.bundle",
+            "MainBundleSize": 6366664,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Audio/鸟叫背景音.mp3",
+            "AssetGUID": "eae95f7fc78a5d94786fbb352c7716d6",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_audio.bundle",
+            "MainBundleSize": 6366664,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Fish/FishValues/Sprite-blackcarp-value.png",
+            "AssetGUID": "513fcf0a775b5034e9393e7cc671ee0f",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites_fish_fishvalues.bundle",
+            "MainBundleSize": 9177,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Fish/FishValues/Sprite-brokenwatch-value.png",
+            "AssetGUID": "2330119c1fa49df42a707ad2a76e24cf",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites_fish_fishvalues.bundle",
+            "MainBundleSize": 9177,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Fish/FishValues/Sprite-catfish-value.png",
+            "AssetGUID": "ffc331b45b4afde4589560dfbaef1f97",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites_fish_fishvalues.bundle",
+            "MainBundleSize": 9177,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Fish/FishValues/Sprite-chubbychub-value.png",
+            "AssetGUID": "e853e9998f0c5ef45875ad6f6c7ce010",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites_fish_fishvalues.bundle",
+            "MainBundleSize": 9177,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Fish/FishValues/Sprite-clam-value.png",
+            "AssetGUID": "89f060673c328bc4a9a6c63df477413d",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites_fish_fishvalues.bundle",
+            "MainBundleSize": 9177,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Fish/FishValues/Sprite-classicbass-value.png",
+            "AssetGUID": "46e05aa5aeac8c44286789243b3658e6",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites_fish_fishvalues.bundle",
+            "MainBundleSize": 9177,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Fish/FishValues/Sprite-colorfullookingcarp-value.png",
+            "AssetGUID": "ee2f64e91bc08bc449722f2a389b6bc3",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites_fish_fishvalues.bundle",
+            "MainBundleSize": 9177,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Fish/FishValues/Sprite-crab-value.png",
+            "AssetGUID": "cd3d98102133efc45b1abf90eb691084",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites_fish_fishvalues.bundle",
+            "MainBundleSize": 9177,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Fish/FishValues/Sprite-dinosaurfish-value.png",
+            "AssetGUID": "8015d523e5d11774b8387d8145a0a5c6",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites_fish_fishvalues.bundle",
+            "MainBundleSize": 9177,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Fish/FishValues/Sprite-fishshapedfoam-value.png",
+            "AssetGUID": "90802e4e7cadeef4f9380cc9da3bd436",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites_fish_fishvalues.bundle",
+            "MainBundleSize": 9177,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Fish/FishValues/Sprite-grasscarp-value.png",
+            "AssetGUID": "2e33dacd1afba3a4a9f71e516be4982a",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites_fish_fishvalues.bundle",
+            "MainBundleSize": 9177,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Fish/FishValues/Sprite-mudfish-value.png",
+            "AssetGUID": "f03ff840f424fe748be4c3331dac0c9c",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites_fish_fishvalues.bundle",
+            "MainBundleSize": 9177,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Fish/FishValues/Sprite-neverseenthisbefore-value.png",
+            "AssetGUID": "874f9505e2b1e5944b054cd693d4b5a2",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites_fish_fishvalues.bundle",
+            "MainBundleSize": 9177,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Fish/FishValues/Sprite-pinkbass-value.png",
+            "AssetGUID": "8f85924d5b4f6204fa2ce0fd9c2194f7",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites_fish_fishvalues.bundle",
+            "MainBundleSize": 9177,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Fish/FishValues/Sprite-rainbowtrout-value.png",
+            "AssetGUID": "ae13cff99fb2c4148ba0a006421c7dd6",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites_fish_fishvalues.bundle",
+            "MainBundleSize": 9177,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Fish/FishValues/Sprite-snail-value.png",
+            "AssetGUID": "e4bd150c89945164fa4ad79bd76554af",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites_fish_fishvalues.bundle",
+            "MainBundleSize": 9177,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Fish/FishValues/Sprite-softshellturtle-value.png",
+            "AssetGUID": "9dc82bc1d304ba340900b3fcd031fa02",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites_fish_fishvalues.bundle",
+            "MainBundleSize": 9177,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Fish/FishValues/Sprite-thisnotedible-value.png",
+            "AssetGUID": "5471654a41117aa4b8a9202cc92b9b92",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites_fish_fishvalues.bundle",
+            "MainBundleSize": 9177,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Fish/FishValues/Sprite-toyfishbone-value.png",
+            "AssetGUID": "1e2127a79658bbe44b6241b41b4eeec3",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites_fish_fishvalues.bundle",
+            "MainBundleSize": 9177,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Fish/FishValues/Sprite-trout-value.png",
+            "AssetGUID": "cb30909742569574aa042178797a2031",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites_fish_fishvalues.bundle",
+            "MainBundleSize": 9177,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Fish/FishValues/Sprite-wallet-value.png",
+            "AssetGUID": "249f55297f37da54ab7c0c511538bc9b",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites_fish_fishvalues.bundle",
+            "MainBundleSize": 9177,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Fish/Sprite-Blackcarp.png",
+            "AssetGUID": "e2c2ce6bf4e5a3047979c9b11cae4d5a",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites_fish.bundle",
+            "MainBundleSize": 174396,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Fish/Sprite-catfish.png",
+            "AssetGUID": "34d39bb2dda19ff4793f55f284002b0a",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites_fish.bundle",
+            "MainBundleSize": 174396,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Fish/Sprite-chubby chub.png",
+            "AssetGUID": "61bbfb4cfe3938a46baf1df8f7f3ce4a",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites_fish.bundle",
+            "MainBundleSize": 174396,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Fish/Sprite-clam.png",
+            "AssetGUID": "7e7ee9c454b4e3848b078e0b02bb19d8",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites_fish.bundle",
+            "MainBundleSize": 174396,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Fish/Sprite-ClassicBass.png",
+            "AssetGUID": "4d3927b1ccf02d145a0ed0d2fdd8404a",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites_fish.bundle",
+            "MainBundleSize": 174396,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Fish/Sprite-Colorfullookingcarp.png",
+            "AssetGUID": "9258e34acb56900499911cdfea9e9bf9",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites_fish.bundle",
+            "MainBundleSize": 174396,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Fish/Sprite-crab.png",
+            "AssetGUID": "090f4c2ba5d38a24b83692a60bc39016",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites_fish.bundle",
+            "MainBundleSize": 174396,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Fish/Sprite-dinosaurfish.png",
+            "AssetGUID": "ee79c13c66fc6594393ccc76372914f7",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites_fish.bundle",
+            "MainBundleSize": 174396,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Fish/Sprite-fishshapedfoam.png",
+            "AssetGUID": "be65b616c5d862d45906fa86429edc8c",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites_fish.bundle",
+            "MainBundleSize": 174396,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Fish/Sprite-Godfeastsonthefifthday.png",
+            "AssetGUID": "4420125bf2dd80e46aa4a131b8fc3e55",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites_fish.bundle",
+            "MainBundleSize": 174396,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Fish/Sprite-grasscarp.png",
+            "AssetGUID": "cc826caf09967264bab1f5de4e677766",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites_fish.bundle",
+            "MainBundleSize": 174396,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Fish/Sprite-mudfish.png",
+            "AssetGUID": "8fd6fc4361fadfe4395dfe0ad14b427c",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites_fish.bundle",
+            "MainBundleSize": 174396,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Fish/Sprite-names (1).png",
+            "AssetGUID": "9773d4ba6ba22a04489efac5ea96b3ab",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites_fish.bundle",
+            "MainBundleSize": 174396,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Fish/Sprite-names (2).png",
+            "AssetGUID": "e4923f62c5562e7418cc2351e475d181",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites_fish.bundle",
+            "MainBundleSize": 174396,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Fish/Sprite-names.png",
+            "AssetGUID": "5f4f917a47f172245a304bfb1bc4b4aa",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites_fish.bundle",
+            "MainBundleSize": 174396,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Fish/Sprite-Neverseenthisbefore.png",
+            "AssetGUID": "96133786350141f4ba387c41b23ad382",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites_fish.bundle",
+            "MainBundleSize": 174396,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Fish/Sprite-PinkBass.png",
+            "AssetGUID": "4938e424fcb58a04c9b61f97284ac58d",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites_fish.bundle",
+            "MainBundleSize": 174396,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Fish/Sprite-rainbowtrout.png",
+            "AssetGUID": "21a6e71c6aadca84ebd666839d0ca6b8",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites_fish.bundle",
+            "MainBundleSize": 174396,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Fish/Sprite-snail.png",
+            "AssetGUID": "b0a512d97a63a1d488ab44e2c7b48201",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites_fish.bundle",
+            "MainBundleSize": 174396,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Fish/Sprite-softshellturtle.png",
+            "AssetGUID": "0fa803f28bfc77b48b3f3ecb03b82260",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites_fish.bundle",
+            "MainBundleSize": 174396,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Fish/Sprite-thisnotedible.png",
+            "AssetGUID": "23f33f57c694e4543a3b94a3e3c743fb",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites_fish.bundle",
+            "MainBundleSize": 174396,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Fish/Sprite-toyfishbone.png",
+            "AssetGUID": "87501e815ca8a184eb95fdcc5b7cd69e",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites_fish.bundle",
+            "MainBundleSize": 174396,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Fish/Sprite-trout.png",
+            "AssetGUID": "347e94025d358184798e01369e465fb3",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites_fish.bundle",
+            "MainBundleSize": 174396,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Fish/Sprite-Valuetable.png",
+            "AssetGUID": "e12ad56d571781b46bd4a875292a5c5f",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites_fish.bundle",
+            "MainBundleSize": 174396,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Fish/Sprite-wallet.png",
+            "AssetGUID": "710eda7f51cc1374b81abfc25bf9440b",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites_fish.bundle",
+            "MainBundleSize": 174396,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Fish/watch.png",
+            "AssetGUID": "723e07c3aa076a2499f3e08c1c16e4b8",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites_fish.bundle",
+            "MainBundleSize": 174396,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Icon.png",
+            "AssetGUID": "9eba76ccab716d743a14af8210c6a510",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites.bundle",
+            "MainBundleSize": 151697,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Logos/Sprite-Opening.asset",
+            "AssetGUID": "b803af2c76b8e3945adfd6a556bd461f",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites_logos.bundle",
+            "MainBundleSize": 1559242,
+            "DependAssets": [
+                "Assets/Arts/Sprites/Logos/Sprite-Opening/Sprite-Opening_1.png",
+                "Assets/Arts/Sprites/Logos/Sprite-Opening/Sprite-Opening_10.png",
+                "Assets/Arts/Sprites/Logos/Sprite-Opening/Sprite-Opening_11.png",
+                "Assets/Arts/Sprites/Logos/Sprite-Opening/Sprite-Opening_12.png",
+                "Assets/Arts/Sprites/Logos/Sprite-Opening/Sprite-Opening_2.png",
+                "Assets/Arts/Sprites/Logos/Sprite-Opening/Sprite-Opening_3.png",
+                "Assets/Arts/Sprites/Logos/Sprite-Opening/Sprite-Opening_4.png",
+                "Assets/Arts/Sprites/Logos/Sprite-Opening/Sprite-Opening_5.png",
+                "Assets/Arts/Sprites/Logos/Sprite-Opening/Sprite-Opening_6.png",
+                "Assets/Arts/Sprites/Logos/Sprite-Opening/Sprite-Opening_7.png",
+                "Assets/Arts/Sprites/Logos/Sprite-Opening/Sprite-Opening_8.png",
+                "Assets/Arts/Sprites/Logos/Sprite-Opening/Sprite-Opening_9.png"
+            ]
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Logos/Sprite-Opening.gif",
+            "AssetGUID": "3b10d77237e7d8846b78c4a61d1af4d9",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites_logos.bundle",
+            "MainBundleSize": 1559242,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Logos/Sprite-Opening/Sprite-Opening_1.png",
+            "AssetGUID": "a8825d06280a1b7459156804e5293dc8",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites_logos_sprite-opening.bundle",
+            "MainBundleSize": 3053708,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Logos/Sprite-Opening/Sprite-Opening_10.png",
+            "AssetGUID": "f3d9dd7c4a1559740bf990e6b1b8f163",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites_logos_sprite-opening.bundle",
+            "MainBundleSize": 3053708,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Logos/Sprite-Opening/Sprite-Opening_11.png",
+            "AssetGUID": "cbf680a4a73dc0441ac3d7f05c87b35c",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites_logos_sprite-opening.bundle",
+            "MainBundleSize": 3053708,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Logos/Sprite-Opening/Sprite-Opening_12.png",
+            "AssetGUID": "3c30c335692d8924b91345bf876c7c20",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites_logos_sprite-opening.bundle",
+            "MainBundleSize": 3053708,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Logos/Sprite-Opening/Sprite-Opening_2.png",
+            "AssetGUID": "330b73bcab6f04347bcd12cb998cadf6",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites_logos_sprite-opening.bundle",
+            "MainBundleSize": 3053708,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Logos/Sprite-Opening/Sprite-Opening_3.png",
+            "AssetGUID": "06d6758256cdf784f8ccd62c347ffc8c",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites_logos_sprite-opening.bundle",
+            "MainBundleSize": 3053708,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Logos/Sprite-Opening/Sprite-Opening_4.png",
+            "AssetGUID": "c2b65540323a1e845a2b10e1f339180e",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites_logos_sprite-opening.bundle",
+            "MainBundleSize": 3053708,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Logos/Sprite-Opening/Sprite-Opening_5.png",
+            "AssetGUID": "24ab7bce7c945804c93b423c088f006e",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites_logos_sprite-opening.bundle",
+            "MainBundleSize": 3053708,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Logos/Sprite-Opening/Sprite-Opening_6.png",
+            "AssetGUID": "da6f888f50d82e24ebb6a0c3cd0e77e3",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites_logos_sprite-opening.bundle",
+            "MainBundleSize": 3053708,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Logos/Sprite-Opening/Sprite-Opening_7.png",
+            "AssetGUID": "3a4f7ce703d24d340b04db430a5b3376",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites_logos_sprite-opening.bundle",
+            "MainBundleSize": 3053708,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Logos/Sprite-Opening/Sprite-Opening_8.png",
+            "AssetGUID": "50e9ba25eefb471498d6dec165d1f222",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites_logos_sprite-opening.bundle",
+            "MainBundleSize": 3053708,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Logos/Sprite-Opening/Sprite-Opening_9.png",
+            "AssetGUID": "677da81ee02ca784a87383b03b5fcbc0",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites_logos_sprite-opening.bundle",
+            "MainBundleSize": 3053708,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Logos/Sprite-OpeningEnd.asset",
+            "AssetGUID": "a6faf578f7e60e549b64db6d59a262eb",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites_logos.bundle",
+            "MainBundleSize": 1559242,
+            "DependAssets": [
+                "Assets/Arts/Sprites/Logos/Sprite-OpeningEnd/Sprite-OpeningEnd_1.png",
+                "Assets/Arts/Sprites/Logos/Sprite-OpeningEnd/Sprite-OpeningEnd_2.png",
+                "Assets/Arts/Sprites/Logos/Sprite-OpeningEnd/Sprite-OpeningEnd_3.png",
+                "Assets/Arts/Sprites/Logos/Sprite-OpeningEnd/Sprite-OpeningEnd_4.png",
+                "Assets/Arts/Sprites/Logos/Sprite-OpeningEnd/Sprite-OpeningEnd_5.png",
+                "Assets/Arts/Sprites/Logos/Sprite-OpeningEnd/Sprite-OpeningEnd_6.png"
+            ]
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Logos/Sprite-OpeningEnd.gif",
+            "AssetGUID": "d8fd05e2be9da6642a99c1b5c869a9e0",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites_logos.bundle",
+            "MainBundleSize": 1559242,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Logos/Sprite-OpeningEnd/Sprite-OpeningEnd_1.png",
+            "AssetGUID": "d52d569b82de3fc42aafd3ed3b9346db",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites_logos_sprite-openingend.bundle",
+            "MainBundleSize": 2263718,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Logos/Sprite-OpeningEnd/Sprite-OpeningEnd_2.png",
+            "AssetGUID": "19867bcc05af3b54f8da1c29f515d1b5",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites_logos_sprite-openingend.bundle",
+            "MainBundleSize": 2263718,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Logos/Sprite-OpeningEnd/Sprite-OpeningEnd_3.png",
+            "AssetGUID": "592ae3ddfe9239a41bfaf0a486afff02",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites_logos_sprite-openingend.bundle",
+            "MainBundleSize": 2263718,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Logos/Sprite-OpeningEnd/Sprite-OpeningEnd_4.png",
+            "AssetGUID": "80412ec818965ff4d8bf28ecf094164a",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites_logos_sprite-openingend.bundle",
+            "MainBundleSize": 2263718,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Logos/Sprite-OpeningEnd/Sprite-OpeningEnd_5.png",
+            "AssetGUID": "da7b262fea5cf4146b992038c76c02fc",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites_logos_sprite-openingend.bundle",
+            "MainBundleSize": 2263718,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Logos/Sprite-OpeningEnd/Sprite-OpeningEnd_6.png",
+            "AssetGUID": "a2028a6b00e48a342b75373dcd2bc328",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites_logos_sprite-openingend.bundle",
+            "MainBundleSize": 2263718,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Logos/Sprite-Openinglogo.asset",
+            "AssetGUID": "d6f92e7a74de27d47a274cf566d3fec8",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites_logos.bundle",
+            "MainBundleSize": 1559242,
+            "DependAssets": [
+                "Assets/Arts/Sprites/Logos/Sprite-Openinglogo/Sprite-Openinglogo_1.png",
+                "Assets/Arts/Sprites/Logos/Sprite-Openinglogo/Sprite-Openinglogo_10.png",
+                "Assets/Arts/Sprites/Logos/Sprite-Openinglogo/Sprite-Openinglogo_11.png",
+                "Assets/Arts/Sprites/Logos/Sprite-Openinglogo/Sprite-Openinglogo_12.png",
+                "Assets/Arts/Sprites/Logos/Sprite-Openinglogo/Sprite-Openinglogo_13.png",
+                "Assets/Arts/Sprites/Logos/Sprite-Openinglogo/Sprite-Openinglogo_14.png",
+                "Assets/Arts/Sprites/Logos/Sprite-Openinglogo/Sprite-Openinglogo_15.png",
+                "Assets/Arts/Sprites/Logos/Sprite-Openinglogo/Sprite-Openinglogo_16.png",
+                "Assets/Arts/Sprites/Logos/Sprite-Openinglogo/Sprite-Openinglogo_17.png",
+                "Assets/Arts/Sprites/Logos/Sprite-Openinglogo/Sprite-Openinglogo_18.png",
+                "Assets/Arts/Sprites/Logos/Sprite-Openinglogo/Sprite-Openinglogo_19.png",
+                "Assets/Arts/Sprites/Logos/Sprite-Openinglogo/Sprite-Openinglogo_2.png",
+                "Assets/Arts/Sprites/Logos/Sprite-Openinglogo/Sprite-Openinglogo_20.png",
+                "Assets/Arts/Sprites/Logos/Sprite-Openinglogo/Sprite-Openinglogo_3.png",
+                "Assets/Arts/Sprites/Logos/Sprite-Openinglogo/Sprite-Openinglogo_4.png",
+                "Assets/Arts/Sprites/Logos/Sprite-Openinglogo/Sprite-Openinglogo_5.png",
+                "Assets/Arts/Sprites/Logos/Sprite-Openinglogo/Sprite-Openinglogo_6.png",
+                "Assets/Arts/Sprites/Logos/Sprite-Openinglogo/Sprite-Openinglogo_7.png",
+                "Assets/Arts/Sprites/Logos/Sprite-Openinglogo/Sprite-Openinglogo_8.png",
+                "Assets/Arts/Sprites/Logos/Sprite-Openinglogo/Sprite-Openinglogo_9.png"
+            ]
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Logos/Sprite-Openinglogo.gif",
+            "AssetGUID": "18d690fe741a7e24bbbce7069cf174b5",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites_logos.bundle",
+            "MainBundleSize": 1559242,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Logos/Sprite-Openinglogo/Sprite-Openinglogo_1.png",
+            "AssetGUID": "74c3d595332d3a34688fc2e2a86c2d1e",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites_logos_sprite-openinglogo.bundle",
+            "MainBundleSize": 862536,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Logos/Sprite-Openinglogo/Sprite-Openinglogo_10.png",
+            "AssetGUID": "4d436b7635c41964d840a8384bb9bd9b",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites_logos_sprite-openinglogo.bundle",
+            "MainBundleSize": 862536,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Logos/Sprite-Openinglogo/Sprite-Openinglogo_11.png",
+            "AssetGUID": "5fcaf40046dbfb64490428cb4ceb0bb6",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites_logos_sprite-openinglogo.bundle",
+            "MainBundleSize": 862536,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Logos/Sprite-Openinglogo/Sprite-Openinglogo_12.png",
+            "AssetGUID": "9295c4148006fe045b1b4e7b21900902",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites_logos_sprite-openinglogo.bundle",
+            "MainBundleSize": 862536,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Logos/Sprite-Openinglogo/Sprite-Openinglogo_13.png",
+            "AssetGUID": "7551cf0d09b460f47848174f880647b8",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites_logos_sprite-openinglogo.bundle",
+            "MainBundleSize": 862536,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Logos/Sprite-Openinglogo/Sprite-Openinglogo_14.png",
+            "AssetGUID": "951bd95169e1aa44fa293e0838814ebf",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites_logos_sprite-openinglogo.bundle",
+            "MainBundleSize": 862536,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Logos/Sprite-Openinglogo/Sprite-Openinglogo_15.png",
+            "AssetGUID": "d89f3b4274c33404c9e03c2ec4e79fde",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites_logos_sprite-openinglogo.bundle",
+            "MainBundleSize": 862536,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Logos/Sprite-Openinglogo/Sprite-Openinglogo_16.png",
+            "AssetGUID": "218a2ff2c830afe4487f5fdebc74cefb",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites_logos_sprite-openinglogo.bundle",
+            "MainBundleSize": 862536,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Logos/Sprite-Openinglogo/Sprite-Openinglogo_17.png",
+            "AssetGUID": "098c68ef1b73bed4193df5bc992b99d6",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites_logos_sprite-openinglogo.bundle",
+            "MainBundleSize": 862536,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Logos/Sprite-Openinglogo/Sprite-Openinglogo_18.png",
+            "AssetGUID": "9d3be0625282e6f4cbc56a260257c12c",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites_logos_sprite-openinglogo.bundle",
+            "MainBundleSize": 862536,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Logos/Sprite-Openinglogo/Sprite-Openinglogo_19.png",
+            "AssetGUID": "13ceaf38b0bef3f4d83fe1db4c0ced3b",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites_logos_sprite-openinglogo.bundle",
+            "MainBundleSize": 862536,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Logos/Sprite-Openinglogo/Sprite-Openinglogo_2.png",
+            "AssetGUID": "0cb74eb00af7c5845b7e593747e5aeaa",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites_logos_sprite-openinglogo.bundle",
+            "MainBundleSize": 862536,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Logos/Sprite-Openinglogo/Sprite-Openinglogo_20.png",
+            "AssetGUID": "5d74478716992e84fad3f59188c9950d",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites_logos_sprite-openinglogo.bundle",
+            "MainBundleSize": 862536,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Logos/Sprite-Openinglogo/Sprite-Openinglogo_3.png",
+            "AssetGUID": "494f74aaca6fd5a46957b884459aaef9",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites_logos_sprite-openinglogo.bundle",
+            "MainBundleSize": 862536,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Logos/Sprite-Openinglogo/Sprite-Openinglogo_4.png",
+            "AssetGUID": "0f1e6575fce9f7c4ebeeda7d9211512f",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites_logos_sprite-openinglogo.bundle",
+            "MainBundleSize": 862536,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Logos/Sprite-Openinglogo/Sprite-Openinglogo_5.png",
+            "AssetGUID": "81aa78ba0ef57b0438d695706e0259a4",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites_logos_sprite-openinglogo.bundle",
+            "MainBundleSize": 862536,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Logos/Sprite-Openinglogo/Sprite-Openinglogo_6.png",
+            "AssetGUID": "01590b7097212a747b49fee3c6dc737b",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites_logos_sprite-openinglogo.bundle",
+            "MainBundleSize": 862536,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Logos/Sprite-Openinglogo/Sprite-Openinglogo_7.png",
+            "AssetGUID": "c2512b1d410e8134984280a962acf269",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites_logos_sprite-openinglogo.bundle",
+            "MainBundleSize": 862536,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Logos/Sprite-Openinglogo/Sprite-Openinglogo_8.png",
+            "AssetGUID": "19bfd4f00e7d0a145b8d256a0d072815",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites_logos_sprite-openinglogo.bundle",
+            "MainBundleSize": 862536,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Logos/Sprite-Openinglogo/Sprite-Openinglogo_9.png",
+            "AssetGUID": "5489198865ced5746bf5ca5053e8c2aa",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites_logos_sprite-openinglogo.bundle",
+            "MainBundleSize": 862536,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Logos/Sprite-OpeningSTART.asset",
+            "AssetGUID": "cabadfd7e5514f34ab9bafe58a02fef2",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites_logos.bundle",
+            "MainBundleSize": 1559242,
+            "DependAssets": [
+                "Assets/Arts/Sprites/Logos/Sprite-OpeningSTART/Sprite-OpeningSTART_1.png",
+                "Assets/Arts/Sprites/Logos/Sprite-OpeningSTART/Sprite-OpeningSTART_2.png",
+                "Assets/Arts/Sprites/Logos/Sprite-OpeningSTART/Sprite-OpeningSTART_3.png",
+                "Assets/Arts/Sprites/Logos/Sprite-OpeningSTART/Sprite-OpeningSTART_4.png",
+                "Assets/Arts/Sprites/Logos/Sprite-OpeningSTART/Sprite-OpeningSTART_5.png",
+                "Assets/Arts/Sprites/Logos/Sprite-OpeningSTART/Sprite-OpeningSTART_6.png"
+            ]
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Logos/Sprite-OpeningSTART.gif",
+            "AssetGUID": "879cc4c693e5ef74898b2e375df6aff1",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites_logos.bundle",
+            "MainBundleSize": 1559242,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Logos/Sprite-OpeningSTART/Sprite-OpeningSTART_1.png",
+            "AssetGUID": "17ffd7d480b2ff045847443e04bb1526",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites_logos_sprite-openingstart.bundle",
+            "MainBundleSize": 2309945,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Logos/Sprite-OpeningSTART/Sprite-OpeningSTART_2.png",
+            "AssetGUID": "bf1c42a867299564d8a2560d69657993",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites_logos_sprite-openingstart.bundle",
+            "MainBundleSize": 2309945,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Logos/Sprite-OpeningSTART/Sprite-OpeningSTART_3.png",
+            "AssetGUID": "ab510b56a6ff3c24c8710fce51874948",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites_logos_sprite-openingstart.bundle",
+            "MainBundleSize": 2309945,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Logos/Sprite-OpeningSTART/Sprite-OpeningSTART_4.png",
+            "AssetGUID": "34cc45140fd8f2646bc2515d5a6861d5",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites_logos_sprite-openingstart.bundle",
+            "MainBundleSize": 2309945,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Logos/Sprite-OpeningSTART/Sprite-OpeningSTART_5.png",
+            "AssetGUID": "6987295b9e052444aab2c2cf042a8b6f",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites_logos_sprite-openingstart.bundle",
+            "MainBundleSize": 2309945,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Logos/Sprite-OpeningSTART/Sprite-OpeningSTART_6.png",
+            "AssetGUID": "53f466abb05396c4cb632769fc2ad49b",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites_logos_sprite-openingstart.bundle",
+            "MainBundleSize": 2309945,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Logos/Sprite-Outroend.asset",
+            "AssetGUID": "8650bc3f0436b7a438d42a5df9280af6",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites_logos.bundle",
+            "MainBundleSize": 1559242,
+            "DependAssets": [
+                "Assets/Arts/Sprites/Logos/Sprite-Outroend/Sprite-Outroend_1.png",
+                "Assets/Arts/Sprites/Logos/Sprite-Outroend/Sprite-Outroend_10.png",
+                "Assets/Arts/Sprites/Logos/Sprite-Outroend/Sprite-Outroend_11.png",
+                "Assets/Arts/Sprites/Logos/Sprite-Outroend/Sprite-Outroend_12.png",
+                "Assets/Arts/Sprites/Logos/Sprite-Outroend/Sprite-Outroend_2.png",
+                "Assets/Arts/Sprites/Logos/Sprite-Outroend/Sprite-Outroend_3.png",
+                "Assets/Arts/Sprites/Logos/Sprite-Outroend/Sprite-Outroend_4.png",
+                "Assets/Arts/Sprites/Logos/Sprite-Outroend/Sprite-Outroend_5.png",
+                "Assets/Arts/Sprites/Logos/Sprite-Outroend/Sprite-Outroend_6.png",
+                "Assets/Arts/Sprites/Logos/Sprite-Outroend/Sprite-Outroend_7.png",
+                "Assets/Arts/Sprites/Logos/Sprite-Outroend/Sprite-Outroend_8.png",
+                "Assets/Arts/Sprites/Logos/Sprite-Outroend/Sprite-Outroend_9.png"
+            ]
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Logos/Sprite-Outroend.gif",
+            "AssetGUID": "ad7ea29bbead4c54eb5ced8352772941",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites_logos.bundle",
+            "MainBundleSize": 1559242,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Logos/Sprite-Outroend/Sprite-Outroend_1.png",
+            "AssetGUID": "7014cd8630690ce4b8a2919c355de506",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites_logos_sprite-outroend.bundle",
+            "MainBundleSize": 3087935,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Logos/Sprite-Outroend/Sprite-Outroend_10.png",
+            "AssetGUID": "cec450f36c368874b9ac081168216ffc",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites_logos_sprite-outroend.bundle",
+            "MainBundleSize": 3087935,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Logos/Sprite-Outroend/Sprite-Outroend_11.png",
+            "AssetGUID": "2dd8ada6e6b968340bf197683b4bfef6",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites_logos_sprite-outroend.bundle",
+            "MainBundleSize": 3087935,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Logos/Sprite-Outroend/Sprite-Outroend_12.png",
+            "AssetGUID": "ca202869c4cb8af438f75605f49b59e0",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites_logos_sprite-outroend.bundle",
+            "MainBundleSize": 3087935,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Logos/Sprite-Outroend/Sprite-Outroend_2.png",
+            "AssetGUID": "8c7c74255ee52a44989a56973679dabb",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites_logos_sprite-outroend.bundle",
+            "MainBundleSize": 3087935,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Logos/Sprite-Outroend/Sprite-Outroend_3.png",
+            "AssetGUID": "e88214a066d8e5149b4f76fd47176f38",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites_logos_sprite-outroend.bundle",
+            "MainBundleSize": 3087935,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Logos/Sprite-Outroend/Sprite-Outroend_4.png",
+            "AssetGUID": "1fe09e49001899144bc0dc95c33f99cb",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites_logos_sprite-outroend.bundle",
+            "MainBundleSize": 3087935,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Logos/Sprite-Outroend/Sprite-Outroend_5.png",
+            "AssetGUID": "d75e984640129704e81a7329330f3bdd",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites_logos_sprite-outroend.bundle",
+            "MainBundleSize": 3087935,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Logos/Sprite-Outroend/Sprite-Outroend_6.png",
+            "AssetGUID": "27847c046870ee94598e088d049f7fb8",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites_logos_sprite-outroend.bundle",
+            "MainBundleSize": 3087935,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Logos/Sprite-Outroend/Sprite-Outroend_7.png",
+            "AssetGUID": "d7d2b3536fad85642b3a014f765beae7",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites_logos_sprite-outroend.bundle",
+            "MainBundleSize": 3087935,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Logos/Sprite-Outroend/Sprite-Outroend_8.png",
+            "AssetGUID": "d67608b4035f4184bac3e0b476d9e8d5",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites_logos_sprite-outroend.bundle",
+            "MainBundleSize": 3087935,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Logos/Sprite-Outroend/Sprite-Outroend_9.png",
+            "AssetGUID": "5563afbc40b68374080985ab4e1fea40",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites_logos_sprite-outroend.bundle",
+            "MainBundleSize": 3087935,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/mouse.png",
+            "AssetGUID": "6f0bf613303d6474f82ed730df6064a9",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites.bundle",
+            "MainBundleSize": 151697,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Sprite-bg day3-5.png",
+            "AssetGUID": "bb3ba5f86e621df4c9feca7b34d85512",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites.bundle",
+            "MainBundleSize": 151697,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Sprite-bg.png",
+            "AssetGUID": "66cbcef5ed3e8ea44b25d16c14200864",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites.bundle",
+            "MainBundleSize": 151697,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Sprite-check.png",
+            "AssetGUID": "8656fbabac8b53a4a89f5e2d14405de2",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites.bundle",
+            "MainBundleSize": 151697,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Sprite-cloud.png",
+            "AssetGUID": "51015423acdc02248a807f9d787db66b",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites.bundle",
+            "MainBundleSize": 151697,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Sprite-Crediticon.png",
+            "AssetGUID": "a10d964ee94aa594b96aea7c3973efc9",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites.bundle",
+            "MainBundleSize": 151697,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Sprite-cursor.png",
+            "AssetGUID": "75d53a2259976cc429b852971a9da301",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites.bundle",
+            "MainBundleSize": 151697,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Sprite-day2-4.png",
+            "AssetGUID": "1e85620a6f4027941840de5c42ec80b3",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites.bundle",
+            "MainBundleSize": 151697,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Sprite-daycounter-export.png",
+            "AssetGUID": "9c3bfd503d35fab46b671b5da4fa88bf",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites.bundle",
+            "MainBundleSize": 151697,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Sprite-E.png",
+            "AssetGUID": "c97f6cfac248a1740b07c965c3ce2b33",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites.bundle",
+            "MainBundleSize": 151697,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Sprite-hook.png",
+            "AssetGUID": "8b94fce568fa2a54e9f28d3434252f2f",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites.bundle",
+            "MainBundleSize": 151697,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Sprite-new water.png",
+            "AssetGUID": "52cac98e34f3ba442b0a6ccdf9461a72",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites.bundle",
+            "MainBundleSize": 151697,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Sprite-obstacle1.png",
+            "AssetGUID": "49896bb36977db64d80d26ae48797106",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites.bundle",
+            "MainBundleSize": 151697,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Sprite-obstacle2.png",
+            "AssetGUID": "12c41be6ada67d344abb21ebed35a38a",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites.bundle",
+            "MainBundleSize": 151697,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Sprite-obstacle3.png",
+            "AssetGUID": "8b53ccc90c37c1c4390e890380d6b034",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites.bundle",
+            "MainBundleSize": 151697,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Sprite-obstacle4.png",
+            "AssetGUID": "d7032d1f0bfb24148a544d78fee7eea0",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites.bundle",
+            "MainBundleSize": 151697,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Sprite-OBSTACLESET1.png",
+            "AssetGUID": "e38d3d9ec28bb1c40a63e5aa78569588",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites.bundle",
+            "MainBundleSize": 151697,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Sprite-OBSTACLESET2.png",
+            "AssetGUID": "c22ffd45d8ad92a45a4be51ae91c2705",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites.bundle",
+            "MainBundleSize": 151697,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Sprite-scrollwheel.png",
+            "AssetGUID": "8595e8d431ef38541acc3bd4182cb86c",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites.bundle",
+            "MainBundleSize": 151697,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Sprite-shop.png",
+            "AssetGUID": "7dceaebda71366f44ad04a5581743123",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites.bundle",
+            "MainBundleSize": 151697,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Sprite-sky.png",
+            "AssetGUID": "42d442d8a82d9444cbb3db4aecafa944",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites.bundle",
+            "MainBundleSize": 151697,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Sprite-sun.png",
+            "AssetGUID": "c2d2d9ce896aad342ae89846a6441001",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites.bundle",
+            "MainBundleSize": 151697,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Sprite-title.png",
+            "AssetGUID": "921f8794ec016f445a0a5e5b2a06727c",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites.bundle",
+            "MainBundleSize": 151697,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Sprite-underwaterbubbles1.png",
+            "AssetGUID": "853b45c82785a254fa206b711343b96a",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites.bundle",
+            "MainBundleSize": 151697,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Sprite-WASD.png",
+            "AssetGUID": "521b2fa90457b5f48ab6eae6d42a31e2",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites.bundle",
+            "MainBundleSize": 151697,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Sprite-water (1).png",
+            "AssetGUID": "8169af50768f9af48bad5c1519be08a6",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites.bundle",
+            "MainBundleSize": 151697,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/Sprite-water.png",
+            "AssetGUID": "a888d3e3fa99e4f40ba418d0acf68a28",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites.bundle",
+            "MainBundleSize": 151697,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/布局参考.png",
+            "AssetGUID": "f30a8b6dfa63f7b4ca34ce3792951b29",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites.bundle",
+            "MainBundleSize": 151697,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/帧动画（sheet)/Sprite-boatripple-Sheet.png",
+            "AssetGUID": "a3bd2f2de6703d14a84257ff2d9c1044",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites_帧动画（sheet).bundle",
+            "MainBundleSize": 55941,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/帧动画（sheet)/Sprite-bubbles-Sheet.png",
+            "AssetGUID": "636e07775c095e74ab8e815aee53d16b",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites_帧动画（sheet).bundle",
+            "MainBundleSize": 55941,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/帧动画（sheet)/Sprite-catch-Sheet.png",
+            "AssetGUID": "0f2a23fa638adb946ad4054337ddd364",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites_帧动画（sheet).bundle",
+            "MainBundleSize": 55941,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/帧动画（sheet)/Sprite-endingcatch-Sheet.png",
+            "AssetGUID": "9d7d12e1df45c614b91561265c49c7fc",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites_帧动画（sheet).bundle",
+            "MainBundleSize": 55941,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/帧动画（sheet)/Sprite-endloop-Sheet.png",
+            "AssetGUID": "edd0267178c544f409ce7bb1ca5358dd",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites_帧动画（sheet).bundle",
+            "MainBundleSize": 55941,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/帧动画（sheet)/Sprite-fishingidle-Sheet.png",
+            "AssetGUID": "9dc90265d48c7264191b3f3f8c95d4fb",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites_帧动画（sheet).bundle",
+            "MainBundleSize": 55941,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/帧动画（sheet)/Sprite-minimumbubbles-Sheet.png",
+            "AssetGUID": "a230a176889b66a4fbe854910babc0c7",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites_帧动画（sheet).bundle",
+            "MainBundleSize": 55941,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/帧动画（sheet)/Sprite-sailing-Sheet.png",
+            "AssetGUID": "45f71366ed29d23458e77af459b4bcd0",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites_帧动画（sheet).bundle",
+            "MainBundleSize": 55941,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/帧动画（sheet)/Sprite-smolbubbles-Sheet.png",
+            "AssetGUID": "76f6fda57b131be44b3f41b104b37c20",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites_帧动画（sheet).bundle",
+            "MainBundleSize": 55941,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/帧动画（sheet)/Sprite-startfishing-Sheet.png",
+            "AssetGUID": "03d70e04484742140a5001ddf3216b5c",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites_帧动画（sheet).bundle",
+            "MainBundleSize": 55941,
+            "DependAssets": []
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Arts/Sprites/帧动画（sheet)/Sprite-XLbubbles-Sheet.png",
+            "AssetGUID": "27f49908331bcb740a9a29e899a87f5c",
+            "AssetTags": [],
+            "MainBundleName": "assets_arts_sprites_帧动画（sheet).bundle",
+            "MainBundleSize": 55941,
+            "DependAssets": []
+        }
+    ],
+    "BundleInfos": [
+        {
+            "BundleName": "assets_arts_animations_bubble.bundle",
+            "FileName": "65c867a312f46c298483eee4a643b778.bundle",
+            "FileHash": "65c867a312f46c298483eee4a643b778",
+            "FileCRC": "20fd0935",
+            "FileSize": 13642,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundles": [
+                "assets_arts_sprites_帧动画（sheet).bundle"
+            ],
+            "AllBuiltinAssets": [
+                "Assets/Arts/Animations/Bubble/Bubble Animator Controller.controller",
+                "Assets/Arts/Animations/Bubble/BubbleBigAnim.anim",
+                "Assets/Arts/Animations/Bubble/BubbleHugeAnim.anim",
+                "Assets/Arts/Animations/Bubble/BubbleMidAnim.anim",
+                "Assets/Arts/Animations/Bubble/BubbleSmallAnim.anim",
+                "Assets/Arts/Animations/Bubble/Ending Bubble Animator Controller.controller",
+                "Assets/Arts/Animations/Bubble/EndingBubbleBigAnim.anim"
+            ]
+        },
+        {
+            "BundleName": "assets_arts_animations_ripple.bundle",
+            "FileName": "ef01ba15305e68271e6bef6014b7d502.bundle",
+            "FileHash": "ef01ba15305e68271e6bef6014b7d502",
+            "FileCRC": "834bf620",
+            "FileSize": 9488,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundles": [
+                "assets_arts_sprites_帧动画（sheet).bundle"
+            ],
+            "AllBuiltinAssets": [
+                "Assets/Arts/Animations/Ripple/RippleAnimation.anim",
+                "Assets/Arts/Animations/Ripple/RippleAnimator.controller"
+            ]
+        },
+        {
+            "BundleName": "assets_arts_animations_ship.bundle",
+            "FileName": "1bf8944eac841b1957d72f19e9735df9.bundle",
+            "FileHash": "1bf8944eac841b1957d72f19e9735df9",
+            "FileCRC": "e0d94772",
+            "FileSize": 11350,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundles": [
+                "assets_arts_sprites_帧动画（sheet).bundle"
+            ],
+            "AllBuiltinAssets": [
+                "Assets/Arts/Animations/Ship/EndCatch.anim",
+                "Assets/Arts/Animations/Ship/EndLoop.anim",
+                "Assets/Arts/Animations/Ship/ShipAnimator.controller",
+                "Assets/Arts/Animations/Ship/ShipCaughtFish.anim",
+                "Assets/Arts/Animations/Ship/ShipFishing.anim",
+                "Assets/Arts/Animations/Ship/ShipSailing.anim",
+                "Assets/Arts/Animations/Ship/ShipStartFish.anim"
+            ]
+        },
+        {
+            "BundleName": "assets_arts_audio.bundle",
+            "FileName": "03bb77394e45a1d0099de3534595d665.bundle",
+            "FileHash": "03bb77394e45a1d0099de3534595d665",
+            "FileCRC": "b049f2c5",
+            "FileSize": 6366664,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundles": [],
+            "AllBuiltinAssets": [
+                "Assets/Arts/Audio/button-press.wav",
+                "Assets/Arts/Audio/morning(new).wav",
+                "Assets/Arts/Audio/morning(supernew).wav",
+                "Assets/Arts/Audio/morning.wav",
+                "Assets/Arts/Audio/night.wav",
+                "Assets/Arts/Audio/night_new.wav",
+                "Assets/Arts/Audio/shop_button.wav",
+                "Assets/Arts/Audio/升级音效.wav",
+                "Assets/Arts/Audio/垂钓音效.wav",
+                "Assets/Arts/Audio/小船移动音效.mp3",
+                "Assets/Arts/Audio/放线音效.wav",
+                "Assets/Arts/Audio/日期显示.mp3",
+                "Assets/Arts/Audio/枪响.wav",
+                "Assets/Arts/Audio/标题开场小动画.wav",
+                "Assets/Arts/Audio/树叶声.wav",
+                "Assets/Arts/Audio/水下碰到礁石.wav",
+                "Assets/Arts/Audio/水中背景音.mp3",
+                "Assets/Arts/Audio/结局配乐.mp3",
+                "Assets/Arts/Audio/连续泡泡音效.mp3",
+                "Assets/Arts/Audio/金钱音效.wav",
+                "Assets/Arts/Audio/钓到垃圾时的声音.mp3",
+                "Assets/Arts/Audio/风声.mp3",
+                "Assets/Arts/Audio/鱼咬钩的声音.wav",
+                "Assets/Arts/Audio/鸟叫背景音.mp3"
+            ]
+        },
+        {
+            "BundleName": "assets_arts_sprites.bundle",
+            "FileName": "2110f46265240e32c1dcba5d2bbfe1be.bundle",
+            "FileHash": "2110f46265240e32c1dcba5d2bbfe1be",
+            "FileCRC": "efd39fd8",
+            "FileSize": 151697,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundles": [],
+            "AllBuiltinAssets": [
+                "Assets/Arts/Sprites/Icon.png",
+                "Assets/Arts/Sprites/mouse.png",
+                "Assets/Arts/Sprites/Sprite-bg day3-5.png",
+                "Assets/Arts/Sprites/Sprite-bg.png",
+                "Assets/Arts/Sprites/Sprite-check.png",
+                "Assets/Arts/Sprites/Sprite-cloud.png",
+                "Assets/Arts/Sprites/Sprite-Crediticon.png",
+                "Assets/Arts/Sprites/Sprite-cursor.png",
+                "Assets/Arts/Sprites/Sprite-day2-4.png",
+                "Assets/Arts/Sprites/Sprite-daycounter-export.png",
+                "Assets/Arts/Sprites/Sprite-E.png",
+                "Assets/Arts/Sprites/Sprite-hook.png",
+                "Assets/Arts/Sprites/Sprite-new water.png",
+                "Assets/Arts/Sprites/Sprite-obstacle1.png",
+                "Assets/Arts/Sprites/Sprite-obstacle2.png",
+                "Assets/Arts/Sprites/Sprite-obstacle3.png",
+                "Assets/Arts/Sprites/Sprite-obstacle4.png",
+                "Assets/Arts/Sprites/Sprite-OBSTACLESET1.png",
+                "Assets/Arts/Sprites/Sprite-OBSTACLESET2.png",
+                "Assets/Arts/Sprites/Sprite-scrollwheel.png",
+                "Assets/Arts/Sprites/Sprite-shop.png",
+                "Assets/Arts/Sprites/Sprite-sky.png",
+                "Assets/Arts/Sprites/Sprite-sun.png",
+                "Assets/Arts/Sprites/Sprite-title.png",
+                "Assets/Arts/Sprites/Sprite-underwaterbubbles1.png",
+                "Assets/Arts/Sprites/Sprite-WASD.png",
+                "Assets/Arts/Sprites/Sprite-water (1).png",
+                "Assets/Arts/Sprites/Sprite-water.png",
+                "Assets/Arts/Sprites/布局参考.png"
+            ]
+        },
+        {
+            "BundleName": "assets_arts_sprites_fish.bundle",
+            "FileName": "a4676e25ab2c7002dbaa545b522d821a.bundle",
+            "FileHash": "a4676e25ab2c7002dbaa545b522d821a",
+            "FileCRC": "69805fc3",
+            "FileSize": 174396,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundles": [],
+            "AllBuiltinAssets": [
+                "Assets/Arts/Sprites/Fish/Sprite-Blackcarp.png",
+                "Assets/Arts/Sprites/Fish/Sprite-catfish.png",
+                "Assets/Arts/Sprites/Fish/Sprite-chubby chub.png",
+                "Assets/Arts/Sprites/Fish/Sprite-clam.png",
+                "Assets/Arts/Sprites/Fish/Sprite-ClassicBass.png",
+                "Assets/Arts/Sprites/Fish/Sprite-Colorfullookingcarp.png",
+                "Assets/Arts/Sprites/Fish/Sprite-crab.png",
+                "Assets/Arts/Sprites/Fish/Sprite-dinosaurfish.png",
+                "Assets/Arts/Sprites/Fish/Sprite-fishshapedfoam.png",
+                "Assets/Arts/Sprites/Fish/Sprite-Godfeastsonthefifthday.png",
+                "Assets/Arts/Sprites/Fish/Sprite-grasscarp.png",
+                "Assets/Arts/Sprites/Fish/Sprite-mudfish.png",
+                "Assets/Arts/Sprites/Fish/Sprite-names (1).png",
+                "Assets/Arts/Sprites/Fish/Sprite-names (2).png",
+                "Assets/Arts/Sprites/Fish/Sprite-names.png",
+                "Assets/Arts/Sprites/Fish/Sprite-Neverseenthisbefore.png",
+                "Assets/Arts/Sprites/Fish/Sprite-PinkBass.png",
+                "Assets/Arts/Sprites/Fish/Sprite-rainbowtrout.png",
+                "Assets/Arts/Sprites/Fish/Sprite-snail.png",
+                "Assets/Arts/Sprites/Fish/Sprite-softshellturtle.png",
+                "Assets/Arts/Sprites/Fish/Sprite-thisnotedible.png",
+                "Assets/Arts/Sprites/Fish/Sprite-toyfishbone.png",
+                "Assets/Arts/Sprites/Fish/Sprite-trout.png",
+                "Assets/Arts/Sprites/Fish/Sprite-Valuetable.png",
+                "Assets/Arts/Sprites/Fish/Sprite-wallet.png",
+                "Assets/Arts/Sprites/Fish/watch.png"
+            ]
+        },
+        {
+            "BundleName": "assets_arts_sprites_fish_fishvalues.bundle",
+            "FileName": "efa9b8c8a00e0c107e3a4bc72d7b13ab.bundle",
+            "FileHash": "efa9b8c8a00e0c107e3a4bc72d7b13ab",
+            "FileCRC": "9b387c1c",
+            "FileSize": 9177,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundles": [],
+            "AllBuiltinAssets": [
+                "Assets/Arts/Sprites/Fish/FishValues/Sprite-blackcarp-value.png",
+                "Assets/Arts/Sprites/Fish/FishValues/Sprite-brokenwatch-value.png",
+                "Assets/Arts/Sprites/Fish/FishValues/Sprite-catfish-value.png",
+                "Assets/Arts/Sprites/Fish/FishValues/Sprite-chubbychub-value.png",
+                "Assets/Arts/Sprites/Fish/FishValues/Sprite-clam-value.png",
+                "Assets/Arts/Sprites/Fish/FishValues/Sprite-classicbass-value.png",
+                "Assets/Arts/Sprites/Fish/FishValues/Sprite-colorfullookingcarp-value.png",
+                "Assets/Arts/Sprites/Fish/FishValues/Sprite-crab-value.png",
+                "Assets/Arts/Sprites/Fish/FishValues/Sprite-dinosaurfish-value.png",
+                "Assets/Arts/Sprites/Fish/FishValues/Sprite-fishshapedfoam-value.png",
+                "Assets/Arts/Sprites/Fish/FishValues/Sprite-grasscarp-value.png",
+                "Assets/Arts/Sprites/Fish/FishValues/Sprite-mudfish-value.png",
+                "Assets/Arts/Sprites/Fish/FishValues/Sprite-neverseenthisbefore-value.png",
+                "Assets/Arts/Sprites/Fish/FishValues/Sprite-pinkbass-value.png",
+                "Assets/Arts/Sprites/Fish/FishValues/Sprite-rainbowtrout-value.png",
+                "Assets/Arts/Sprites/Fish/FishValues/Sprite-snail-value.png",
+                "Assets/Arts/Sprites/Fish/FishValues/Sprite-softshellturtle-value.png",
+                "Assets/Arts/Sprites/Fish/FishValues/Sprite-thisnotedible-value.png",
+                "Assets/Arts/Sprites/Fish/FishValues/Sprite-toyfishbone-value.png",
+                "Assets/Arts/Sprites/Fish/FishValues/Sprite-trout-value.png",
+                "Assets/Arts/Sprites/Fish/FishValues/Sprite-wallet-value.png"
+            ]
+        },
+        {
+            "BundleName": "assets_arts_sprites_logos.bundle",
+            "FileName": "e9d5329c623053b7cf5f740789fb7fb9.bundle",
+            "FileHash": "e9d5329c623053b7cf5f740789fb7fb9",
+            "FileCRC": "2906b399",
+            "FileSize": 1559242,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundles": [
+                "assets_arts_sprites_logos_sprite-opening.bundle",
+                "assets_arts_sprites_logos_sprite-openingend.bundle",
+                "assets_arts_sprites_logos_sprite-openinglogo.bundle",
+                "assets_arts_sprites_logos_sprite-openingstart.bundle",
+                "assets_arts_sprites_logos_sprite-outroend.bundle"
+            ],
+            "AllBuiltinAssets": [
+                "Assets/Arts/Sprites/Logos/Sprite-Opening.asset",
+                "Assets/Arts/Sprites/Logos/Sprite-Opening.gif",
+                "Assets/Arts/Sprites/Logos/Sprite-OpeningEnd.asset",
+                "Assets/Arts/Sprites/Logos/Sprite-OpeningEnd.gif",
+                "Assets/Arts/Sprites/Logos/Sprite-Openinglogo.asset",
+                "Assets/Arts/Sprites/Logos/Sprite-Openinglogo.gif",
+                "Assets/Arts/Sprites/Logos/Sprite-OpeningSTART.asset",
+                "Assets/Arts/Sprites/Logos/Sprite-OpeningSTART.gif",
+                "Assets/Arts/Sprites/Logos/Sprite-Outroend.asset",
+                "Assets/Arts/Sprites/Logos/Sprite-Outroend.gif"
+            ]
+        },
+        {
+            "BundleName": "assets_arts_sprites_logos_sprite-opening.bundle",
+            "FileName": "7198ef7c9b6c787066401f3abbe60e1c.bundle",
+            "FileHash": "7198ef7c9b6c787066401f3abbe60e1c",
+            "FileCRC": "2ebe3d6e",
+            "FileSize": 3053708,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundles": [],
+            "AllBuiltinAssets": [
+                "Assets/Arts/Sprites/Logos/Sprite-Opening/Sprite-Opening_1.png",
+                "Assets/Arts/Sprites/Logos/Sprite-Opening/Sprite-Opening_10.png",
+                "Assets/Arts/Sprites/Logos/Sprite-Opening/Sprite-Opening_11.png",
+                "Assets/Arts/Sprites/Logos/Sprite-Opening/Sprite-Opening_12.png",
+                "Assets/Arts/Sprites/Logos/Sprite-Opening/Sprite-Opening_2.png",
+                "Assets/Arts/Sprites/Logos/Sprite-Opening/Sprite-Opening_3.png",
+                "Assets/Arts/Sprites/Logos/Sprite-Opening/Sprite-Opening_4.png",
+                "Assets/Arts/Sprites/Logos/Sprite-Opening/Sprite-Opening_5.png",
+                "Assets/Arts/Sprites/Logos/Sprite-Opening/Sprite-Opening_6.png",
+                "Assets/Arts/Sprites/Logos/Sprite-Opening/Sprite-Opening_7.png",
+                "Assets/Arts/Sprites/Logos/Sprite-Opening/Sprite-Opening_8.png",
+                "Assets/Arts/Sprites/Logos/Sprite-Opening/Sprite-Opening_9.png"
+            ]
+        },
+        {
+            "BundleName": "assets_arts_sprites_logos_sprite-openingend.bundle",
+            "FileName": "f962b95c00cc59598e36273463358889.bundle",
+            "FileHash": "f962b95c00cc59598e36273463358889",
+            "FileCRC": "0082660e",
+            "FileSize": 2263718,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundles": [],
+            "AllBuiltinAssets": [
+                "Assets/Arts/Sprites/Logos/Sprite-OpeningEnd/Sprite-OpeningEnd_1.png",
+                "Assets/Arts/Sprites/Logos/Sprite-OpeningEnd/Sprite-OpeningEnd_2.png",
+                "Assets/Arts/Sprites/Logos/Sprite-OpeningEnd/Sprite-OpeningEnd_3.png",
+                "Assets/Arts/Sprites/Logos/Sprite-OpeningEnd/Sprite-OpeningEnd_4.png",
+                "Assets/Arts/Sprites/Logos/Sprite-OpeningEnd/Sprite-OpeningEnd_5.png",
+                "Assets/Arts/Sprites/Logos/Sprite-OpeningEnd/Sprite-OpeningEnd_6.png"
+            ]
+        },
+        {
+            "BundleName": "assets_arts_sprites_logos_sprite-openinglogo.bundle",
+            "FileName": "98b02cbd549f2ccb9eff33eb4a4f2e4a.bundle",
+            "FileHash": "98b02cbd549f2ccb9eff33eb4a4f2e4a",
+            "FileCRC": "34485132",
+            "FileSize": 862536,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundles": [],
+            "AllBuiltinAssets": [
+                "Assets/Arts/Sprites/Logos/Sprite-Openinglogo/Sprite-Openinglogo_1.png",
+                "Assets/Arts/Sprites/Logos/Sprite-Openinglogo/Sprite-Openinglogo_10.png",
+                "Assets/Arts/Sprites/Logos/Sprite-Openinglogo/Sprite-Openinglogo_11.png",
+                "Assets/Arts/Sprites/Logos/Sprite-Openinglogo/Sprite-Openinglogo_12.png",
+                "Assets/Arts/Sprites/Logos/Sprite-Openinglogo/Sprite-Openinglogo_13.png",
+                "Assets/Arts/Sprites/Logos/Sprite-Openinglogo/Sprite-Openinglogo_14.png",
+                "Assets/Arts/Sprites/Logos/Sprite-Openinglogo/Sprite-Openinglogo_15.png",
+                "Assets/Arts/Sprites/Logos/Sprite-Openinglogo/Sprite-Openinglogo_16.png",
+                "Assets/Arts/Sprites/Logos/Sprite-Openinglogo/Sprite-Openinglogo_17.png",
+                "Assets/Arts/Sprites/Logos/Sprite-Openinglogo/Sprite-Openinglogo_18.png",
+                "Assets/Arts/Sprites/Logos/Sprite-Openinglogo/Sprite-Openinglogo_19.png",
+                "Assets/Arts/Sprites/Logos/Sprite-Openinglogo/Sprite-Openinglogo_2.png",
+                "Assets/Arts/Sprites/Logos/Sprite-Openinglogo/Sprite-Openinglogo_20.png",
+                "Assets/Arts/Sprites/Logos/Sprite-Openinglogo/Sprite-Openinglogo_3.png",
+                "Assets/Arts/Sprites/Logos/Sprite-Openinglogo/Sprite-Openinglogo_4.png",
+                "Assets/Arts/Sprites/Logos/Sprite-Openinglogo/Sprite-Openinglogo_5.png",
+                "Assets/Arts/Sprites/Logos/Sprite-Openinglogo/Sprite-Openinglogo_6.png",
+                "Assets/Arts/Sprites/Logos/Sprite-Openinglogo/Sprite-Openinglogo_7.png",
+                "Assets/Arts/Sprites/Logos/Sprite-Openinglogo/Sprite-Openinglogo_8.png",
+                "Assets/Arts/Sprites/Logos/Sprite-Openinglogo/Sprite-Openinglogo_9.png"
+            ]
+        },
+        {
+            "BundleName": "assets_arts_sprites_logos_sprite-openingstart.bundle",
+            "FileName": "0accf52ff89370000d3cc91bf8efaf41.bundle",
+            "FileHash": "0accf52ff89370000d3cc91bf8efaf41",
+            "FileCRC": "ea2a4ece",
+            "FileSize": 2309945,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundles": [],
+            "AllBuiltinAssets": [
+                "Assets/Arts/Sprites/Logos/Sprite-OpeningSTART/Sprite-OpeningSTART_1.png",
+                "Assets/Arts/Sprites/Logos/Sprite-OpeningSTART/Sprite-OpeningSTART_2.png",
+                "Assets/Arts/Sprites/Logos/Sprite-OpeningSTART/Sprite-OpeningSTART_3.png",
+                "Assets/Arts/Sprites/Logos/Sprite-OpeningSTART/Sprite-OpeningSTART_4.png",
+                "Assets/Arts/Sprites/Logos/Sprite-OpeningSTART/Sprite-OpeningSTART_5.png",
+                "Assets/Arts/Sprites/Logos/Sprite-OpeningSTART/Sprite-OpeningSTART_6.png"
+            ]
+        },
+        {
+            "BundleName": "assets_arts_sprites_logos_sprite-outroend.bundle",
+            "FileName": "f81a12ecc459e1e85a30ce8d4f0c4b31.bundle",
+            "FileHash": "f81a12ecc459e1e85a30ce8d4f0c4b31",
+            "FileCRC": "59aa4212",
+            "FileSize": 3087935,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundles": [],
+            "AllBuiltinAssets": [
+                "Assets/Arts/Sprites/Logos/Sprite-Outroend/Sprite-Outroend_1.png",
+                "Assets/Arts/Sprites/Logos/Sprite-Outroend/Sprite-Outroend_10.png",
+                "Assets/Arts/Sprites/Logos/Sprite-Outroend/Sprite-Outroend_11.png",
+                "Assets/Arts/Sprites/Logos/Sprite-Outroend/Sprite-Outroend_12.png",
+                "Assets/Arts/Sprites/Logos/Sprite-Outroend/Sprite-Outroend_2.png",
+                "Assets/Arts/Sprites/Logos/Sprite-Outroend/Sprite-Outroend_3.png",
+                "Assets/Arts/Sprites/Logos/Sprite-Outroend/Sprite-Outroend_4.png",
+                "Assets/Arts/Sprites/Logos/Sprite-Outroend/Sprite-Outroend_5.png",
+                "Assets/Arts/Sprites/Logos/Sprite-Outroend/Sprite-Outroend_6.png",
+                "Assets/Arts/Sprites/Logos/Sprite-Outroend/Sprite-Outroend_7.png",
+                "Assets/Arts/Sprites/Logos/Sprite-Outroend/Sprite-Outroend_8.png",
+                "Assets/Arts/Sprites/Logos/Sprite-Outroend/Sprite-Outroend_9.png"
+            ]
+        },
+        {
+            "BundleName": "assets_arts_sprites_帧动画（sheet).bundle",
+            "FileName": "18e98881b50fca321f94edf0f50a8e83.bundle",
+            "FileHash": "18e98881b50fca321f94edf0f50a8e83",
+            "FileCRC": "a884bd10",
+            "FileSize": 55941,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundles": [],
+            "AllBuiltinAssets": [
+                "Assets/Arts/Sprites/帧动画（sheet)/Sprite-boatripple-Sheet.png",
+                "Assets/Arts/Sprites/帧动画（sheet)/Sprite-bubbles-Sheet.png",
+                "Assets/Arts/Sprites/帧动画（sheet)/Sprite-catch-Sheet.png",
+                "Assets/Arts/Sprites/帧动画（sheet)/Sprite-endingcatch-Sheet.png",
+                "Assets/Arts/Sprites/帧动画（sheet)/Sprite-endloop-Sheet.png",
+                "Assets/Arts/Sprites/帧动画（sheet)/Sprite-fishingidle-Sheet.png",
+                "Assets/Arts/Sprites/帧动画（sheet)/Sprite-minimumbubbles-Sheet.png",
+                "Assets/Arts/Sprites/帧动画（sheet)/Sprite-sailing-Sheet.png",
+                "Assets/Arts/Sprites/帧动画（sheet)/Sprite-smolbubbles-Sheet.png",
+                "Assets/Arts/Sprites/帧动画（sheet)/Sprite-startfishing-Sheet.png",
+                "Assets/Arts/Sprites/帧动画（sheet)/Sprite-XLbubbles-Sheet.png"
+            ]
+        }
+    ],
+    "IndependAssets": []
+}
