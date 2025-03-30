@@ -63,6 +63,7 @@ Material:
     - _ScaningLineSpeed: 1
     - _ScanningLine: 30
     - _ScanningLinesAmount: 0.048
+    - _TotalAlpha: 0.017
     - _VerticalSpace: 0.5
     m_Colors:
     - _Color: {r: 2.670157, g: 2.670157, b: 2.670157, a: 0}

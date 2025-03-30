@@ -91,7 +91,6 @@ namespace GameController
             var colorN = globalNumber.color;
             colorN.a = 0;
             globalNumber.DOColor(colorN, 5f).SetEase(Ease.OutSine);
-            Debug.Log("day1");
 
             if (dayCount == 5)
             {

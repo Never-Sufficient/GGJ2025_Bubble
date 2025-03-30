@@ -139,7 +139,7 @@ public class FishingRodInputHandle : MonoBehaviour
         }
     }
 
-    private void HookEnterWater()
+    private  void HookEnterWater()
     {
         Invoke("delayMusic1", 0.5f);
         transform.position = Vector2.MoveTowards(transform.position,
@@ -336,15 +336,15 @@ public class FishingRodInputHandle : MonoBehaviour
             default:
                 break;
         }
-        Instantiate(trapPrefab, new Vector3(backGround.transform.position.x + (Random.value > 0.5f ? 2.8f : -2.8f), collectionGenerateMinDepthArray[0].position.y +(Random.Range(3.75f, 5f)* (Random.value > 0.5f ? 1 : -1)), backGround.transform.position.z -1),
+        Instantiate(trapPrefab, new Vector3(backGround.transform.position.x + (Random.value > 0.5f ? 2.8f : -2.8f), collectionGenerateMinDepthArray[0].position.y +(Random.Range(3.75f, 4.75f)* (Random.value > 0.5f ? 1 : -1)), backGround.transform.position.z -1),
             Quaternion.identity, backGround.transform);
-        Instantiate(trapPrefab, new Vector3(backGround.transform.position.x + (Random.value > 0.5f ? 2.8f : -2.8f), collectionGenerateMinDepthArray[1].position.y + (Random.Range(3.75f, 5f) * (Random.value > 0.5f ? 1 : -1)), backGround.transform.position.z - 1),
+        Instantiate(trapPrefab, new Vector3(backGround.transform.position.x + (Random.value > 0.5f ? 2.8f : -2.8f), collectionGenerateMinDepthArray[1].position.y + (Random.Range(3.75f, 4.75f) * (Random.value > 0.5f ? 1 : -1)), backGround.transform.position.z - 1),
             Quaternion.identity, backGround.transform);
         for(int i = 0;i< rocksGenerateTransforms.Length; i++)
         {
             if(Random.value > 0.333f && !rocksCompleted)
             {
-                Instantiate(trapPrefab, new Vector3(backGround.transform.position.x + (Random.value > 0.5f ? 2.8f : -2.8f), rocksGenerateTransforms[i].position.y + (Random.Range(0f, 1f) * (Random.value > 0.5f ? 1 : -1)), backGround.transform.position.z - 1),
+                Instantiate(trapPrefab, new Vector3(backGround.transform.position.x + (Random.value > 0.5f ? 2.8f : -2.8f), rocksGenerateTransforms[i].position.y + (Random.Range(0f, 0.5f) * (Random.value > 0.5f ? 1 : -1)), backGround.transform.position.z - 1),
             Quaternion.identity, backGround.transform);
             }
         }
@@ -363,29 +363,27 @@ public class FishingRodInputHandle : MonoBehaviour
             Quaternion.Euler(new Vector3(-90f, 0f, 0f)), backGround.transform);
         hookEnterWater = true;
     }
-    public void move()
-    {
-        Invoke("delayMusic2", 0.5f);
-        isFishing = false;
-        transform.position = Vector2.MoveTowards(transform.position, exitWaterPosition.position, Time.deltaTime * 3f);
-        hookExitWater = false;
-        getCollection = false;
-    }
     private async UniTaskVoid NoTimeToGetCollection(Vector2 position)
     {
-        isFishing = false;
-        hook.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
-        backGround.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
-        getCollection = false;
-        hookExitWater = false;
-        rocksCompleted = false;
-        await UniTask.WaitForFixedUpdate();
-        await backGround.GetComponent<Rigidbody2D>().DOMove(bottomPoint, 2.5f);
-        gameObject.GetComponent<Rigidbody2D>().DOMove(position, 3f).SetEase(Ease.InOutCubic).onComplete = () =>
+        if (isFishing)
         {
-            GetComponent<Collider2D>().enabled = true;
-            delayMusic2();
-        };
+            isFishing = false;
+            hook.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+            backGround.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+            getCollection = false;
+            hookExitWater = false;
+            rocksCompleted = false;
+            Mouse.current.WarpCursorPosition(lastCursorPosition);
+            Cursor.visible = true;
+            await UniTask.WaitForFixedUpdate();
+            await backGround.GetComponent<Rigidbody2D>().DOMove(bottomPoint, 2.5f);
+            gameObject.GetComponent<Rigidbody2D>().DOMove(position, 3f).SetEase(Ease.InOutCubic).onComplete = () =>
+            {
+                GetComponent<Collider2D>().enabled = true;
+
+            };
+        }
+        Invoke("delayMusic2", 1.5f);
     }
     private void OnTimeExpire()
     {
@@ -396,9 +394,28 @@ public class FishingRodInputHandle : MonoBehaviour
     {
         SoundManager.Instance.MusicPlayStr("11");
     }
-    public void delayMusic2()
+    public async UniTaskVoid delayMusic2()
     {
         SoundManager.Instance.StopMusic();
         SoundManager.Instance.StopHookSound();
+        if(isFishing)
+        {
+            isFishing = false;
+            hook.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+            backGround.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+            getCollection = false;
+            hookExitWater = false;
+            rocksCompleted = false;
+            Mouse.current.WarpCursorPosition(lastCursorPosition);
+            Cursor.visible = true;
+            await UniTask.WaitForFixedUpdate();
+            await backGround.GetComponent<Rigidbody2D>().DOMove(bottomPoint, 1f);
+            gameObject.GetComponent<Rigidbody2D>().DOMove(exitWaterPosition.position, 1.5f).SetEase(Ease.InOutCubic).onComplete = () =>
+            {
+                GetComponent<Collider2D>().enabled = true;
+
+            };
+        }
+
     }
 }

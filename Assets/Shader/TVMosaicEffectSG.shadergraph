@@ -1137,8 +1137,8 @@
     },
     "m_FragmentContext": {
         "m_Position": {
-            "x": 1023.2000122070313,
-            "y": 1177.5999755859375
+            "x": 1107.199951171875,
+            "y": 1250.4000244140625
         },
         "m_Blocks": [
             {
@@ -5408,7 +5408,7 @@
     "m_ObjectId": "9973fbdf1b3e486b861ed852889ef66f",
     "m_Version": 0,
     "m_fullscreenMode": 0,
-    "m_BlendMode": 0,
+    "m_BlendMode": 1,
     "m_SrcColorBlendMode": 0,
     "m_DstColorBlendMode": 1,
     "m_ColorBlendOperation": 0,

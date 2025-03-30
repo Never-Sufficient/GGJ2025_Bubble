@@ -18,13 +18,16 @@ namespace GameController
         [SerializeField] private Camera shipCamera;
         [SerializeField] private GameTimer gameTimer;
         [SerializeField] private Image dark;
+        [SerializeField] private Transform exitPosition;
 
         private bool interactedWithBubble = false;
         private bool endCaught = false;
-
+        private bool stopSpawnBubble = false;
         public async UniTask StartEndingEvent()
         {
+            SoundManager.Instance.MusicPlayStr("12");
             gameTimer.enabled = false;
+            stopSpawnBubble = false;
             shipSceneController.SetBubbleSpawnActive(false);
             Instantiate(endingBubble, endingBubblePosition.position, Quaternion.identity).SetActive(true);
             await UniTask.WaitUntil(() => interactedWithBubble);
@@ -38,6 +41,7 @@ namespace GameController
             SpawnBubble().Forget();
             CameraAnim();
             await UniTask.WaitForSeconds(10);
+            StopSpawnBubble().Forget();
             await dark.DOFade(1, 5f);
             openingAndEndingController.Ending();
             await dark.DOFade(0, 5f);
@@ -45,14 +49,20 @@ namespace GameController
 
         private async UniTask SpawnBubble()
         {
-            while (true)
+            while (!stopSpawnBubble)
             {
                 Vector3 randomVector = new Vector2(Random.Range(-2f, 2f), Random.Range(-2f, 2f));
-                Instantiate(endingBubble, endingBubblePosition.position + randomVector, Quaternion.identity);
+                GameObject bubbles = Instantiate(endingBubble, endingBubblePosition.position + randomVector, Quaternion.identity);
+                Destroy(bubbles,10f);
                 await UniTask.WaitForSeconds(0.2f);
             }
         }
 
+        private async UniTask StopSpawnBubble()
+        {
+            await UniTask.WaitForSeconds(5);
+            stopSpawnBubble = true;
+        }
         public void InteractedWithBubble()
         {
             interactedWithBubble = true;

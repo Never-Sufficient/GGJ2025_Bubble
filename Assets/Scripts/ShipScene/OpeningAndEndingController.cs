@@ -54,6 +54,7 @@ namespace ShipScene
         public void Ending()
         {
             ending.SetActive(true);
+            SoundManager.Instance.StopMusic();
         }
 
         private void OnEndingEnd()

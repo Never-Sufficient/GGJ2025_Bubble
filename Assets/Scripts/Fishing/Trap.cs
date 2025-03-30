@@ -55,6 +55,12 @@ public class Trap : MonoBehaviour
                 collision.gameObject.GetComponent<Rigidbody2D>().AddForce(direction * trapForce, ForceMode2D.Impulse);
 
             }
+            else
+            {
+                SoundManager.Instance.EffectPlayStr("10");
+                Vector2 direction = new Vector2(0.0f, 1.0f);
+                collision.gameObject.GetComponent<Rigidbody2D>().AddForce(-direction * trapForce, ForceMode2D.Impulse);
+            }
 
         }
     }

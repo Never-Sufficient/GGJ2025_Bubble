@@ -30,7 +30,7 @@ namespace Config
 #if UNITY_WEBGL
             await Tables.Init(async file => JSON.Parse(await GetTextForStreamingAssets($"{gameConfDir}/{file}.json")));
 #else
-            tables.Init(file => JSON.Parse(File.ReadAllText($"{gameConfDir}/{file}.json")));
+            Tables.Init(file => JSON.Parse(File.ReadAllText($"{gameConfDir}/{file}.json")));
 #endif
         }
     }

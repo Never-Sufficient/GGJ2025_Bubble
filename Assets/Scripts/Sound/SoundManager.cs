@@ -147,6 +147,7 @@ public class SoundManager : MonoBehaviour
     {
 
         _musicSource.Stop();
+        engine.Stop();
     }
 
     public void MusicPlayStr(string str)
