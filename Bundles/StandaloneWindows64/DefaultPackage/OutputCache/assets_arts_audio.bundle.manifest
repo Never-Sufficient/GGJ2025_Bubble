@@ -1,0 +1,43 @@
+ManifestFileVersion: 0
+CRC: 1918835467
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: af93001d9381a425fee120b7006ac2ad
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 9a2ca7bdbd1871f7131daf57de908e0c
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: af93001d9381a425fee120b7006ac2ad
+HashAppended: 0
+ClassTypes:
+- Class: 83
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- "Assets/Arts/Audio/\u6C34\u4E0B\u78B0\u5230\u7901\u77F3.wav"
+- "Assets/Arts/Audio/\u5347\u7EA7\u97F3\u6548.wav"
+- "Assets/Arts/Audio/\u9493\u5230\u5783\u573E\u65F6\u7684\u58F0\u97F3.mp3"
+- Assets/Arts/Audio/night.wav
+- Assets/Arts/Audio/morning(supernew).wav
+- "Assets/Arts/Audio/\u9E1F\u53EB\u80CC\u666F\u97F3.mp3"
+- "Assets/Arts/Audio/\u6C34\u4E2D\u80CC\u666F\u97F3.mp3"
+- "Assets/Arts/Audio/\u67AA\u54CD.wav"
+- "Assets/Arts/Audio/\u9C7C\u54AC\u94A9\u7684\u58F0\u97F3.wav"
+- "Assets/Arts/Audio/\u98CE\u58F0.mp3"
+- Assets/Arts/Audio/morning.wav
+- "Assets/Arts/Audio/\u6811\u53F6\u58F0.wav"
+- Assets/Arts/Audio/night_new.wav
+- Assets/Arts/Audio/morning(new).wav
+- "Assets/Arts/Audio/\u7ED3\u5C40\u914D\u4E50.mp3"
+- "Assets/Arts/Audio/\u6807\u9898\u5F00\u573A\u5C0F\u52A8\u753B.wav"
+- Assets/Arts/Audio/button-press.wav
+- "Assets/Arts/Audio/\u653E\u7EBF\u97F3\u6548.wav"
+- Assets/Arts/Audio/shop_button.wav
+- "Assets/Arts/Audio/\u5C0F\u8239\u79FB\u52A8\u97F3\u6548.mp3"
+- "Assets/Arts/Audio/\u91D1\u94B1\u97F3\u6548.wav"
+- "Assets/Arts/Audio/\u8FDE\u7EED\u6CE1\u6CE1\u97F3\u6548.mp3"
+- "Assets/Arts/Audio/\u65E5\u671F\u663E\u793A.mp3"
+- "Assets/Arts/Audio/\u5782\u9493\u97F3\u6548.wav"
+Dependencies: []

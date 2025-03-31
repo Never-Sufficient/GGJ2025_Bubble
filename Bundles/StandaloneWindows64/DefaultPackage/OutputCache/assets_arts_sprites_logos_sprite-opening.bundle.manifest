@@ -1,0 +1,33 @@
+ManifestFileVersion: 0
+CRC: 1359223165
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 6a0b7a0e78e6f4c3bf350ba873c0b37a
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 2d8df09e698f722ada1caa03d3413830
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 6a0b7a0e78e6f4c3bf350ba873c0b37a
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Arts/Sprites/Logos/Sprite-Opening/Sprite-Opening_10.png
+- Assets/Arts/Sprites/Logos/Sprite-Opening/Sprite-Opening_3.png
+- Assets/Arts/Sprites/Logos/Sprite-Opening/Sprite-Opening_6.png
+- Assets/Arts/Sprites/Logos/Sprite-Opening/Sprite-Opening_7.png
+- Assets/Arts/Sprites/Logos/Sprite-Opening/Sprite-Opening_11.png
+- Assets/Arts/Sprites/Logos/Sprite-Opening/Sprite-Opening_12.png
+- Assets/Arts/Sprites/Logos/Sprite-Opening/Sprite-Opening_5.png
+- Assets/Arts/Sprites/Logos/Sprite-Opening/Sprite-Opening_4.png
+- Assets/Arts/Sprites/Logos/Sprite-Opening/Sprite-Opening_8.png
+- Assets/Arts/Sprites/Logos/Sprite-Opening/Sprite-Opening_2.png
+- Assets/Arts/Sprites/Logos/Sprite-Opening/Sprite-Opening_1.png
+- Assets/Arts/Sprites/Logos/Sprite-Opening/Sprite-Opening_9.png
+Dependencies: []

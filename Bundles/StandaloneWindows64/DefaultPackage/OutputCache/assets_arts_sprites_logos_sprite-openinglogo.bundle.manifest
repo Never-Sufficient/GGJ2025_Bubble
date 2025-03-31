@@ -1,0 +1,41 @@
+ManifestFileVersion: 0
+CRC: 893755195
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 95bf1e45053dcca012c7edc6690ebe81
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 2d8df09e698f722ada1caa03d3413830
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 95bf1e45053dcca012c7edc6690ebe81
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Arts/Sprites/Logos/Sprite-Openinglogo/Sprite-Openinglogo_9.png
+- Assets/Arts/Sprites/Logos/Sprite-Openinglogo/Sprite-Openinglogo_18.png
+- Assets/Arts/Sprites/Logos/Sprite-Openinglogo/Sprite-Openinglogo_3.png
+- Assets/Arts/Sprites/Logos/Sprite-Openinglogo/Sprite-Openinglogo_1.png
+- Assets/Arts/Sprites/Logos/Sprite-Openinglogo/Sprite-Openinglogo_5.png
+- Assets/Arts/Sprites/Logos/Sprite-Openinglogo/Sprite-Openinglogo_17.png
+- Assets/Arts/Sprites/Logos/Sprite-Openinglogo/Sprite-Openinglogo_8.png
+- Assets/Arts/Sprites/Logos/Sprite-Openinglogo/Sprite-Openinglogo_12.png
+- Assets/Arts/Sprites/Logos/Sprite-Openinglogo/Sprite-Openinglogo_14.png
+- Assets/Arts/Sprites/Logos/Sprite-Openinglogo/Sprite-Openinglogo_19.png
+- Assets/Arts/Sprites/Logos/Sprite-Openinglogo/Sprite-Openinglogo_7.png
+- Assets/Arts/Sprites/Logos/Sprite-Openinglogo/Sprite-Openinglogo_6.png
+- Assets/Arts/Sprites/Logos/Sprite-Openinglogo/Sprite-Openinglogo_15.png
+- Assets/Arts/Sprites/Logos/Sprite-Openinglogo/Sprite-Openinglogo_10.png
+- Assets/Arts/Sprites/Logos/Sprite-Openinglogo/Sprite-Openinglogo_2.png
+- Assets/Arts/Sprites/Logos/Sprite-Openinglogo/Sprite-Openinglogo_11.png
+- Assets/Arts/Sprites/Logos/Sprite-Openinglogo/Sprite-Openinglogo_4.png
+- Assets/Arts/Sprites/Logos/Sprite-Openinglogo/Sprite-Openinglogo_16.png
+- Assets/Arts/Sprites/Logos/Sprite-Openinglogo/Sprite-Openinglogo_20.png
+- Assets/Arts/Sprites/Logos/Sprite-Openinglogo/Sprite-Openinglogo_13.png
+Dependencies: []

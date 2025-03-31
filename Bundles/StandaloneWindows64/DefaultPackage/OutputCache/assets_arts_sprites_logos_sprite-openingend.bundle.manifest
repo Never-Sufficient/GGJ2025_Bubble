@@ -1,0 +1,27 @@
+ManifestFileVersion: 0
+CRC: 2758027757
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: f8c0fda37c937669f24b208be8b4e5ba
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 2d8df09e698f722ada1caa03d3413830
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: f8c0fda37c937669f24b208be8b4e5ba
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Arts/Sprites/Logos/Sprite-OpeningEnd/Sprite-OpeningEnd_6.png
+- Assets/Arts/Sprites/Logos/Sprite-OpeningEnd/Sprite-OpeningEnd_5.png
+- Assets/Arts/Sprites/Logos/Sprite-OpeningEnd/Sprite-OpeningEnd_1.png
+- Assets/Arts/Sprites/Logos/Sprite-OpeningEnd/Sprite-OpeningEnd_3.png
+- Assets/Arts/Sprites/Logos/Sprite-OpeningEnd/Sprite-OpeningEnd_4.png
+- Assets/Arts/Sprites/Logos/Sprite-OpeningEnd/Sprite-OpeningEnd_2.png
+Dependencies: []

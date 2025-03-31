@@ -1,0 +1,33 @@
+ManifestFileVersion: 0
+CRC: 2777803587
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: de69f374f3ad669504eff2ae094479b8
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 2d8df09e698f722ada1caa03d3413830
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: de69f374f3ad669504eff2ae094479b8
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Arts/Sprites/Logos/Sprite-Outroend/Sprite-Outroend_2.png
+- Assets/Arts/Sprites/Logos/Sprite-Outroend/Sprite-Outroend_7.png
+- Assets/Arts/Sprites/Logos/Sprite-Outroend/Sprite-Outroend_12.png
+- Assets/Arts/Sprites/Logos/Sprite-Outroend/Sprite-Outroend_3.png
+- Assets/Arts/Sprites/Logos/Sprite-Outroend/Sprite-Outroend_8.png
+- Assets/Arts/Sprites/Logos/Sprite-Outroend/Sprite-Outroend_4.png
+- Assets/Arts/Sprites/Logos/Sprite-Outroend/Sprite-Outroend_1.png
+- Assets/Arts/Sprites/Logos/Sprite-Outroend/Sprite-Outroend_6.png
+- Assets/Arts/Sprites/Logos/Sprite-Outroend/Sprite-Outroend_9.png
+- Assets/Arts/Sprites/Logos/Sprite-Outroend/Sprite-Outroend_10.png
+- Assets/Arts/Sprites/Logos/Sprite-Outroend/Sprite-Outroend_11.png
+- Assets/Arts/Sprites/Logos/Sprite-Outroend/Sprite-Outroend_5.png
+Dependencies: []

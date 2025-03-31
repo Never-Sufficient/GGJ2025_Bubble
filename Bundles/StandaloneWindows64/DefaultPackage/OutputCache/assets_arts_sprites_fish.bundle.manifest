@@ -1,0 +1,47 @@
+ManifestFileVersion: 0
+CRC: 3418674205
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: ef316869bfa10996be278d16c6b0bae2
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 2d8df09e698f722ada1caa03d3413830
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: ef316869bfa10996be278d16c6b0bae2
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Arts/Sprites/Fish/Sprite-names (1).png
+- Assets/Arts/Sprites/Fish/Sprite-thisnotedible.png
+- Assets/Arts/Sprites/Fish/Sprite-rainbowtrout.png
+- Assets/Arts/Sprites/Fish/Sprite-Valuetable.png
+- Assets/Arts/Sprites/Fish/Sprite-Blackcarp.png
+- Assets/Arts/Sprites/Fish/Sprite-Neverseenthisbefore.png
+- Assets/Arts/Sprites/Fish/Sprite-clam.png
+- Assets/Arts/Sprites/Fish/Sprite-mudfish.png
+- Assets/Arts/Sprites/Fish/Sprite-crab.png
+- Assets/Arts/Sprites/Fish/Sprite-Godfeastsonthefifthday.png
+- Assets/Arts/Sprites/Fish/Sprite-PinkBass.png
+- Assets/Arts/Sprites/Fish/Sprite-fishshapedfoam.png
+- Assets/Arts/Sprites/Fish/Sprite-ClassicBass.png
+- Assets/Arts/Sprites/Fish/Sprite-grasscarp.png
+- Assets/Arts/Sprites/Fish/Sprite-softshellturtle.png
+- Assets/Arts/Sprites/Fish/watch.png
+- Assets/Arts/Sprites/Fish/Sprite-snail.png
+- Assets/Arts/Sprites/Fish/Sprite-chubby chub.png
+- Assets/Arts/Sprites/Fish/Sprite-Colorfullookingcarp.png
+- Assets/Arts/Sprites/Fish/Sprite-trout.png
+- Assets/Arts/Sprites/Fish/Sprite-dinosaurfish.png
+- Assets/Arts/Sprites/Fish/Sprite-names.png
+- Assets/Arts/Sprites/Fish/Sprite-names (2).png
+- Assets/Arts/Sprites/Fish/Sprite-catfish.png
+- Assets/Arts/Sprites/Fish/Sprite-wallet.png
+- Assets/Arts/Sprites/Fish/Sprite-toyfishbone.png
+Dependencies: []

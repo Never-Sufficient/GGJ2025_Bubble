@@ -1,0 +1,42 @@
+ManifestFileVersion: 0
+CRC: 1664205075
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 5dd073068fd1b5a439e32c04beebbb4d
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 2d8df09e698f722ada1caa03d3413830
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 5dd073068fd1b5a439e32c04beebbb4d
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Arts/Sprites/Fish/FishValues/Sprite-classicbass-value.png
+- Assets/Arts/Sprites/Fish/FishValues/Sprite-blackcarp-value.png
+- Assets/Arts/Sprites/Fish/FishValues/Sprite-clam-value.png
+- Assets/Arts/Sprites/Fish/FishValues/Sprite-thisnotedible-value.png
+- Assets/Arts/Sprites/Fish/FishValues/Sprite-toyfishbone-value.png
+- Assets/Arts/Sprites/Fish/FishValues/Sprite-neverseenthisbefore-value.png
+- Assets/Arts/Sprites/Fish/FishValues/Sprite-dinosaurfish-value.png
+- Assets/Arts/Sprites/Fish/FishValues/Sprite-softshellturtle-value.png
+- Assets/Arts/Sprites/Fish/FishValues/Sprite-wallet-value.png
+- Assets/Arts/Sprites/Fish/FishValues/Sprite-mudfish-value.png
+- Assets/Arts/Sprites/Fish/FishValues/Sprite-grasscarp-value.png
+- Assets/Arts/Sprites/Fish/FishValues/Sprite-rainbowtrout-value.png
+- Assets/Arts/Sprites/Fish/FishValues/Sprite-pinkbass-value.png
+- Assets/Arts/Sprites/Fish/FishValues/Sprite-fishshapedfoam-value.png
+- Assets/Arts/Sprites/Fish/FishValues/Sprite-crab-value.png
+- Assets/Arts/Sprites/Fish/FishValues/Sprite-chubbychub-value.png
+- Assets/Arts/Sprites/Fish/FishValues/Sprite-snail-value.png
+- Assets/Arts/Sprites/Fish/FishValues/Sprite-catfish-value.png
+- Assets/Arts/Sprites/Fish/FishValues/Sprite-trout-value.png
+- Assets/Arts/Sprites/Fish/FishValues/Sprite-colorfullookingcarp-value.png
+- Assets/Arts/Sprites/Fish/FishValues/Sprite-brokenwatch-value.png
+Dependencies: []

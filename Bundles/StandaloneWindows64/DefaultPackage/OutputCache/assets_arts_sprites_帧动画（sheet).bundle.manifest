@@ -1,0 +1,32 @@
+ManifestFileVersion: 0
+CRC: 211146050
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: b0f6216cf7b8ab2b571b7b9683ca9828
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 2d8df09e698f722ada1caa03d3413830
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: b0f6216cf7b8ab2b571b7b9683ca9828
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- "Assets/Arts/Sprites/\u5E27\u52A8\u753B\uFF08sheet)/Sprite-minimumbubbles-Sheet.png"
+- "Assets/Arts/Sprites/\u5E27\u52A8\u753B\uFF08sheet)/Sprite-XLbubbles-Sheet.png"
+- "Assets/Arts/Sprites/\u5E27\u52A8\u753B\uFF08sheet)/Sprite-smolbubbles-Sheet.png"
+- "Assets/Arts/Sprites/\u5E27\u52A8\u753B\uFF08sheet)/Sprite-endloop-Sheet.png"
+- "Assets/Arts/Sprites/\u5E27\u52A8\u753B\uFF08sheet)/Sprite-boatripple-Sheet.png"
+- "Assets/Arts/Sprites/\u5E27\u52A8\u753B\uFF08sheet)/Sprite-endingcatch-Sheet.png"
+- "Assets/Arts/Sprites/\u5E27\u52A8\u753B\uFF08sheet)/Sprite-fishingidle-Sheet.png"
+- "Assets/Arts/Sprites/\u5E27\u52A8\u753B\uFF08sheet)/Sprite-bubbles-Sheet.png"
+- "Assets/Arts/Sprites/\u5E27\u52A8\u753B\uFF08sheet)/Sprite-startfishing-Sheet.png"
+- "Assets/Arts/Sprites/\u5E27\u52A8\u753B\uFF08sheet)/Sprite-catch-Sheet.png"
+- "Assets/Arts/Sprites/\u5E27\u52A8\u753B\uFF08sheet)/Sprite-sailing-Sheet.png"
+Dependencies: []

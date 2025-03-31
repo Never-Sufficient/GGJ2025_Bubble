@@ -1,0 +1,31 @@
+ManifestFileVersion: 0
+CRC: 2733883966
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 07346c7a4c0a8a6f786d2823a8a93847
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 33e7d3bfc4cea645191d16fd650062c3
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 07346c7a4c0a8a6f786d2823a8a93847
+HashAppended: 0
+ClassTypes:
+- Class: 74
+  Script: {instanceID: 0}
+- Class: 91
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Arts/Animations/Bubble/BubbleSmallAnim.anim
+- Assets/Arts/Animations/Bubble/EndingBubbleBigAnim.anim
+- Assets/Arts/Animations/Bubble/Bubble Animator Controller.controller
+- Assets/Arts/Animations/Bubble/BubbleBigAnim.anim
+- Assets/Arts/Animations/Bubble/BubbleMidAnim.anim
+- Assets/Arts/Animations/Bubble/BubbleHugeAnim.anim
+- Assets/Arts/Animations/Bubble/Ending Bubble Animator Controller.controller
+Dependencies:
+- "E:/GitHub/GGJ2025_Bubble/Bundles/StandaloneWindows64/DefaultPackage/OutputCache/assets_arts_sprites_\u5E27\u52A8\u753B\uFF08sheet).bundle"

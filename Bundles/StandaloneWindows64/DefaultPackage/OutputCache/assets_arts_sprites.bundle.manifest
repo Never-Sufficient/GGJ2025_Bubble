@@ -1,0 +1,50 @@
+ManifestFileVersion: 0
+CRC: 599444433
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 719baefcd0edc0ac2e6b89530d48929b
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 2d8df09e698f722ada1caa03d3413830
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 719baefcd0edc0ac2e6b89530d48929b
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Arts/Sprites/Sprite-new water.png
+- Assets/Arts/Sprites/Sprite-water.png
+- Assets/Arts/Sprites/Sprite-shop.png
+- Assets/Arts/Sprites/Sprite-E.png
+- Assets/Arts/Sprites/mouse.png
+- Assets/Arts/Sprites/Sprite-Crediticon.png
+- Assets/Arts/Sprites/Sprite-cursor.png
+- Assets/Arts/Sprites/Sprite-obstacle4.png
+- Assets/Arts/Sprites/Sprite-daycounter-export.png
+- Assets/Arts/Sprites/Sprite-sun.png
+- Assets/Arts/Sprites/Sprite-obstacle1.png
+- Assets/Arts/Sprites/Sprite-obstacle3.png
+- Assets/Arts/Sprites/Sprite-OBSTACLESET2.png
+- Assets/Arts/Sprites/Sprite-OBSTACLESET1.png
+- Assets/Arts/Sprites/Icon.png
+- Assets/Arts/Sprites/Sprite-day2-4.png
+- Assets/Arts/Sprites/Sprite-water (1).png
+- Assets/Arts/Sprites/Sprite-bg.png
+- Assets/Arts/Sprites/Sprite-WASD.png
+- "Assets/Arts/Sprites/\u5E03\u5C40\u53C2\u8003.png"
+- Assets/Arts/Sprites/Sprite-title.png
+- Assets/Arts/Sprites/Sprite-obstacle2.png
+- Assets/Arts/Sprites/Sprite-scrollwheel.png
+- Assets/Arts/Sprites/Sprite-underwaterbubbles1.png
+- Assets/Arts/Sprites/Sprite-cloud.png
+- Assets/Arts/Sprites/Sprite-bg day3-5.png
+- Assets/Arts/Sprites/Sprite-hook.png
+- Assets/Arts/Sprites/Sprite-check.png
+- Assets/Arts/Sprites/Sprite-sky.png
+Dependencies: []

@@ -1,0 +1,54 @@
+ManifestFileVersion: 0
+CRC: 1649331171
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: assets_arts_animations_bubble.bundle
+      Dependencies:
+        Dependency_0: "assets_arts_sprites_\u5E27\u52A8\u753B\uFF08sheet).bundle"
+    Info_1:
+      Name: assets_arts_animations_ripple.bundle
+      Dependencies:
+        Dependency_0: "assets_arts_sprites_\u5E27\u52A8\u753B\uFF08sheet).bundle"
+    Info_2:
+      Name: assets_arts_animations_ship.bundle
+      Dependencies:
+        Dependency_0: "assets_arts_sprites_\u5E27\u52A8\u753B\uFF08sheet).bundle"
+    Info_3:
+      Name: assets_arts_audio.bundle
+      Dependencies: {}
+    Info_4:
+      Name: assets_arts_sprites_fish_fishvalues.bundle
+      Dependencies: {}
+    Info_5:
+      Name: assets_arts_sprites_fish.bundle
+      Dependencies: {}
+    Info_6:
+      Name: assets_arts_sprites.bundle
+      Dependencies: {}
+    Info_7:
+      Name: assets_arts_sprites_logos_sprite-opening.bundle
+      Dependencies: {}
+    Info_8:
+      Name: assets_arts_sprites_logos.bundle
+      Dependencies:
+        Dependency_0: assets_arts_sprites_logos_sprite-opening.bundle
+        Dependency_1: assets_arts_sprites_logos_sprite-openingend.bundle
+        Dependency_2: assets_arts_sprites_logos_sprite-openinglogo.bundle
+        Dependency_3: assets_arts_sprites_logos_sprite-openingstart.bundle
+        Dependency_4: assets_arts_sprites_logos_sprite-outroend.bundle
+    Info_9:
+      Name: assets_arts_sprites_logos_sprite-openingend.bundle
+      Dependencies: {}
+    Info_10:
+      Name: assets_arts_sprites_logos_sprite-openinglogo.bundle
+      Dependencies: {}
+    Info_11:
+      Name: assets_arts_sprites_logos_sprite-openingstart.bundle
+      Dependencies: {}
+    Info_12:
+      Name: assets_arts_sprites_logos_sprite-outroend.bundle
+      Dependencies: {}
+    Info_13:
+      Name: "assets_arts_sprites_\u5E27\u52A8\u753B\uFF08sheet).bundle"
+      Dependencies: {}

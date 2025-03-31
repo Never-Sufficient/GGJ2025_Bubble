@@ -1,0 +1,42 @@
+ManifestFileVersion: 0
+CRC: 1890290405
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 3f26e62c10f614dc1d3918f3aa2d414d
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 80904f59132c68178a1be32c08e8f07d
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 3f26e62c10f614dc1d3918f3aa2d414d
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 6940cdda447048efa58605bd546f9920, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers:
+- AssemblyName: GifForUnity
+  ClassName: GifImporter.GifFrame
+Assets:
+- Assets/Arts/Sprites/Logos/Sprite-Openinglogo.asset
+- Assets/Arts/Sprites/Logos/Sprite-Outroend.gif
+- Assets/Arts/Sprites/Logos/Sprite-OpeningSTART.gif
+- Assets/Arts/Sprites/Logos/Sprite-OpeningEnd.asset
+- Assets/Arts/Sprites/Logos/Sprite-OpeningEnd.gif
+- Assets/Arts/Sprites/Logos/Sprite-Opening.gif
+- Assets/Arts/Sprites/Logos/Sprite-Outroend.asset
+- Assets/Arts/Sprites/Logos/Sprite-OpeningSTART.asset
+- Assets/Arts/Sprites/Logos/Sprite-Openinglogo.gif
+- Assets/Arts/Sprites/Logos/Sprite-Opening.asset
+Dependencies:
+- E:/GitHub/GGJ2025_Bubble/Bundles/StandaloneWindows64/DefaultPackage/OutputCache/assets_arts_sprites_logos_sprite-opening.bundle
+- E:/GitHub/GGJ2025_Bubble/Bundles/StandaloneWindows64/DefaultPackage/OutputCache/assets_arts_sprites_logos_sprite-openingend.bundle
+- E:/GitHub/GGJ2025_Bubble/Bundles/StandaloneWindows64/DefaultPackage/OutputCache/assets_arts_sprites_logos_sprite-openinglogo.bundle
+- E:/GitHub/GGJ2025_Bubble/Bundles/StandaloneWindows64/DefaultPackage/OutputCache/assets_arts_sprites_logos_sprite-openingstart.bundle
+- E:/GitHub/GGJ2025_Bubble/Bundles/StandaloneWindows64/DefaultPackage/OutputCache/assets_arts_sprites_logos_sprite-outroend.bundle

@@ -1,0 +1,31 @@
+ManifestFileVersion: 0
+CRC: 3038710779
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 4b6b8ed9288d57a5386c8583d3f3770f
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 33e7d3bfc4cea645191d16fd650062c3
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 4b6b8ed9288d57a5386c8583d3f3770f
+HashAppended: 0
+ClassTypes:
+- Class: 74
+  Script: {instanceID: 0}
+- Class: 91
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Arts/Animations/Ship/ShipCaughtFish.anim
+- Assets/Arts/Animations/Ship/ShipStartFish.anim
+- Assets/Arts/Animations/Ship/EndLoop.anim
+- Assets/Arts/Animations/Ship/ShipFishing.anim
+- Assets/Arts/Animations/Ship/EndCatch.anim
+- Assets/Arts/Animations/Ship/ShipSailing.anim
+- Assets/Arts/Animations/Ship/ShipAnimator.controller
+Dependencies:
+- "E:/GitHub/GGJ2025_Bubble/Bundles/StandaloneWindows64/DefaultPackage/OutputCache/assets_arts_sprites_\u5E27\u52A8\u753B\uFF08sheet).bundle"
