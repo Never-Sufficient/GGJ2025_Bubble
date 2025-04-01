@@ -14,6 +14,7 @@ namespace ShipScene
         private InputAction interactAction;
         private bool shipHere = false;
         private FishCfg data;
+        private bool hasGenerated = false;
 
         private void Start()
         {
@@ -29,8 +30,13 @@ namespace ShipScene
 
             if (interactAction.WasPressedThisFrame() && shipHere)
             {
-                SoundManager.Instance.EffectPlayStr("3");
-                this.TriggerEvent(EventName.StartFishing, data);
+                if (!hasGenerated)
+                {
+                    SoundManager.Instance.EffectPlayStr("3");
+                    this.TriggerEvent(EventName.StartFishing, data);
+                    hasGenerated = true;
+                }
+
             }
         }
 

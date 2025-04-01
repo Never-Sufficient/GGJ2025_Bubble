@@ -6474,7 +6474,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   srBackground: {fileID: 671656581}
   endingEventDirector: {fileID: 1862831789}
-  oneDayDuration: 180
+  oneDayDuration: 20
   globalDark: {fileID: 1004138271}
   globalDay: {fileID: 2111594091}
   globalNumber: {fileID: 920051633}
