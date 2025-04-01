@@ -173,6 +173,7 @@ public class FishingRodInputHandle : MonoBehaviour
             this.TriggerEvent(EventName.CaughtFish);
             Mouse.current.WarpCursorPosition(lastCursorPosition);
             Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
         }
     }
 
@@ -313,6 +314,7 @@ public class FishingRodInputHandle : MonoBehaviour
     {
         Cursor.visible = false;
         lastCursorPosition = Input.mousePosition;
+        Cursor.lockState = CursorLockMode.Confined;
         Transform localCGMD = null;
         maxDepth = maxDepthArray[GameData.Instance.DepthCanReach - 1];
         switch (GameData.Instance.DepthCanReach)
@@ -375,6 +377,7 @@ public class FishingRodInputHandle : MonoBehaviour
             rocksCompleted = false;
             Mouse.current.WarpCursorPosition(lastCursorPosition);
             Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
             await UniTask.WaitForFixedUpdate();
             await backGround.GetComponent<Rigidbody2D>().DOMove(bottomPoint, 2.5f);
             gameObject.GetComponent<Rigidbody2D>().DOMove(position, 3f).SetEase(Ease.InOutCubic).onComplete = () =>
@@ -408,6 +411,7 @@ public class FishingRodInputHandle : MonoBehaviour
             rocksCompleted = false;
             Mouse.current.WarpCursorPosition(lastCursorPosition);
             Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
             await UniTask.WaitForFixedUpdate();
             await backGround.GetComponent<Rigidbody2D>().DOMove(bottomPoint, 1f);
             gameObject.GetComponent<Rigidbody2D>().DOMove(exitWaterPosition.position, 1.5f).SetEase(Ease.InOutCubic).onComplete = () =>
