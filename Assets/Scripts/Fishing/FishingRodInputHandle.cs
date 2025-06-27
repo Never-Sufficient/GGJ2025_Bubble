@@ -82,7 +82,7 @@ public class FishingRodInputHandle : MonoBehaviour
         }
     }
 
-    private async void FixedUpdate()
+    private void FixedUpdate()
     {
         //Debug.Log(Mathf.Abs(hook.GetComponent<Rigidbody2D>().velocity.y));
         // Debug.Log("getCollection" + getCollection);

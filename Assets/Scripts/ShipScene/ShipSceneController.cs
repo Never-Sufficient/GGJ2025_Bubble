@@ -65,7 +65,8 @@ namespace ShipScene
                 var spawnPosition = new Vector2(Random.Range(spawnMinX, spawnMaxX), Random.Range(spawnMinY, spawnMaxY));
                 var bubble = bubblePool.Instance.Get();
                 var (bubbleAnimName, fishCfg) = RandomChooseBubbleAndFish();
-                bubble.GetComponent<Bubble>().Init(tip, bubblePool, spawnPosition, bubbleAnimName, fishCfg);
+                var hasGenerated = false;
+                bubble.GetComponent<Bubble>().Init(tip, bubblePool, spawnPosition, bubbleAnimName, fishCfg, hasGenerated);
             }
         }
 

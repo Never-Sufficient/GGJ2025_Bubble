@@ -70,12 +70,13 @@ namespace ShipScene
         }
 
         public void Init(GameObject tip, BubblePool bubblePool, Vector2 position, string bubbleAnimationName,
-            FishCfg fishCfg)
+            FishCfg fishCfg, bool hasGenerated)
         {
             this.tip = tip;
             this.bubblePool = bubblePool;
             transform.position = position;
             this.data = fishCfg;
+            this.hasGenerated = hasGenerated;
 
             gameObject.SetActive(true);
             GetComponent<Animator>().Play(bubbleAnimationName);
